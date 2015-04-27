@@ -1,0 +1,96 @@
+﻿.loginpage {
+    display: -ms-grid;
+    width: 100%;
+    height: 100%;
+    background: #CC2200;
+    -ms-grid-columns: 1fr;
+     -ms-grid-rows:auto auto 1fr;
+}
+
+.loginpage .firstcolumn {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    -ms-grid-column: 1;
+     -ms-grid-row: 1;
+    text-align: center;
+}
+
+.loginpage .secondcolumn {
+    text-align: center;
+   margin-top: 10px;
+    margin-bottom: 20px;
+    -ms-grid-column: 1;
+     -ms-grid-row: 2;
+     font-family: "Open Sans Bold";
+    font-size: 32px;
+}
+.loginpage .mainform {
+    margin: 20px 20px;
+    -ms-grid-column: 1;
+     -ms-grid-row: 3;
+    text-align: center;
+}
+
+.loginpage .errormessageholder {
+    text-align: center;
+    width: 100%;
+        font-size: 14px;
+    margin-top: 15px;
+
+}
+
+.loginpage #loginProgressRing {
+        color: #FFFFFF;
+    width:30px; height:30px;
+    display:none;
+   margin: 15px auto;
+}
+
+.loginpage .loginform {
+    display: block;margin: 0 auto;width: 100%;
+}
+.loginpage .loginbutton {
+    width: 100%
+}
+
+.loginpage .loginform input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top:5px;
+}
+
+.loginpage .backbutton {
+    display: none;
+}
+
+
+@media screen and (min-width: 800px) {
+
+     .loginpage .loginform > div {
+         margin: 10px 0;
+     }
+
+ .loginpage {
+    -ms-grid-columns: 1fr 2fr 1fr;
+}
+
+
+.loginpage .mainform {
+    -ms-grid-column: 2;
+}
+
+.loginpage  .firstcolumn {
+    -ms-grid-column: 2;
+}
+
+.loginpage .secondcolumn {
+    -ms-grid-column: 2;
+ 
+}
+
+.loginpage .backbutton {
+    display: inherit;
+}
+
+
+}

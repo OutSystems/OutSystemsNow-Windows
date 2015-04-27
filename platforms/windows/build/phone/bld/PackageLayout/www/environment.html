@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HelloWorld</title>
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    <!-- WinJS references -->
+    <link href="//Microsoft.Phone.WinJS.2.1/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+    <!-- HelloWorld references -->
+    <link href="css/environment.css" rel="stylesheet" />
+    <script src="js/environment.js"></script>
+</head>
+    <body>
+        <div class="environmentpage" id="environmentpage">
+            <section aria-label="Main content" role="main" class="logopage">
+                <img class="logo" src="img/logo_original.png" />
+            </section>
+            <section aria-label="Main content" role="main" class="mainform">
+
+                <div class="environmentform">
+                    <div class="textholder">
+                        <span class="lighttext">Access my applications hosted on:</span>
+                        <div class="endpointhelp endpointhelpphone">
+                            <img id="helpImagePhone" style="width: auto; max-height: 30px;display:block" src="img/icon_help_small.png" />
+                            <img id="closeHelpImagePhone" style="width: auto; max-height: 30px;display: none;" src="img/icon_close_small.png" />
+                        </div>
+                    </div>
+                    <div class="endpointholder">
+                        <input type="text" class="endpointinput" id="endpointapp" style="box-sizing: border-box;"/>
+                        <div class="endpointhelp endpointhelptablet">
+                            <img id="helpImage" style="width: auto; max-height: 45px; display:block" src="img/icon_help.png" />
+                            <img id="closeHelpImage" style="width: auto; max-height: 45px;display: none;" src="img/icon_close.png" />
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+            <section class="okbuttonsection">
+                <div>
+                    <button type="button" id="gobutton" >GO</button>
+                    <progress id="envProgressRing" class="win-ring"></progress>
+                    <div class="errormessageholder">
+                        <span id="errormessage"></span>
+                    </div>
+                </div>
+            </section>
+            <section class="helpsection" id="helpSection">
+                <div class="helptext">
+                    Please fill in the location of your OutSystems environment. This is the base URL that you use to acces any of your Platform applications.
+                </div>
+            </section>
+            <section class="demo">
+                <div class="demobottom">
+                    <span class="lighttext trydemobuttontext" >Want to see it in action?</span>
+                    <input class="trydemobutton" id="demobutton" type="button" value="TRY OUR DEMO" />
+                </div>
+            </section>
+            <section class="footer">
+                <span class="bottomlink">Discover more at <a href="http://www.outsystems.com">www.outsystems.com</a></span>
+            </section>
+        </div>
+    </body>
+</html>

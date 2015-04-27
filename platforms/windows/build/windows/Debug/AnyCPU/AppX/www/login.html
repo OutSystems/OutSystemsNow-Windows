@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <!-- HelloWorld references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    <!-- WinJS references -->
+    <link href="//Microsoft.Phone.WinJS.2.1/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+    <link href="css/login.css" rel="stylesheet" />
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <div class="fragment loginpage" id="loginSize">
+        <button data-win-control="WinJS.UI.BackButton" class="backbutton" style="margin-left:40px;margin-top:30px;"></button>
+        <div class="firstcolumn lighttext">Applications on:</div>
+        <div id="endpoint" class="secondcolumn lighttext"></div>
+        <section aria-label="Main content" role="main" class="mainform">
+            <form class="loginform">
+                <div>
+                    <input type="text" placeholder="username" id="username"  />
+                </div>
+                <div>
+                    <input type="password" placeholder="password" id="password" />
+                </div>
+                <div>
+                    <input class="loginbutton" type="button" value="LOGIN" id="loginbutton" />
+                    <progress id="loginProgressRing" class="win-ring"></progress>
+                    <!--<input style="width: 100%" type="button" value="WEBVIEW" id="webviewbutton" />-->
+                    <div class="errormessageholder">
+                        <span id="errormessage"></span>
+                    </div>
+                </div>                    
+            </form>
+        </section>
+    </div>
+</body>
+</html>

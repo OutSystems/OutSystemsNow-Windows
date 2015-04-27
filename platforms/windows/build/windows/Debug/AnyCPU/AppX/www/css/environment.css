@@ -1,0 +1,222 @@
+﻿.environmentpage {
+    display: -ms-grid;
+    width: 100%;
+    height: 100%;
+    background: #CC2200;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows:auto auto;
+     -ms-grid-rows:auto auto auto auto 1fr 80px;
+}
+
+.environmentpage .logopage {
+    margin: 60px 20px 40px 20px;
+    -ms-grid-column: 1;
+     -ms-grid-row: 1;
+}
+
+.environmentpage  .mainform {
+     margin: 0px 20px;
+    -ms-grid-column: 1;
+     -ms-grid-row: 2;
+    font-size: 18px;
+}
+
+.environmentpage .demo {
+     margin: 20px 20px;
+    -ms-grid-column: 1;
+     -ms-grid-row: 5;
+     font-size: 18px;
+    text-align: center;
+    position: relative;
+}
+.environmentpage  .demobottom {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    bottom: 60px;
+    display: -ms-grid;
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: 1fr;
+}
+
+.environmentpage .footer {
+    -ms-grid-column: 1;
+     -ms-grid-row: 6;
+     font-size: 18px;
+    text-align: center;
+}
+
+.environmentpage .footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.environmentpage .footer a:hover 
+{
+     color:white; 
+     text-decoration:none; 
+     font-weight: bold;
+     cursor:pointer;  
+}
+.environmentpage .errormessageholder {
+    text-align: center;
+    width: 100%;
+        font-size: 14px;
+    margin-top: 15px;
+
+}
+.environmentpage #gobutton {
+    width: 100%;
+}
+
+.environmentpage .environmentform {
+    display: block;margin: 0 auto;width: 100%;
+}
+
+.environmentpage .logo {
+   display:  block;margin: 0 auto;width: 100%;height: auto;max-width: 500px
+}
+
+.environmentpage .trydemobutton {
+   font-weight: bold;
+   padding: 10px;
+   -ms-grid-row:2;
+   -ms-grid-column-align:center;
+   margin-top: 10px;
+}
+
+.environmentpage .trydemobuttontext {
+    -ms-grid-row:1;-ms-grid-column-align:center;
+}
+
+.environmentpage #envProgressRing {
+        color: #FFFFFF;
+    width:30px; height:30px;
+    display:none;
+   margin: 15px auto;
+}
+
+.environmentpage .endpointinput {
+    width: 100%;
+    -ms-grid-column: 1;
+}
+
+.environmentpage .endpointhelp {
+    -ms-grid-column: 2;
+   -ms-grid-column-align: center;
+    -ms-grid-row-align: center;
+    padding: 0px 0px;
+}
+
+.environmentpage .endpointholder {
+    display: -ms-grid;-ms-grid-columns:1fr;
+}
+
+.environmentpage .textholder {
+    display: -ms-grid;-ms-grid-columns:1fr 60px;
+}
+
+
+.environmentpage .helpsection {
+    width: 100%;
+     -ms-grid-row:3;
+      -ms-grid-column:1;
+    background: #ffffff;
+    background: rgba(255, 255, 255, 0.4);
+      display: -ms-grid;
+      -ms-grid-columns:1fr;
+      -ms-grid-rows:1fr;
+    height: 0px;
+    overflow: hidden;
+}
+
+.environmentpage .helptext {
+    -ms-grid-column:1;
+    -ms-grid-column-align:center;
+    -ms-grid-row:1;
+    -ms-grid-row-align:center;
+    margin: 0 20px;
+}
+
+.environmentpage .okbuttonsection {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    margin: 0px 20px;
+}
+.environmentpage .endpointhelpphone {
+    display: block;
+}
+
+.environmentpage .endpointhelptablet {
+    display: none;
+}
+
+
+@media screen and (min-width: 800px) {
+
+     .environmentpage .environmentform > div {
+         margin: 10px 0;
+     }
+
+     .environmentpage .textholder {
+    display: -ms-grid;-ms-grid-columns:1fr;
+}
+
+ .environmentpage {
+    -ms-grid-columns: 1fr 2fr 1fr;
+}
+
+
+.environmentpage .logopage {
+    -ms-grid-column: 2;
+}
+
+.environmentpage  .mainform {
+    -ms-grid-column: 2;
+}
+
+.environmentpage .demo {
+    -ms-grid-column: 2;
+ 
+}
+
+.environmentpage .footer {
+    -ms-grid-column: 2;
+}
+
+.environmentpage .helpsection {
+      -ms-grid-column:1; 
+      -ms-grid-column-span:3; 
+      -ms-grid-columns:1fr 2fr 1fr;
+}
+.environmentpage .helptext {
+    -ms-grid-column:2;
+    -ms-grid-column-align:center;
+      margin: 0px;
+}
+
+.environmentpage .okbuttonsection {
+    -ms-grid-column: 2;
+    margin-top: 10px;
+}
+.environmentpage  .demobottom {
+    display: inherit;
+}
+.environmentpage .trydemobutton {
+    margin-left: 10px;
+}
+.environmentpage .endpointholder {
+    display: -ms-grid;-ms-grid-columns:1fr 60px;
+}
+
+.environmentpage .endpointhelpphone {
+    display: none;
+}
+
+.environmentpage .endpointhelptablet {
+    display: block;
+}
+
+
+}

@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>AMIGUINHO-PC</Machine>
+    <WindowsUser>Emanuel</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>outsystems.now.windows</PackageIdentityName>
+    <IntermediateOutputPath>C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>16DA0095B44F05A43354D48F3A4BD8C7127918FB51F20AF24E30F1C734C3C25B</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>outsystems.now.windows_0.0.1.1_neutral__28bt5vyr9vk80</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>outsystems.now.windows_28bt5vyr9vk80!outsystems.now.windows</RegisteredUserModeAppID>
+    <RegisteredPackageID>outsystems.now.windows</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=4CEDDF8A-590E-4825-9CDA-3890C4DB291F</RegisteredPackagePublisher>
+    <RegisteredVersion>0.0.1.1</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\build\windows\Debug\AnyCPU\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-28T16:15:30.228</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\WindowsRuntimeComponent\bin\Debug\OutsystemsRuntimeComponent.winmd">
+      <PackagePath>OutsystemsRuntimeComponent.winmd</PackagePath>
+      <Modified>2015-01-28T15:50:54.418</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\PushSDK\build\bin\Debug\PushSDK.winmd">
+      <PackagePath>PushSDK.winmd</PackagePath>
+      <Modified>2015-01-27T10:20:33.590</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\plugins\com.phonegap.plugins.barcodescanner\src\windows8\lib\WinRTBarcodeReader.winmd">
+      <PackagePath>WinRTBarcodeReader.winmd</PackagePath>
+      <Modified>2015-01-15T10:39:33.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\plugins\com.phonegap.plugins.barcodescanner\src\windows8\lib\ZXing.winmd">
+      <PackagePath>ZXing.winmd</PackagePath>
+      <Modified>2015-01-15T10:39:33.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\icon106.png">
+      <PackagePath>images\icon106.png</PackagePath>
+      <Modified>2015-01-07T14:06:59.345</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\icon150.scale-100.png">
+      <PackagePath>images\icon150.scale-100.png</PackagePath>
+      <Modified>2015-01-07T14:01:49.422</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\icon170.png">
+      <PackagePath>images\icon170.png</PackagePath>
+      <Modified>2015-01-07T14:05:52.720</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\icon360.png">
+      <PackagePath>images\icon360.png</PackagePath>
+      <Modified>2015-01-07T14:05:02.297</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\icon44.scale-100.png">
+      <PackagePath>images\icon44.scale-100.png</PackagePath>
+      <Modified>2015-01-07T14:02:59.023</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\icon71.scale-100.png">
+      <PackagePath>images\icon71.scale-100.png</PackagePath>
+      <Modified>2015-01-07T14:03:56.005</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-07T13:13:20.619</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\splashscreen480.scale-100.png">
+      <PackagePath>images\splashscreen480.scale-100.png</PackagePath>
+      <Modified>2015-01-07T13:20:20.206</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\splashscreen620.png">
+      <PackagePath>images\splashscreen620.png</PackagePath>
+      <Modified>2015-01-07T13:13:20.619</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-07T14:01:49.422</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-22T17:29:05.220</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-22T17:30:22.991</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-22T17:28:23.155</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-22T17:29:35.023</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-22T17:32:57.933</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\icon150.scale-240.png">
+      <PackagePath>images\icon150.scale-240.png</PackagePath>
+      <Modified>2015-01-07T14:05:02.297</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\icon44.scale-240.png">
+      <PackagePath>images\icon44.scale-240.png</PackagePath>
+      <Modified>2015-01-07T14:06:59.345</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\images\icon71.scale-240.png">
+      <PackagePath>images\icon71.scale-240.png</PackagePath>
+      <Modified>2015-01-07T14:05:52.720</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\img\icon_close.png">
+      <PackagePath>www\img\icon_close.png</PackagePath>
+      <Modified>2015-01-13T10:33:27.211</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\img\icon_help.png">
+      <PackagePath>www\img\icon_help.png</PackagePath>
+      <Modified>2015-01-13T10:33:20.986</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\img\NoAppImage.png">
+      <PackagePath>www\img\NoAppImage.png</PackagePath>
+      <Modified>2015-01-09T14:42:56.283</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\img\logo.png">
+      <PackagePath>www\img\logo.png</PackagePath>
+      <Modified>2015-01-07T13:48:19.958</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\img\test.png">
+      <PackagePath>www\img\test.png</PackagePath>
+      <Modified>2015-01-08T17:59:18.030</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\img\logo_original.png">
+      <PackagePath>www\img\logo_original.png</PackagePath>
+      <Modified>2015-01-07T14:26:20.265</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\StoreManifest.xml">
+      <PackagePath>StoreManifest.xml</PackagePath>
+      <Modified>2015-01-27T10:20:33.636</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+      <Modified>2015-01-07T13:48:20.182</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\src\windows\FileProxy.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\src\windows\FileProxy.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.611</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\DirectoryEntry.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\DirectoryEntry.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.612</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\DirectoryReader.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\DirectoryReader.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.613</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\Entry.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\Entry.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.613</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\File.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\File.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.614</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileEntry.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\FileEntry.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.615</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileError.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\FileError.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.616</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileReader.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\FileReader.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.616</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileSystem.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\FileSystem.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.617</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\fileSystems.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\fileSystems.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.623</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileUploadOptions.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\FileUploadOptions.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.618</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileUploadResult.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\FileUploadResult.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.618</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileWriter.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\FileWriter.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.620</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\Flags.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\Flags.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.620</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\LocalFileSystem.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\LocalFileSystem.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.621</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\Metadata.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\Metadata.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.622</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\ProgressEvent.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\ProgressEvent.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.623</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\requestFileSystem.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\requestFileSystem.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.624</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js">
+      <PackagePath>www\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js</PackagePath>
+      <Modified>2015-01-22T18:28:07.625</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+      <Modified>2015-01-13T11:34:55.527</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+      <Modified>2015-01-27T10:20:33.688</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\js\applist.js">
+      <PackagePath>www\js\applist.js</PackagePath>
+      <Modified>2015-01-22T16:34:54.441</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\js\environment.js">
+      <PackagePath>www\js\environment.js</PackagePath>
+      <Modified>2015-01-27T10:20:33.689</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\js\index.js">
+      <PackagePath>www\js\index.js</PackagePath>
+      <Modified>2015-01-28T10:31:03.766</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\js\login.js">
+      <PackagePath>www\js\login.js</PackagePath>
+      <Modified>2015-01-28T16:11:49.374</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\js\navigator.js">
+      <PackagePath>www\js\navigator.js</PackagePath>
+      <Modified>2015-01-07T18:43:22.675</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\js\webview.js">
+      <PackagePath>www\js\webview.js</PackagePath>
+      <Modified>2015-01-28T16:17:10.362</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\BarcodeScannerProxy.js">
+      <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\BarcodeScannerProxy.js</PackagePath>
+      <Modified>2015-01-15T10:39:33.727</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js">
+      <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js</PackagePath>
+      <Modified>2015-01-15T10:39:33.726</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.camera\src\windows\CameraProxy.js">
+      <PackagePath>www\plugins\org.apache.cordova.camera\src\windows\CameraProxy.js</PackagePath>
+      <Modified>2015-01-15T10:39:33.705</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.camera\www\Camera.js">
+      <PackagePath>www\plugins\org.apache.cordova.camera\www\Camera.js</PackagePath>
+      <Modified>2015-01-15T10:39:33.703</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.camera\www\CameraConstants.js">
+      <PackagePath>www\plugins\org.apache.cordova.camera\www\CameraConstants.js</PackagePath>
+      <Modified>2015-01-15T10:39:33.702</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js">
+      <PackagePath>www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js</PackagePath>
+      <Modified>2015-01-15T10:39:33.704</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js">
+      <PackagePath>www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js</PackagePath>
+      <Modified>2015-01-15T10:39:33.703</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.geolocation\src\windows\GeolocationProxy.js">
+      <PackagePath>www\plugins\org.apache.cordova.geolocation\src\windows\GeolocationProxy.js</PackagePath>
+      <Modified>2015-01-15T10:39:33.708</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.geolocation\www\Coordinates.js">
+      <PackagePath>www\plugins\org.apache.cordova.geolocation\www\Coordinates.js</PackagePath>
+      <Modified>2015-01-15T10:39:33.709</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.geolocation\www\geolocation.js">
+      <PackagePath>www\plugins\org.apache.cordova.geolocation\www\geolocation.js</PackagePath>
+      <Modified>2015-01-15T10:39:33.712</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.geolocation\www\Position.js">
+      <PackagePath>www\plugins\org.apache.cordova.geolocation\www\Position.js</PackagePath>
+      <Modified>2015-01-15T10:39:33.711</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\plugins\org.apache.cordova.geolocation\www\PositionError.js">
+      <PackagePath>www\plugins\org.apache.cordova.geolocation\www\PositionError.js</PackagePath>
+      <Modified>2015-01-15T10:39:33.710</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\applist.html">
+      <PackagePath>www\applist.html</PackagePath>
+      <Modified>2015-01-20T10:21:00.002</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+      <Modified>2015-01-14T17:28:23.524</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\environment.html">
+      <PackagePath>www\environment.html</PackagePath>
+      <Modified>2015-01-19T17:03:21.565</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\login.html">
+      <PackagePath>www\login.html</PackagePath>
+      <Modified>2015-01-28T16:11:39.725</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\webview.html">
+      <PackagePath>www\webview.html</PackagePath>
+      <Modified>2015-01-19T15:05:50.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\css\applist.css">
+      <PackagePath>www\css\applist.css</PackagePath>
+      <Modified>2015-01-20T14:09:23.697</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\css\environment.css">
+      <PackagePath>www\css\environment.css</PackagePath>
+      <Modified>2015-01-14T16:50:52.500</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\css\index.css">
+      <PackagePath>www\css\index.css</PackagePath>
+      <Modified>2015-01-13T12:59:14.974</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\css\login.css">
+      <PackagePath>www\css\login.css</PackagePath>
+      <Modified>2015-01-13T14:12:59.617</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\css\webview.css">
+      <PackagePath>www\css\webview.css</PackagePath>
+      <Modified>2015-01-15T21:37:53.535</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\css\windows\environment.css">
+      <PackagePath>www\css\windows\environment.css</PackagePath>
+      <Modified>2015-01-12T17:58:56.236</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\img\test.jpg">
+      <PackagePath>www\img\test.jpg</PackagePath>
+      <Modified>2015-01-08T17:35:58.443</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\fonts\opensans-bold-webfont.woff">
+      <PackagePath>www\fonts\opensans-bold-webfont.woff</PackagePath>
+      <Modified>2015-01-07T18:08:55.339</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\fonts\opensans-light-webfont.woff">
+      <PackagePath>www\fonts\opensans-light-webfont.woff</PackagePath>
+      <Modified>2015-01-07T18:08:31.943</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\fonts\opensans-regular-webfont.woff">
+      <PackagePath>www\fonts\opensans-regular-webfont.woff</PackagePath>
+      <Modified>2015-01-07T18:08:17.783</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\fonts\OpenSans-Bold.ttf">
+      <PackagePath>www\fonts\OpenSans-Bold.ttf</PackagePath>
+      <Modified>2015-01-07T17:59:55.419</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\fonts\OpenSans-Light.ttf">
+      <PackagePath>www\fonts\OpenSans-Light.ttf</PackagePath>
+      <Modified>2015-01-07T17:59:55.429</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\www\fonts\OpenSans-Regular.ttf">
+      <PackagePath>www\fonts\OpenSans-Regular.ttf</PackagePath>
+      <Modified>2015-01-07T17:59:55.438</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\build\windows\Debug\AnyCPU\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-01-28T16:15:25.466</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

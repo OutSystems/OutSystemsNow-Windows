@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="B298AAFA.OutSystemsNow" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>EN-US</Language>
+			<Scale>240</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="config.xml" uri="ms-resource://B298AAFA.OutSystemsNow/Files/config.xml">
+				<Candidate type="Path">
+					<Value>config.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="StoreManifest.xml" uri="ms-resource://B298AAFA.OutSystemsNow/Files/StoreManifest.xml">
+				<Candidate type="Path">
+					<Value>StoreManifest.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="icon106.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/icon106.png">
+					<Candidate type="Path">
+						<Value>images\icon106.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="icon120.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/icon120.png">
+					<Candidate type="Path">
+						<Value>images\icon120.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="icon150.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/icon150.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\icon150.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="icon170.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/icon170.png">
+					<Candidate type="Path">
+						<Value>images\icon170.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="icon360.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/icon360.png">
+					<Candidate type="Path">
+						<Value>images\icon360.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="icon44.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/icon44.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\icon44.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="icon50.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/icon50.png">
+					<Candidate type="Path">
+						<Value>images\icon50.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="icon71.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/icon71.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\icon71.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/SplashScreen.png"/>
+				<NamedResource name="splashscreen480.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/splashscreen480.png">
+					<Candidate type="Path">
+						<Value>images\splashscreen480.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="splashscreen620.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/splashscreen620.png">
+					<Candidate type="Path">
+						<Value>images\splashscreen620.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/Square150x150Logo.png"/>
+				<NamedResource name="Square30x30Logo.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/Square30x30Logo.png"/>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/Square310x310Logo.png"/>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/Square70x70Logo.png"/>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/StoreLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\StoreLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/images/Wide310x150Logo.png">
+					<Candidate type="Path">
+						<Value>images\Wide310x150Logo.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="www">
+				<NamedResource name="applist.html" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/applist.html">
+					<Candidate type="Path">
+						<Value>www\applist.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="cordova.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/cordova.js">
+					<Candidate type="Path">
+						<Value>www\cordova.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="cordova_plugins.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/cordova_plugins.js">
+					<Candidate type="Path">
+						<Value>www\cordova_plugins.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="environment.html" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/environment.html">
+					<Candidate type="Path">
+						<Value>www\environment.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="index.html" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/index.html">
+					<Candidate type="Path">
+						<Value>www\index.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="login.html" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/login.html">
+					<Candidate type="Path">
+						<Value>www\login.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="webview.html" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/webview.html">
+					<Candidate type="Path">
+						<Value>www\webview.html</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="css">
+					<NamedResource name="applist.css" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/css/applist.css">
+						<Candidate type="Path">
+							<Value>www\css\applist.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="environment.css" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/css/environment.css">
+						<Candidate type="Path">
+							<Value>www\css\environment.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="index.css" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/css/index.css">
+						<Candidate type="Path">
+							<Value>www\css\index.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="login.css" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/css/login.css">
+						<Candidate type="Path">
+							<Value>www\css\login.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="webview.css" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/css/webview.css">
+						<Candidate type="Path">
+							<Value>www\css\webview.css</Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="windows">
+						<NamedResource name="environment.css" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/css/windows/environment.css">
+							<Candidate type="Path">
+								<Value>www\css\windows\environment.css</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="fonts">
+					<NamedResource name="opensans-bold-webfont.woff" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/fonts/opensans-bold-webfont.woff">
+						<Candidate type="Path">
+							<Value>www\fonts\opensans-bold-webfont.woff</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="OpenSans-Bold.ttf" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/fonts/OpenSans-Bold.ttf">
+						<Candidate type="Path">
+							<Value>www\fonts\OpenSans-Bold.ttf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="opensans-light-webfont.woff" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/fonts/opensans-light-webfont.woff">
+						<Candidate type="Path">
+							<Value>www\fonts\opensans-light-webfont.woff</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="OpenSans-Light.ttf" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/fonts/OpenSans-Light.ttf">
+						<Candidate type="Path">
+							<Value>www\fonts\OpenSans-Light.ttf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="opensans-regular-webfont.woff" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/fonts/opensans-regular-webfont.woff">
+						<Candidate type="Path">
+							<Value>www\fonts\opensans-regular-webfont.woff</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="OpenSans-Regular.ttf" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/fonts/OpenSans-Regular.ttf">
+						<Candidate type="Path">
+							<Value>www\fonts\OpenSans-Regular.ttf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="img">
+					<NamedResource name="icon_close.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/img/icon_close.png">
+						<Candidate type="Path">
+							<Value>www\img\icon_close.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="icon_close_small.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/img/icon_close_small.png">
+						<Candidate type="Path">
+							<Value>www\img\icon_close_small.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="icon_help.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/img/icon_help.png">
+						<Candidate type="Path">
+							<Value>www\img\icon_help.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="icon_help_small.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/img/icon_help_small.png">
+						<Candidate type="Path">
+							<Value>www\img\icon_help_small.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="logo.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/img/logo.png">
+						<Candidate type="Path">
+							<Value>www\img\logo.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="logo_original.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/img/logo_original.png">
+						<Candidate type="Path">
+							<Value>www\img\logo_original.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="NoAppImage.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/img/NoAppImage.png">
+						<Candidate type="Path">
+							<Value>www\img\NoAppImage.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="test.png" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/img/test.png">
+						<Candidate type="Path">
+							<Value>www\img\test.png</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="js">
+					<NamedResource name="applist.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/js/applist.js">
+						<Candidate type="Path">
+							<Value>www\js\applist.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="environment.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/js/environment.js">
+						<Candidate type="Path">
+							<Value>www\js\environment.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="index.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/js/index.js">
+						<Candidate type="Path">
+							<Value>www\js\index.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="login.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/js/login.js">
+						<Candidate type="Path">
+							<Value>www\js\login.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="navigator.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/js/navigator.js">
+						<Candidate type="Path">
+							<Value>www\js\navigator.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="webview.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/js/webview.js">
+						<Candidate type="Path">
+							<Value>www\js\webview.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="plugins">
+					<ResourceMapSubtree name="com.phonegap.plugins.barcodescanner">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows8">
+								<NamedResource name="BarcodeScannerProxy.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/com.phonegap.plugins.barcodescanner/src/windows8/BarcodeScannerProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\BarcodeScannerProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="barcodescanner.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/com.phonegap.plugins.barcodescanner/www/barcodescanner.js">
+								<Candidate type="Path">
+									<Value>www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="org.apache.cordova.camera">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="CameraProxy.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.camera/src/windows/CameraProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\org.apache.cordova.camera\src\windows\CameraProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="Camera.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.camera/www/Camera.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.camera\www\Camera.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CameraConstants.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.camera/www/CameraConstants.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.camera\www\CameraConstants.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CameraPopoverHandle.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.camera/www/CameraPopoverHandle.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CameraPopoverOptions.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="org.apache.cordova.file">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="FileProxy.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/src/windows/FileProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\org.apache.cordova.file\src\windows\FileProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="DirectoryEntry.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/DirectoryEntry.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\DirectoryEntry.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="DirectoryReader.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/DirectoryReader.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\DirectoryReader.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Entry.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/Entry.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\Entry.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="File.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/File.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\File.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileEntry.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/FileEntry.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\FileEntry.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileError.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/FileError.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\FileError.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileReader.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/FileReader.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\FileReader.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileSystem.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/FileSystem.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\FileSystem.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="fileSystems.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/fileSystems.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\fileSystems.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileUploadOptions.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/FileUploadOptions.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\FileUploadOptions.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileUploadResult.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/FileUploadResult.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\FileUploadResult.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileWriter.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/FileWriter.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\FileWriter.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Flags.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/Flags.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\Flags.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="LocalFileSystem.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/LocalFileSystem.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\LocalFileSystem.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Metadata.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/Metadata.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\Metadata.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ProgressEvent.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/ProgressEvent.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\ProgressEvent.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="requestFileSystem.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/requestFileSystem.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\requestFileSystem.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="resolveLocalFileSystemURI.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="org.apache.cordova.geolocation">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="GeolocationProxy.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.geolocation/src/windows/GeolocationProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\org.apache.cordova.geolocation\src\windows\GeolocationProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="Coordinates.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.geolocation/www/Coordinates.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.geolocation\www\Coordinates.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="geolocation.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.geolocation/www/geolocation.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.geolocation\www\geolocation.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Position.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.geolocation/www/Position.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.geolocation\www\Position.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="PositionError.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.geolocation/www/PositionError.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.geolocation\www\PositionError.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="resources">
+			<NamedResource name="environmentError1" uri="ms-resource://B298AAFA.OutSystemsNow/resources/environmentError1">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Please enter a valid OutSystems network address</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="environmentError2" uri="ms-resource://B298AAFA.OutSystemsNow/resources/environmentError2">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>There was an error trying to connect to the provided environment, please try again.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="loginError1" uri="ms-resource://B298AAFA.OutSystemsNow/resources/loginError1">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid Login</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="loginError2" uri="ms-resource://B298AAFA.OutSystemsNow/resources/loginError2">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Incompatible module version in your installation, please contact your system administrator to update the OutSystems Now modules</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

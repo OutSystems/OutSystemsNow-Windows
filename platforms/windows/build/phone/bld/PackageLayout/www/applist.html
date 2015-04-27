@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <!-- HelloWorld references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    <!-- WinJS references -->
+    <link href="//Microsoft.Phone.WinJS.2.1/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+    <link href="css/applist.css" rel="stylesheet" />
+    <script src="js/applist.js"></script>
+</head>
+    <body>
+        <div class="fragment applistpage">
+
+            <div class="headerholder">
+                <button data-win-control="WinJS.UI.BackButton" class="backbutton" style=""></button>
+                <div class="headertitleholder">
+                    <span id="headerTitle"></span>
+                </div>
+            </div>
+            <section aria-label="Main content" role="main" class="mainform" >
+                <!--<div id="basicListView" data-win-control="WinJS.UI.ListView"
+                         data-win-options="{itemDataSource : DataExample.itemList.dataSource,
+    itemTemplate: select('.smallListIconTextTemplate'),
+    layout : {type: WinJS.UI.GridLayout, maximumRowsOrColumns:2, orientation: 'vertical'}}">
+                    </div>-->
+                <div data-win-control="WinJS.UI.Repeater" id="repeater">
+                    <div class="smallListIconTextItem" >
+                        <input type="hidden" data-win-bind="value: path" />
+                        <div class="insideBlock">
+                            <div class="smallListIconTextItem-Image" data-win-bind="style.backgroundImage: imageId">
+                            </div>
+                            <div class="descriptionNameHolder">
+                                <div class="smallListIconTextItem-Detail">
+                                    <span data-win-bind="textContent: name"></span>
+                                </div>
+                                <div class="smallListIconTextItem-Description">
+                                    <p class="clamped clamped-2">
+                                        <span class="text" data-win-bind="textContent: description">
+                                            <span class="ellipsis">
+                                                &#133;
+                                            </span>
+                                            <span class="fill"></span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

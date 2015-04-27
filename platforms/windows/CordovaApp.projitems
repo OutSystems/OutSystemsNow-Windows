@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>9ebdb27f-d75b-4d8c-b53f-7be4a1fe89f9</SharedGUID>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)images\icon120.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\icon50.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\splashscreen480.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\StoreLogo.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\Wide310x150Logo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)www\img\icon_close_small.png" />
+    <Content Include="$(MSBuildThisFileDirectory)www\img\icon_help_small.png" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\src\windows\FileProxy.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\DirectoryEntry.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\DirectoryReader.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\Entry.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\File.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\FileEntry.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\FileError.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\FileReader.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\FileSystem.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\fileSystems.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\FileUploadOptions.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\FileUploadResult.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\FileWriter.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\Flags.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\LocalFileSystem.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\Metadata.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\ProgressEvent.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\requestFileSystem.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js" />
+    <Content Include="$(MSBuildThisFileDirectory)images\icon106.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\icon150.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\icon150.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\icon170.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\icon360.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\icon44.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\icon44.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\icon71.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\icon71.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\splashscreen480.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\splashscreen620.png" />
+    <Content Include="$(MSBuildThisFileDirectory)www\applist.html" />
+    <Content Include="$(MSBuildThisFileDirectory)www\cordova.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\cordova_plugins.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\css\applist.css" />
+    <Content Include="$(MSBuildThisFileDirectory)www\css\environment.css" />
+    <Content Include="$(MSBuildThisFileDirectory)www\css\index.css" />
+    <Content Include="$(MSBuildThisFileDirectory)www\css\login.css" />
+    <Content Include="$(MSBuildThisFileDirectory)www\css\webview.css" />
+    <Content Include="$(MSBuildThisFileDirectory)www\css\windows\environment.css" />
+    <Content Include="$(MSBuildThisFileDirectory)www\img\icon_close.png" />
+    <Content Include="$(MSBuildThisFileDirectory)www\img\icon_help.png" />
+    <Content Include="$(MSBuildThisFileDirectory)www\img\NoAppImage.png" />
+    <Content Include="$(MSBuildThisFileDirectory)www\img\logo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)www\img\test.png" />
+    <Content Include="$(MSBuildThisFileDirectory)www\index.html" />
+    <Content Include="$(MSBuildThisFileDirectory)www\js\applist.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\js\environment.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\environment.html" />
+    <Content Include="$(MSBuildThisFileDirectory)www\fonts\opensans-bold-webfont.woff" />
+    <Content Include="$(MSBuildThisFileDirectory)www\fonts\OpenSans-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)www\fonts\opensans-light-webfont.woff" />
+    <Content Include="$(MSBuildThisFileDirectory)www\fonts\OpenSans-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)www\fonts\opensans-regular-webfont.woff" />
+    <Content Include="$(MSBuildThisFileDirectory)www\fonts\OpenSans-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)www\img\logo_original.png" />
+    <Content Include="$(MSBuildThisFileDirectory)www\js\index.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\js\login.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\js\navigator.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\js\webview.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\login.html" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\BarcodeScannerProxy.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.camera\src\windows\CameraProxy.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.camera\www\Camera.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.camera\www\CameraConstants.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.geolocation\src\windows\GeolocationProxy.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.geolocation\www\Coordinates.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.geolocation\www\geolocation.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.geolocation\www\Position.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\plugins\org.apache.cordova.geolocation\www\PositionError.js" />
+    <Content Include="$(MSBuildThisFileDirectory)www\webview.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)www\strings\en-US\resources.resjson" />
+  </ItemGroup>
+</Project>

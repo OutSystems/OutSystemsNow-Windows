@@ -1,0 +1,13 @@
+﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+
+{
+    "environmentError1"              : "Please enter a valid OutSystems network address",
+	  "_environmentError1.comment"              : "When user input for envirnoment is empty",
+	 "environmentError2" :  "There was an error trying to connect to the provided environment, please try again.",
+	 	  "_environmentError2.comment"              : "Error message when can not connect to outsystems now endpoint, aspx or jsf",
+
+	"loginError1": "Invalid Login",
+		"loginError2": "Incompatible module version in your installation, please contact your system administrator to update the OutSystems Now modules"
+
+
+}

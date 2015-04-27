@@ -1,0 +1,28 @@
+﻿.webviewpage {
+    background: white;
+    display: -ms-grid;
+    width: 100%;
+    height: 100%;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr;
+}
+
+.webviewpage .cordovawebview {
+    -ms-grid-column: 1;
+     -ms-grid-row: 1;
+}
+.webviewpage #imagetagholder {
+    -ms-grid-column: 1;
+     -ms-grid-row: 1;
+         opacity: 0;
+
+}
+
+#myProgressRing {
+    color: #CC2200;
+    position: relative; left: -40%;top:-50%;width:60px; height:60px;
+}
+
+#myProgressLine {
+    width: 100%; color: #CC2200;  position: absolute; top:0;margin: 0;padding: 0;height: 7px;
+}

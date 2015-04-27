@@ -1,0 +1,297 @@
+﻿.applistpage {
+    display: -ms-grid;
+    width: 100%;
+    height: 100%;
+    background: white;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 70px 1fr;
+    background: lightgray;
+}
+
+.listheader {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+}
+
+.applistpage .mainform {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.win-listview {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: transparent;
+}
+
+    .win-listview .win-itembox, .win-itemcontainer .win-itembox {
+        background: transparent;
+    }
+
+.applistpage .backbutton {
+    display: none;
+}
+
+#basicListView {
+    /*text-align: center;*/
+}
+
+    #basicListView .win-container {
+        /*position: relative !important;
+    width: 100%;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 5px !important;*/
+    }
+
+.smallListIconTextItem {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+    .smallListIconTextItem .smallListIconTextItem-Image {
+        margin-top: 25px;
+        /*-ms-grid-row-align: center;*/
+        -ms-grid-column-align: center;
+        width: 80px;
+        height: 80px;
+        display: block;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: contain;
+        background-color: lightgray;
+    }
+
+    .smallListIconTextItem .smallListIconTextItem-Detail {
+        color: black;
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-row-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        color: gray;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-family: "Open Sans Light";
+        text-align: center;
+    }
+
+#basicListView {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+
+
+.insideBlock {
+    height: 175px;
+    display: -ms-grid;
+    -ms-grid-rows: 1fr 70px;
+    -ms-grid-columns: 1fr;
+    background: #FFFFFF;
+    margin: 0.5px 0.5px;
+}
+
+.applistpage .headerholder {
+    background: #CC2200;
+    text-align: center;
+    color: white;
+}
+
+.applistpage .headertitleholder {
+    vertical-align: middle;
+    line-height: 70px;
+    font-size: 22px;
+}
+
+.smallListIconTextItem-Description {
+    display: none;
+    color: black;
+    white-space: normal;
+    text-overflow: ellipsis;
+    /*width: 100px;*/
+    display: none;
+    overflow: hidden;
+    -ms-grid-row: 2;
+}
+
+.clamped {
+    line-height: 1.5;
+    overflow: hidden;
+    position: relative;
+    margin-top: -5px;
+}
+
+.clamped-2 {
+    /* Clamp to 2 lines, ie line-height x 2: */
+    max-height: 4.5em;
+}
+
+.ellipsis {
+    background: #fff;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
+.fill {
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.descriptionNameHolder {
+    display: -ms-grid;
+    -ms-grid-rows: 1fr;
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    overflow: hidden;
+    -ms-grid-column-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+
+    .applistpage {
+        background: white;
+    }
+
+    .smallListIconTextItem {
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #repeater {
+        margin: 5px;
+    }
+
+    .applistpage .mainform {
+        -ms-grid-column: 1;
+        -ms-grid-row: 2;
+        overflow-y: auto;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .applistpage .headerholder {
+        background: #CC2200;
+        color: white;
+        display: -ms-grid;
+        -ms-grid-columns: 80px 1fr;
+        -ms-grid-rows: 1fr;
+    }
+
+    .applistpage .headertitleholder {
+        font-size: 22px;
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+        -ms-grid-column-align: center;
+        -ms-grid-row-align: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .applistpage .backbutton {
+        display: inherit;
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+        -ms-grid-column-align: center;
+        -ms-grid-row-align: center;
+    }
+
+    .insideBlock {
+        margin: 5px 5px;
+        -ms-grid-columns: auto 1fr;
+        padding: 15px;
+        height: 100px;
+        -ms-grid-rows: 1fr;
+        border: 0.5px solid lightgray;
+    }
+
+    .smallListIconTextItem-Description {
+        display: block;
+        -ms-grid-row: 2;
+        height: 100px;
+    }
+
+    .smallListIconTextItem-Detail {
+        font-size: 18px;
+        font-weight: 300;
+        font-family: "Open Sans Light";
+        text-align: left !important;
+        margin-top: 0px !important;
+        margin-bottom: 10px !important;
+        color: #cc2200 !important;
+    }
+
+    .smallListIconTextItem .smallListIconTextItem-Image {
+        -ms-grid-row-align: start;
+        -ms-grid-column-align: start;
+        background-size: contain;
+        margin-top: 0px;
+    }
+
+    .descriptionNameHolder {
+        -ms-grid-rows: auto 1fr;
+        -ms-grid-column: 2;
+        margin-left: 15px;
+        width: 100%;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 769px) {
+    .smallListIconTextItem {
+        width: 33.3333333333333%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .applistpage .mainform {
+        -ms-grid-column: 1;
+        -ms-grid-row: 2;
+        overflow-y: auto;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .applistpage .headerholder {
+        background: #CC2200;
+        color: white;
+        display: -ms-grid;
+        -ms-grid-columns: 80px 1fr;
+        -ms-grid-rows: 1fr;
+    }
+
+    .applistpage .headertitleholder {
+        font-size: 22px;
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+        -ms-grid-column-align: center;
+        -ms-grid-row-align: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .applistpage .backbutton {
+        display: inherit;
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+        -ms-grid-column-align: center;
+        -ms-grid-row-align: center;
+    }
+}

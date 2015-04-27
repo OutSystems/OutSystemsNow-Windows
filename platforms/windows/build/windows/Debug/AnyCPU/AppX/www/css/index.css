@@ -1,0 +1,22 @@
+﻿@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/opensans-regular-webfont.woff);
+}
+
+@font-face {
+    font-family: "Open Sans Light";
+    src: url(../fonts/opensans-light-webfont.woff);
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url(../fonts/opensans-bold-webfont.woff);
+}
+
+body {
+    color: white;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+}
+    

@@ -1,0 +1,3 @@
+MainPackage=C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\build\phone\Release\AnyCPU\CordovaApp.Phone_0.0.1.4_Bundle\CordovaApp.Phone_0.0.1.4_AnyCPU.appx
+SymbolPackage=C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\AppPackages\CordovaApp.Phone_0.0.1.4_Test\CordovaApp.Phone_0.0.1.4_AnyCPU.appxsym
+ResourcePack=C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\build\phone\Release\AnyCPU\CordovaApp.Phone_0.0.1.4_Bundle\CordovaApp.Phone_0.0.1.4_scale-100.appx

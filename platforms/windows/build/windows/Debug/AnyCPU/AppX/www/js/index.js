@@ -1,0 +1,208 @@
+﻿// For an introduction to the Hub/Pivot template, see the following documentation:
+// http://go.microsoft.com/fwlink/?LinkID=392285
+(function () {
+    "use strict";
+    var enviroment = window.WinJS.Class.define(function () {
+    },
+      { host: "" },
+      { userName: "" },
+      { password: "" },
+      { dateLastLogin: "" },
+      { name: "" },
+      { isJsp: false },
+      { applist: null },
+      { currentapp: null });
+
+    window.WinJS.Namespace.define("globalVars", {
+        IsUaSetted: false,
+        environment: null,
+        autologin: false,
+        deeplink: false,
+        encryptFunction: function (data, name) {
+            if (data.applist != null) data.applist = null;
+            var cryptography = Windows.Security.Cryptography;
+            var keyHash = this.getMd5Hash("Va@wxa!bO2!95-lO1_yc_^@kYE0&7EUBL$S,C%YUgMRTnAF$vC6WcGX!v[\khg");
+            var toDecryptBuffer = cryptography.CryptographicBuffer.convertStringToBinary(JSON.stringify(data), cryptography.BinaryStringEncoding.utf8);
+            var aes = Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider.openAlgorithm(Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.aesEcbPkcs7);
+            var symetricKey = aes.createSymmetricKey(keyHash);
+            var buffEncrypted = Windows.Security.Cryptography.Core.CryptographicEngine.encrypt(symetricKey, toDecryptBuffer, null);
+            var strEncrypted = cryptography.CryptographicBuffer.encodeToBase64String(buffEncrypted);
+            var applicationData = Windows.Storage.ApplicationData.current;
+            var localSettings = applicationData.localSettings;
+            localSettings.values[name] = strEncrypted;
+        }
+        ,
+        decryptFunction: function (name) {
+            try {
+                var applicationData = Windows.Storage.ApplicationData.current;
+                var localSettings = applicationData.localSettings;
+                var cipherString = localSettings.values[name];
+                if (cipherString) {
+                    var cryptography = Windows.Security.Cryptography;
+                    var keyHash = this.getMd5Hash("Va@wxa!bO2!95-lO1_yc_^@kYE0&7EUBL$S,C%YUgMRTnAF$vC6WcGX!v[\khg");
+                    var toDecryptBuffer = cryptography.CryptographicBuffer.decodeFromBase64String(cipherString);
+                    var aes = Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider.openAlgorithm(Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.aesEcbPkcs7);
+                    var symetricKey = aes.createSymmetricKey(keyHash);
+                    var buffDecrypted = Windows.Security.Cryptography.Core.CryptographicEngine.decrypt(symetricKey, toDecryptBuffer, null);
+                    var strDecrypted = cryptography.CryptographicBuffer.convertBinaryToString(cryptography.BinaryStringEncoding.utf8, buffDecrypted);
+                    return strDecrypted;
+                } else {
+                    return null;
+                }
+            } catch (e) {
+                return null;
+            }
+
+
+        },
+        getMd5Hash: function (key) {
+            var cryptography = Windows.Security.Cryptography;
+            // Convert the message string to binary data.
+            var buffUtf8Msg = Windows.Security.Cryptography.CryptographicBuffer.convertStringToBinary(key, cryptography.BinaryStringEncoding.utf8);
+            // Create a HashAlgorithmProvider object.
+            var objAlgProv = Windows.Security.Cryptography.Core.HashAlgorithmProvider.openAlgorithm(Windows.Security.Cryptography.Core.HashAlgorithmNames.md5);
+            // Hash the message.
+            var buffHash = objAlgProv.hashData(buffUtf8Msg);
+            // Verify that the hash length equals the length specified for the algorithm.
+            if (buffHash.length != objAlgProv.hashLength) {
+                // throw new Exception("There was an error creating the hash");
+            }
+            return buffHash;
+        },
+        getHardwareId: function () {
+            var ht = Windows.System.Profile.HardwareIdentification.getPackageSpecificToken(null);
+
+            var reader = Windows.Storage.Streams.DataReader.fromBuffer(ht.id);
+            var arr = new Array(ht.id.length);
+            reader.readBytes(arr);
+
+            var id = "";
+            for (var j = 0; j < arr.length; j++) {
+                id += arr[j].toString();
+            }
+            return id;
+        },
+        formatParams: function (p) {
+            var queryStr = "";
+
+            for (var propertyName in p) {
+                var val = p[propertyName];
+                queryStr += propertyName + "=" + encodeURI(val) + "&";
+            }
+
+            return queryStr.slice(0, -1);
+        }, setUserAgent: function (window, userAgent) {
+            if (window.navigator.userAgent != userAgent) {
+                var userAgentProp = { get: function () { return userAgent; } };
+                try {
+                    Object.defineProperty(window.navigator, 'userAgent', userAgentProp);
+                } catch (e) {
+                    window.navigator = Object.create(navigator, {
+                        userAgent: userAgentProp
+                    });
+                }
+            }
+        }, getAppVersion: function() {
+            var thisPackage = Windows.ApplicationModel.Package.current;
+            var version = thisPackage.id.version;
+
+            var appVersion = version.major + "." +
+                             version.minor + "." +
+                             version.build + "." +
+                             version.revision;
+            return appVersion;
+        }
+    });
+
+
+
+
+    var activation = Windows.ApplicationModel.Activation;
+    var app = window.WinJS.Application;
+    var nav = window.WinJS.Navigation;
+    var sched = window.WinJS.Utilities.Scheduler;
+    var ui = window.WinJS.UI;
+
+    app.addEventListener("activated", function (args) {
+
+        if (args.detail.kind === activation.ActivationKind.launch || args.detail.kind == Windows.ApplicationModel.Activation.ActivationKind.protocol) {
+            if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
+                // your application here.
+            } else {
+                // Restore application state here.
+            }
+
+            hookUpBackButtonGlobalEventHandlers();
+            nav.history = app.sessionState.history || {};
+            nav.history.current.initialPlaceholder = true;
+
+            // Cast the generic event args to WebUILaunchActivatedEventArgs.
+
+            // Optimize the load of the application and while the splash screen is shown, execute high priority scheduled work.
+            if (args.detail.kind == Windows.ApplicationModel.Activation.ActivationKind.protocol) {
+                // The received URI is eventArgs.detail.uri.rawUri
+                globalVars.environment = new enviroment();
+                globalVars.environment.host = args.detail.uri.host;
+                var username;
+                var password;
+                var uriApp;
+                for (var i = 0, len = args.detail.uri.queryParsed.length; i < len; i++) {
+                    if (args.detail.uri.queryParsed[i].name == "username") {
+                        username = args.detail.uri.queryParsed[i].value;
+                    }
+                    if (args.detail.uri.queryParsed[i].name == "password") {
+                        password = args.detail.uri.queryParsed[i].value;
+                    }
+                    if (args.detail.uri.queryParsed[i].name == "url") {
+                        uriApp = args.detail.uri.queryParsed[i].value;
+                    }
+                }
+                globalVars.deeplink = true;
+                globalVars.environment.username = username;
+                globalVars.environment.password = password;
+                globalVars.environment.currentapp = uriApp;
+                if (username || password) {
+                    globalVars.deeplinkLogin = true;
+                }
+                if (uriApp) {
+                    globalVars.deeplinkapp = true;
+                }
+            }
+            ui.disableAnimations();
+            var p = ui.processAll().then(function () {
+                return nav.navigate(nav.location || Application.navigator.home, nav.state);
+            }).then(function () {
+                return sched.requestDrain(sched.Priority.aboveNormal + 1);
+            }).then(function () {
+                ui.enableAnimations();
+            });
+
+            args.setPromise(p);
+        }
+    });
+
+    app.oncheckpoint = function () {
+        // TODO: This application is about to be suspended. Save any state
+        // that needs to persist across suspensions here. If you need to 
+        // complete an asynchronous operation before your application is 
+        // suspended, call args.setPromise().
+        app.sessionState.history = nav.history;
+    };
+
+    function hookUpBackButtonGlobalEventHandlers() {
+        window.addEventListener('keyup', backButtonGlobalKeyUpHandler, false);
+    }
+
+    // CONSTANTS
+    var KEY_LEFT = "Left";
+    var KEY_BROWSER_BACK = "BrowserBack";
+    var MOUSE_BACK_BUTTON = 3;
+
+    function backButtonGlobalKeyUpHandler(event) {
+        // Navigates back when (alt + left) or BrowserBack keys are released.
+        if ((event.key === KEY_LEFT && event.altKey && !event.shiftKey && !event.ctrlKey) || (event.key === KEY_BROWSER_BACK)) {
+            nav.back();
+        }
+    }
+    app.start();
+})();
