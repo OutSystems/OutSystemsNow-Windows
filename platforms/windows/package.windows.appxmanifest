@@ -14,8 +14,8 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="B298AAFA.OutSystemsNow" StartPage="www/index.html">
-      <m2:VisualElements BackgroundColor="#CC2200" Description="OutSystems Now" DisplayName="OutSystems Now" ForegroundText="light" Square150x150Logo="images\Square150x150Logo.png" Square30x30Logo="images\Square30x30Logo.png" ToastCapable="true">
+    <Application Id="OutSystemsNow" StartPage="www/index.html">
+      <m2:VisualElements BackgroundColor="#CC2200" Description="CordovaApp" DisplayName="OutSystems Now" ForegroundText="light" Square150x150Logo="images\Square150x150Logo.png" Square30x30Logo="images\Square30x30Logo.png" ToastCapable="true">
         <m2:DefaultTile ShortName="OutSystems Now" Square310x310Logo="images\Square310x310Logo.png" Square70x70Logo="images\Square70x70Logo.png" Wide310x150Logo="images\Wide310x150Logo.png">
           <m2:ShowNameOnTiles>
             <m2:ShowOn Tile="square150x150Logo" />
@@ -33,8 +33,8 @@
         </Extension>
       </Extensions>
       <ApplicationContentUriRules>
-        <Rule Match="https://*.outsystems.net" Type="include" />
         <Rule Match="https://*.outsystems.com" Type="include" />
+        <Rule Match="https://*.outsystems.net" Type="include" />
         <Rule Match="https://*.outsystemscloud.com" Type="include" />
       </ApplicationContentUriRules>
     </Application>
@@ -42,6 +42,8 @@
   <Capabilities>
     <Capability Name="internetClient" />
     <Capability Name="picturesLibrary" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="privateNetworkClientServer" />
     <DeviceCapability Name="location" />
     <DeviceCapability Name="webcam" />
   </Capabilities>

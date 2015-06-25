@@ -75,6 +75,15 @@
         },
         "com.phonegap.plugins.barcodescanner": {
             "PACKAGE_NAME": "OutSystems Now"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "OutSystems Now"
+        },
+        "cordova-plugin-sim": {
+            "PACKAGE_NAME": "OutSystems Now"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "OutSystems Now"
         }
     },
     "dependent_plugins": {}

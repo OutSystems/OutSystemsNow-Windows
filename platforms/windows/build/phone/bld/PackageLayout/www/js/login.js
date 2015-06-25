@@ -8,9 +8,8 @@
     var localSettings = applicationData.localSettings;
     window.WinJS.Navigation.addEventListener("navigating", function (parameters) {
         if (parameters.detail.delta < 0) {
-            globalVars.deeplink = false;
-            globalVars.deeplinkLogin = false;
-            globalVars.deeplinkapp = false;
+            if (globalVars.deeplink && globalVars.deeplink.hasValidSettings())
+                globalVars.deeplink.invalidate();
         }
     });
     window.WinJS.UI.Pages.define("/www/login.html", {
@@ -23,7 +22,21 @@
 
             //Force portrait screen only
             var wgd = Windows.Graphics.Display;
-            wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.portrait;
+
+            var backButton = document.getElementById("backButtonLogin");
+
+            if (WinJS.Utilities.isPhone) {
+                wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.portrait;
+                if (backButton) {
+                    backButton.classList.add("backButtonPhone");
+                }
+            }
+            else {
+                wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.none;
+                if (backButton) {
+                    backButton.classList.add("backButtonTabletDesktop");
+                }
+            }
 
 
             //if (!WinJS.Utilities.isPhone)
@@ -43,6 +56,21 @@
                 }
                 return canGoBack;
             };
+        },
+        updateLayout: function (element) {
+            /// <param name="element" domElement="true" />
+
+            console.log("updateLayout");
+
+            var backButton = document.getElementById("backButtonLogin");
+            if (backButton) {
+                if (WinJS.Utilities.isPhone) {
+                    backButton.classList.add("backButtonPhone");
+                }
+                else {
+                    backButton.classList.add("backButtonTabletDesktop");
+                }
+            }
         }
     });  
 
@@ -50,16 +78,30 @@
         var username = document.getElementById("username");
         var password = document.getElementById("password");
         //if deeplink brings username and password will execute this and use the values of username and password fields.
-        if (globalVars.deeplinkLogin) {
-            globalVars.deeplinkLogin = false;
-            if (globalVars.environment.username != null && globalVars.environment.password != null) {
-                username.value = globalVars.environment.username;
-                password.value = globalVars.environment.password;
-                doLogin();
-            } else {
-                if (globalVars.environment.username) username.value = globalVars.environment.username;
-                if (globalVars.environment.password) password.value = globalVars.environment.password;
+        if (globalVars.deeplink.hasValidSettings()) {
+
+            if (globalVars.deeplink.isLoginOperation()) {
+                globalVars.deeplink.invalidate();
             }
+
+            if (globalVars.deeplink.hasCredentials()) {
+                username.value = globalVars.deeplink.params.username;
+                password.value = globalVars.deeplink.params.password;
+
+            } else {
+                
+                var savedState = globalVars.decryptFunction(globalVars.environment.host);
+                if (savedState != null) {
+                    var parsed = JSON.parse(savedState);
+                    username = document.getElementById("username");
+                    password = document.getElementById("password");
+                    username.value = parsed.username;
+                    password.value = parsed.password;
+                }
+            }
+
+            doLogin();
+
         } else {
             //if the device has a saved instance of last login will, try to login again with the last saved instance
             var savedState = globalVars.decryptFunction(globalVars.environment.host);

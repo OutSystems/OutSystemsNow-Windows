@@ -214,6 +214,49 @@ module.exports = [
         "merges": [
             ""
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device/www/device.js",
+        "id": "org.apache.cordova.device.device",
+        "clobbers": [
+            "device"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device/src/windows/DeviceProxy.js",
+        "id": "org.apache.cordova.device.DeviceProxy",
+        "merges": [
+            ""
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-sim/www/sim.js",
+        "id": "cordova-plugin-sim.Sim",
+        "clobbers": [
+            "window.plugins.sim"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-network-information/www/network.js",
+        "id": "cordova-plugin-network-information.network",
+        "clobbers": [
+            "navigator.connection",
+            "navigator.network.connection"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+        "id": "cordova-plugin-network-information.Connection",
+        "clobbers": [
+            "Connection"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-network-information/src/windows/NetworkInfoProxy.js",
+        "id": "cordova-plugin-network-information.NetworkInfoProxy",
+        "merges": [
+            ""
+        ]
     }
 ];
 module.exports.metadata = 
@@ -222,7 +265,10 @@ module.exports.metadata =
     "org.apache.cordova.camera": "0.3.4",
     "org.apache.cordova.geolocation": "0.3.11",
     "org.apache.cordova.file": "1.3.2",
-    "com.phonegap.plugins.barcodescanner": "2.0.1"
+    "com.phonegap.plugins.barcodescanner": "2.0.1",
+    "org.apache.cordova.device": "0.3.0",
+    "cordova-plugin-sim": "1.0.2",
+    "cordova-plugin-network-information": "1.0.1-dev"
 }
 // BOTTOM OF METADATA
 });

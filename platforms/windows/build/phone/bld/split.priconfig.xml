@@ -5,7 +5,7 @@
     <autoResourcePackage qualifier="Scale" />
     <autoResourcePackage qualifier="DXFeatureLevel" />
   </packaging>
-  <index root="\" startIndexAt="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\build\phone\Release\AnyCPU\resources.pri">
+  <index root="\" startIndexAt="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\build\phone\Release\AnyCPU\resources.pri">
     <default>
       <qualifier name="Language" value="en-US" />
       <qualifier name="Contrast" value="standard" />

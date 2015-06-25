@@ -16,27 +16,32 @@
 </head>
 <body>
     <div class="fragment loginpage" id="loginSize">
-        <button data-win-control="WinJS.UI.BackButton" class="backbutton" style="margin-left:40px;margin-top:30px;"></button>
-        <div class="firstcolumn lighttext">Applications on:</div>
+        <div class="headerholder">
+            <button data-win-control="WinJS.UI.BackButton" class="backbutton" id="backButtonLogin"></button>
+
+            <div class="headertitleholder lighttext">Applications on:</div>
+        </div>
         <div id="endpoint" class="secondcolumn lighttext"></div>
-        <section aria-label="Main content" role="main" class="mainform">
-            <form class="loginform">
-                <div>
-                    <input type="text" placeholder="username" id="username"  />
-                </div>
-                <div>
-                    <input type="password" placeholder="password" id="password" />
-                </div>
-                <div>
-                    <input class="loginbutton" type="button" value="LOGIN" id="loginbutton" />
-                    <progress id="loginProgressRing" class="win-ring"></progress>
-                    <!--<input style="width: 100%" type="button" value="WEBVIEW" id="webviewbutton" />-->
-                    <div class="errormessageholder">
-                        <span id="errormessage"></span>
+        <div id="loginSection" class="loginSection">
+            <section aria-label="Main content" role="main" class="mainform">
+                <form class="loginform">
+                    <div>
+                        <input type="text" placeholder="username" id="username"  />
                     </div>
-                </div>                    
-            </form>
-        </section>
+                    <div>
+                        <input type="password" placeholder="password" id="password" />
+                    </div>
+                    <div>
+                        <input class="loginbutton" type="button" value="LOGIN" id="loginbutton" />
+                        <progress id="loginProgressRing" class="win-ring"></progress>
+                        <!--<input style="width: 100%" type="button" value="WEBVIEW" id="webviewbutton" />-->
+                        <div class="errormessageholder">
+                            <span id="errormessage"></span>
+                        </div>
+                    </div>                    
+                </form>
+            </section>
+        </div>
     </div>
 </body>
 </html>

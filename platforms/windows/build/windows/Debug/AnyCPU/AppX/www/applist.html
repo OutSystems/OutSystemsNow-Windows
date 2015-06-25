@@ -18,7 +18,7 @@
         <div class="fragment applistpage">
 
             <div class="headerholder">
-                <button data-win-control="WinJS.UI.BackButton" class="backbutton" style=""></button>
+                <button data-win-control="WinJS.UI.BackButton" class="backbutton" id="backButtonAppList"></button>                
                 <div class="headertitleholder">
                     <span id="headerTitle"></span>
                 </div>
@@ -31,7 +31,7 @@
                     </div>-->
                 <div data-win-control="WinJS.UI.Repeater" id="repeater">
                     <div class="smallListIconTextItem" >
-                        <input type="hidden" data-win-bind="value: path" />
+                        <input type="hidden" id="appIndex"/>
                         <div class="insideBlock">
                             <div class="smallListIconTextItem-Image" data-win-bind="style.backgroundImage: imageId">
                             </div>

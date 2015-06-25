@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
-<REPORT OVERALL_RESULT="PASS" VERSION="3.3" LATEST_VERSION="FALSE" UPDATE_DOWNLOAD_URL="http://go.microsoft.com/fwlink/?LinkID=246599&amp;amp;clcid=0x409" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsStore" PUBLISHER_DISPLAY_NAME="OutSystems Inc." OSVERSION="6.3.9600.0" OS="Microsoft Windows 8.1 Enterprise" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" VALIDATION_TYPE="UI" ReportGenerationTime="4/7/2015 11:49:48 AM" ID="71c54a46da7ebe6451c9db1f7230177d">
+<REPORT OVERALL_RESULT="PASS" VERSION="3.3" LATEST_VERSION="FALSE" UPDATE_DOWNLOAD_URL="http://go.microsoft.com/fwlink/?LinkID=246599&amp;amp;clcid=0x409" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsStore" PUBLISHER_DISPLAY_NAME="OutSystems Inc." OSVERSION="6.3.9600.0" OS="Microsoft Windows 8.1 Enterprise" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" VALIDATION_TYPE="UI" ReportGenerationTime="6/25/2015 10:54:37 AM" ID="2e8b355a0790db014300afecaa902f2a">
   <REQUIREMENTS>
     <REQUIREMENT NUMBER="1" TITLE="Clean reversible install test" RATIONALE="A clean, reversible, installation allows users to successfully manage (deploy, and remove) applications on their system." />
     <REQUIREMENT NUMBER="2" TITLE="Install to the correct folders test" RATIONALE="Windows provides specific locations in the file system to store programs and software components, shared application data, and application data specific to a user." />
@@ -12,77 +12,77 @@
     <REQUIREMENT NUMBER="8" TITLE="Safe mode test" RATIONALE="By default, most drivers and services that did not come preinstalled with Windows are not started in Safe Mode. They should remain disabled unless they are needed for basic operations of the system or for diagnostic and recovery purposes." />
     <REQUIREMENT NUMBER="9" TITLE="Multiuser session test" RATIONALE="Windows users should be able to run concurrent sessions without conflict or disruption.  Applications must ensure that when running in multiple sessions either locally or remotely, the normal functionality of the application should not be impacted. Application settings and data files should not be persisted across users. A user’s privacy and preferences should be isolated to the user’s session." />
     <REQUIREMENT NUMBER="10" TITLE="Crashes and hangs test" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience.">
-      <TEST INDEX="47" NAME="App launch tests" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:22s.69ms">
+      <TEST INDEX="47" NAME="App launch tests" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:22s.93ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:03s.82ms">
+      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:03s.84ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="11" TITLE="Compatibility and resiliency test" RATIONALE="When Windows detects that an application has operated in an incompatible manner, it applies a compatibility fix that causes the application to behave correctly, ensuring a positive user experience. Applications should not rely on this behavior since it is only provided to allow legacy applications to work correctly on Windows." />
     <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
-      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:03s.08ms">
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:03s.22ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="13" TITLE="Windows security best practices test" RATIONALE="An application should not change the default Windows security settings." />
     <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
-      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:02s.32ms">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:02s.39ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:01s.86ms">
+      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:01s.77ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:02s.72ms">
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:02s.70ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
-      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:03s.11ms">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:03s.24ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="17" TITLE="Performance test" RATIONALE="The application should have a fast and responsive launch and suspend experience while consuming a reasonable amount of system resources (CPU, File IO, Memory etc.) to enable fast switching and multitasking between previously unopened applications.">
-      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:01s.91ms">
+      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:01s.99ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="60" NAME="Optimized binding references" DESCRIPTION="When using bindings, WinJS.Binding.optimizeBindingReferences should be set to true to optimize the memory usage." EXECUTIONTIME="00h:00m:02s.57ms">
+      <TEST INDEX="60" NAME="Optimized binding references" DESCRIPTION="When using bindings, WinJS.Binding.optimizeBindingReferences should be set to true to optimize the memory usage." EXECUTIONTIME="00h:00m:02s.61ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="19" TITLE="App manifest resources test" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
-      <TEST INDEX="45" NAME="App resources validation" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.56ms">
+      <TEST INDEX="45" NAME="App resources validation" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.59ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="61" NAME="Branding validation" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:03s.81ms">
+      <TEST INDEX="61" NAME="Branding validation" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:03s.84ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
-      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:02s.76ms">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:02s.65ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="21" TITLE="File encoding test" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding.">
-      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:02s.53ms">
+      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:02s.41ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="22" TITLE="Direct3D Feature Test" RATIONALE="App should use the Direct3D capability correctly.">
-      <TEST INDEX="51" NAME="Direct3D feature level support" DESCRIPTION="Applications must render content on Direct3D feature level 9.1 hardware." EXECUTIONTIME="00h:00m:05s.00ms">
+      <TEST INDEX="51" NAME="Direct3D feature level support" DESCRIPTION="Applications must render content on Direct3D feature level 9.1 hardware." EXECUTIONTIME="00h:00m:05s.05ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
@@ -92,50 +92,50 @@
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
-      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.13ms">
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.33ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
-      <TEST INDEX="56" NAME="ExclusiveTo attribute test" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:01s.47ms">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute test" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:01s.51ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="57" NAME="Type location test" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.72ms">
+      <TEST INDEX="57" NAME="Type location test" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.79ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="55" NAME="Type name case-sensitivity test" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.76ms">
+      <TEST INDEX="55" NAME="Type name case-sensitivity test" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.72ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="54" NAME="Type name correctness test" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.59ms">
+      <TEST INDEX="54" NAME="Type name correctness test" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.72ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="58" NAME="General metadata correctness test" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:01s.29ms">
+      <TEST INDEX="58" NAME="General metadata correctness test" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:01s.52ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="53" NAME="Properties test" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.73ms">
+      <TEST INDEX="53" NAME="Properties test" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.77ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
-      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:02s.62ms">
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:02s.58ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="66" NAME="Supported directory structure check" DESCRIPTION="Validate each file in the package for that the file name length should be less than MAX_PATH." EXECUTIONTIME="00h:00m:01s.27ms">
+      <TEST INDEX="66" NAME="Supported directory structure check" DESCRIPTION="Validate each file in the package for that the file name length should be less than MAX_PATH." EXECUTIONTIME="00h:00m:01s.30ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="26" TITLE="High-DPI support" RATIONALE="The application needs to set DPI-aware to make the UI look consistently good across a wide variety of high-DPI display settings." />
     <REQUIREMENT NUMBER="27" TITLE="Resource Usage Test" RATIONALE="WinJS background tasks need to call close() to free resource.">
-      <TEST INDEX="68" NAME="WinJS background task test" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:01s.94ms">
+      <TEST INDEX="68" NAME="WinJS background task test" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:01s.99ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
@@ -143,34 +143,12 @@
   </REQUIREMENTS>
   <APPLICATIONS>
     <Installed_Programs>
-      <Program Name="B298AAFA.OutSystemsNow" Type="Application" Source="AppxPackage" Publisher="CN=4CEDDF8A-590E-4825-9CDA-3890C4DB291F" Version="1.0.0.0" Language="1033" OnSystemDrive="true" RootDirPath="C:\Program Files\WindowsApps\B298AAFA.OutSystemsNow_1.0.0.0_neutral__28bt5vyr9vk80" PathEvidenceId="0xa" RNP="0x1" DNP="0xd" EvidenceId="0xa" Id="0000682180a6568249a1ef7beba9282f4c4800000904">
+      <Program Name="B298AAFA.OutSystemsNow" Type="Application" Source="AppxPackage" Publisher="CN=4CEDDF8A-590E-4825-9CDA-3890C4DB291F" Version="1.1.0.0" Language="1033" InstallDate="06/25/2015 09:53:20" RootDirPath="C:\Program Files\WindowsApps\B298AAFA.OutSystemsNow_1.1.0.0_neutral__28bt5vyr9vk80" Id="000059869d4aba8f5054dd4760a7e9adfac100000904">
         <Indicators>
-          <DirectoryIndicators>
-            <Directory Name="windows" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\src\windows" RNP="0x9" DNP="0xb" UniqueId="0x52" Id="0000efdfac32d09b3d9ce03589e0a6ac5cae0ff17833" />
-            <Directory Name="org.apache.cordova.file" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file" RNP="0x9" DNP="0xb" UniqueId="0x39" Id="00006f4986fc0bc3637b3b9763b05f7c2da43212ec8d" />
-            <Directory Name="src" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\src" RNP="0x9" DNP="0xb" UniqueId="0x51" Id="0000aa1d795d5e615db6a51ff3f52645426145609d74" />
-            <Directory Name="www" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\www" RNP="0x9" DNP="0xb" UniqueId="0x54" Id="00002a0dd572593b77616f32cfe15b70877daadb021b" />
-            <Directory Name="org.apache.cordova.geolocation" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation" RNP="0x9" DNP="0xb" UniqueId="0x50" Id="0000569eaf7c934cb0fc7d5502af83fc4275ed411e28" />
-            <Directory Name="src" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\src" RNP="0x9" DNP="0xb" UniqueId="0x3a" Id="0000aa1d795d5e615db6a51ff3f52645426145609d74" />
-            <Directory Name="windows" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\src\windows" RNP="0x9" DNP="0xb" UniqueId="0x3b" Id="0000efdfac32d09b3d9ce03589e0a6ac5cae0ff17833" />
-            <Directory Name="www" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0x9" DNP="0xb" UniqueId="0x3d" Id="00002a0dd572593b77616f32cfe15b70877daadb021b" />
-            <Directory Name="js" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\js" RNP="0x9" DNP="0xb" UniqueId="0x22" Id="0000ed830a2cad918e620bb3cae846c3985ea8ddae26" />
-            <Directory Name="www" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www" RNP="0x9" DNP="0xb" UniqueId="0x16" Id="00002a0dd572593b77616f32cfe15b70877daadb021b" />
-            <Directory Name="www" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\com.phonegap.plugins.barcodescanner\www" RNP="0x9" DNP="0xb" UniqueId="0x2e" Id="00002a0dd572593b77616f32cfe15b70877daadb021b" />
-            <Directory Name="windows8" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8" RNP="0x9" DNP="0xb" UniqueId="0x2c" Id="0000c45143c15eabfe5c3e723df041c7c48dd1587c2e" />
-            <Directory Name="plugins" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins" RNP="0x9" DNP="0xb" UniqueId="0x29" Id="0000cdff5a8b448d17782e1bc983e7f7abb756a41b34" />
-            <Directory Name="src" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\com.phonegap.plugins.barcodescanner\src" RNP="0x9" DNP="0xb" UniqueId="0x2b" Id="0000aa1d795d5e615db6a51ff3f52645426145609d74" />
-            <Directory Name="org.apache.cordova.camera" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera" RNP="0x9" DNP="0xb" UniqueId="0x30" Id="0000b80f36f96dda92c1dbe758d699f878180254c576" />
-            <Directory Name="src" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\src" RNP="0x9" DNP="0xb" UniqueId="0x31" Id="0000aa1d795d5e615db6a51ff3f52645426145609d74" />
-            <Directory Name="windows" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\src\windows" RNP="0x9" DNP="0xb" UniqueId="0x32" Id="0000efdfac32d09b3d9ce03589e0a6ac5cae0ff17833" />
-            <Directory Name="www" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\www" RNP="0x9" DNP="0xb" UniqueId="0x34" Id="00002a0dd572593b77616f32cfe15b70877daadb021b" />
-            <Directory Name="b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80" RNP="0x9" DNP="0xb" UniqueId="0xb" Id="0000a271699d0e7857af65d4287e5592e94d04c7e2e2" />
-            <Directory Name="com.phonegap.plugins.barcodescanner" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\com.phonegap.plugins.barcodescanner" RNP="0x9" DNP="0xb" UniqueId="0x2a" Id="0000bc11fda06e3b9d8180f530629de9c009546416b0" />
-          </DirectoryIndicators>
           <WindowsStoreAppManifestIndicators>
-            <PackageManifest PackageFullName="b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80">
-              <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-                <Identity Name="B298AAFA.OutSystemsNow" Publisher="CN=4CEDDF8A-590E-4825-9CDA-3890C4DB291F" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+            <PackageManifest PackageFullName="B298AAFA.OutSystemsNow_1.1.0.0_neutral__28bt5vyr9vk80">
+              <Package>
+                <Identity Name="B298AAFA.OutSystemsNow" Publisher="CN=4CEDDF8A-590E-4825-9CDA-3890C4DB291F" Version="1.1.0.0" ProcessorArchitecture="neutral" />
                 <Properties>
                   <DisplayName>OutSystems Now</DisplayName>
                   <PublisherDisplayName>OutSystems Inc.</PublisherDisplayName>
@@ -185,16 +163,16 @@
                 </Resources>
                 <Applications>
                   <Application Id="B298AAFA.OutSystemsNow" StartPage="www\index.html">
-                    <m2:VisualElements BackgroundColor="#CC2200" Description="CordovaApp" DisplayName="OutSystems Now" ForegroundText="light" Square150x150Logo="images\Square150x150Logo.png" Square30x30Logo="images\Square30x30Logo.png" ToastCapable="true">
-                      <m2:DefaultTile ShortName="OutSystems Now" Square310x310Logo="images\Square310x310Logo.png" Square70x70Logo="images\Square70x70Logo.png" Wide310x150Logo="images\Wide310x150Logo.png">
-                        <m2:ShowNameOnTiles>
-                          <m2:ShowOn Tile="square150x150Logo" />
-                          <m2:ShowOn Tile="wide310x150Logo" />
-                          <m2:ShowOn Tile="square310x310Logo" />
-                        </m2:ShowNameOnTiles>
-                      </m2:DefaultTile>
-                      <m2:SplashScreen BackgroundColor="#CC2200" Image="images\SplashScreen.png" />
-                    </m2:VisualElements>
+                    <VisualElements BackgroundColor="#CC2200" Description="CordovaApp" DisplayName="OutSystems Now" ForegroundText="light" Square150x150Logo="images\Square150x150Logo.png" Square30x30Logo="images\Square30x30Logo.png" ToastCapable="true">
+                      <DefaultTile ShortName="OutSystems Now" Square310x310Logo="images\Square310x310Logo.png" Square70x70Logo="images\Square70x70Logo.png" Wide310x150Logo="images\Wide310x150Logo.png">
+                        <ShowNameOnTiles>
+                          <ShowOn Tile="square150x150Logo" />
+                          <ShowOn Tile="wide310x150Logo" />
+                          <ShowOn Tile="square310x310Logo" />
+                        </ShowNameOnTiles>
+                      </DefaultTile>
+                      <SplashScreen BackgroundColor="#CC2200" Image="images\SplashScreen.png" />
+                    </VisualElements>
                     <Extensions>
                       <Extension Category="windows.protocol">
                         <Protocol Name="osnow">
@@ -203,9 +181,9 @@
                       </Extension>
                     </Extensions>
                     <ApplicationContentUriRules>
-                      <Rule Match="https://*.outsystems.net" Type="include" />
-                      <Rule Match="https://*.outsystems.com" Type="include" />
                       <Rule Match="https://*.outsystemscloud.com" Type="include" />
+                      <Rule Match="https://*.outsystems.com" Type="include" />
+                      <Rule Match="https://*.outsystems.net" Type="include" />
                     </ApplicationContentUriRules>
                   </Application>
                 </Applications>
@@ -226,36 +204,36 @@
                       <ActivatableClass ActivatableClassId="PushSDK.NotificationService" ThreadingModel="both" />
                       <ActivatableClass ActivatableClassId="PushSDK.Classes.ToastPush" ThreadingModel="both" />
                       <ActivatableClass ActivatableClassId="WinRTBarcodeReader.Reader" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.Result" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417EncodingOptions" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417Writer" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417ResultMetadata" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.PDF417.Internal.Dimensions" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.Common.EncodingOptions" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.Common.BitSource" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.Common.ReedSolomon.GenericGF" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.Common.BitArray" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.Common.BitMatrix" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.Common.DecodingOptions" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.Common.Detector.WhiteRectangleDetector" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.BarcodeReader" ThreadingModel="both" />
                       <ActivatableClass ActivatableClassId="ZXing.QrCode.QRCodeWriter" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.QrCode.QrCodeEncodingOptions" ThreadingModel="both" />
                       <ActivatableClass ActivatableClassId="ZXing.QrCode.Internal.QRCodeDecoderMetaData" ThreadingModel="both" />
                       <ActivatableClass ActivatableClassId="ZXing.QrCode.Internal.ErrorCorrectionLevel" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.QrCode.QrCodeEncodingOptions" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.Rendering.PixelDataRenderer" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.OneD.UPCAWriter" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.OneD.Code128EncodingOptions" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.ResultPoint" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.Datamatrix.DatamatrixEncodingOptions" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.Datamatrix.Encoder.DefaultPlacement" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.Datamatrix.Internal.Version" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.Datamatrix.DataMatrixWriter" ThreadingModel="both" />
                       <ActivatableClass ActivatableClassId="ZXing.Aztec.AztecResultMetadata" ThreadingModel="both" />
                       <ActivatableClass ActivatableClassId="ZXing.Aztec.AztecEncodingOptions" ThreadingModel="both" />
                       <ActivatableClass ActivatableClassId="ZXing.Aztec.AztecWriter" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.BarcodeReader" ThreadingModel="both" />
-                      <ActivatableClass ActivatableClassId="ZXing.BarcodeWriter" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.Datamatrix.DataMatrixWriter" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.Datamatrix.DatamatrixEncodingOptions" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.Datamatrix.Encoder.DefaultPlacement" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.Datamatrix.Internal.Version" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.OneD.UPCAWriter" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.OneD.Code128EncodingOptions" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.Rendering.PixelDataRenderer" ThreadingModel="both" />
                       <ActivatableClass ActivatableClassId="ZXing.Dimension" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.Common.EncodingOptions" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.Common.DecodingOptions" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.Common.BitMatrix" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.Common.BitSource" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.Common.ReedSolomon.GenericGF" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.Common.BitArray" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.Common.Detector.WhiteRectangleDetector" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.Result" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417EncodingOptions" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417ResultMetadata" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.PDF417.Internal.Dimensions" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417Writer" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.BarcodeWriter" ThreadingModel="both" />
+                      <ActivatableClass ActivatableClassId="ZXing.ResultPoint" ThreadingModel="both" />
                     </InProcessServer>
                   </Extension>
                 </Extensions>
@@ -264,96 +242,84 @@
           </WindowsStoreAppManifestIndicators>
         </Indicators>
         <StaticProperties>
-          <Files Id="0000e8a5cf0b24a62b94371f5dbdcca5d2459b1061a9">
-            <File Name="WinRTBarcodeReader.winmd" Id="0000908e8661e058d19a0288854bdbdccf0baafa711d" ProductName="WindowsRuntimeComponent1" ProductVersion="1.0.0.0" VerLanguage="0" ShortName="WINRTB~1.WIN" SwitchBackContext="0x0100000000000602" FileVersion="1.0.0.0" Size="0x2c00" SizeOfImage="0xa000" PeHeaderHash="0101616cdef3b69804cc114414265ed3fa5e5b5a8653" PeChecksum="0x0" PeImageType="0x14c" PeSubsystem="3" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="WindowsRuntimeComponent1" InternalName="WinRTBarcodeReader.winmdobj" LegalCopyright="Copyright ©  2014" LinkerVersion="11.0" LinkDate="02/05/2015 17:54:59" BinaryType="DOTNETIL" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" OriginalFilename="WinRTBarcodeReader.winmdobj" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80" RNP="0x4" DNP="0x5" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\winrtbarcodereader.winmd" LongPathHash="00002b64265ac55c6b7d282fe4592363fee3b09afa04" UniqueId="0x10" />
-            <File Name="cordova_plugins.js" Id="0000048f6af2567cac24568f58ee3780fbd375f40337" ShortName="CORDOV~1.JS" Size="0x1b02" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\cordova_plugins.js" LongPathHash="000006c4fec40cbdb198c7960d08baa80c8e75431216" UniqueId="0x19" />
-            <File Name="index.html" Id="0000f497e62f3bfab929d5cb1a8d3f9e3469ed10f67a" ShortName="INDEX~1.HTM" Size="0x397" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\index.html" LongPathHash="0000f1fc85da84ec8e44e9c8bc12a7eb92666d20ea20" UniqueId="0x1b" />
-            <File Name="applist.html" Id="0000eed34c98742382fc79b3e8ab2351efb551db27a4" ShortName="APPLIS~1.HTM" Size="0xb8b" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\applist.html" LongPathHash="00000b983ad0f26de92d44d46c15f20c3ffe3d2d510d" UniqueId="0x17" />
-            <File Name="Newtonsoft.Json.dll" Id="0000531935c9217b458fee1bac4e93cc4e73a9aa168f" ProductName="Json.NET" CompanyName="Newtonsoft" ProductVersion="6.0.8.18111" VerLanguage="0" ShortName="NEWTON~1.DLL" SwitchBackContext="0x0100000000000400" FileVersion="6.0.8.18111" Size="0x61e00" SizeOfImage="0x68000" PeHeaderHash="0101f39cb91e9686b1ab4017fa03d3f38a4b0138255c" PeChecksum="0x6f56d" PeImageType="0x14c" PeSubsystem="3" BinProductVersion="6.0.8.18111" BinFileVersion="6.0.8.18111" FileDescription="Json.NET Portable .NET 4.0" InternalName="Newtonsoft.Json.dll" LegalCopyright="Copyright © James Newton-King 2008" LinkerVersion="11.0" LinkDate="01/11/2015 06:52:17" BinaryType="DOTNETIL" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" OriginalFilename="Newtonsoft.Json.dll" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80" RNP="0x4" DNP="0x5" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\newtonsoft.json.dll" LongPathHash="0000f2ee51c68a1b619996af9291b9a2b635b4b0af8f" UniqueId="0xc" />
-            <File Name="ZXing.winmd" Id="0000a1e31b07addcb77312c6622f6ac65f447a32739f" ProductName="ZXing.Net" CompanyName="ZXing.Net Development" ProductVersion="0.14.0.0" VerLanguage="0" ShortName="ZXING~1.WIN" SwitchBackContext="0x0100000000000602" FileVersion="0.14.0.0" Size="0x6d000" SizeOfImage="0x74000" PeHeaderHash="0101842fdd91fee181abb69b1ad79210146f3e3aadee" PeChecksum="0x0" PeImageType="0x14c" PeSubsystem="3" BinProductVersion="0.14.0.0" BinFileVersion="0.14.0.0" FileDescription="zxing.net for windows rt" InternalName="ZXing.winmdobj" LegalCopyright="Copyright © 2012-2014" LinkerVersion="11.0" LinkDate="04/01/2014 19:38:24" BinaryType="DOTNETIL" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" OriginalFilename="ZXing.winmdobj" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80" RNP="0x4" DNP="0x5" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\zxing.winmd" LongPathHash="000027d64da70dc8c257bb029364fa84d2c0a07bf960" UniqueId="0x11" />
-            <File Name="cordova.js" Id="0000ae251aa1d025eede4603c8a21109165a2f10ef27" Size="0xcffc" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\cordova.js" LongPathHash="0000ab242fa0ede7eace8d84942957bd327671989bb3" UniqueId="0x18" />
-            <File Name="environment.html" Id="00000a6cec3d9fec2c63c9af4a9a7eea933bff92a317" ShortName="ENVIRO~1.HTM" Size="0xda3" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\environment.html" LongPathHash="0000bfd0baa96443e268c0c6f77f0959d1cc3d455b04" UniqueId="0x1a" />
-            <File Name="OutsystemsRuntimeComponent.winmd" Id="000051da5eb200db3b617f21671fa4beb799db16461e" ProductName="WindowsRuntimeComponent" ProductVersion="1.0.0.0" VerLanguage="0" ShortName="OUTSYS~1.WIN" SwitchBackContext="0x0100000000000602" FileVersion="1.0.0.0" Size="0x1400" SizeOfImage="0x8000" PeHeaderHash="010146022a76176add667499debf9b6d4ad2e3e42b1f" PeChecksum="0x0" PeImageType="0x14c" PeSubsystem="3" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="WindowsRuntimeComponent" InternalName="OutsystemsRuntimeComponent.winmdobj" LegalCopyright="Copyright ©  2015" LinkerVersion="11.0" LinkDate="04/07/2015 08:57:07" BinaryType="DOTNETIL" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" OriginalFilename="OutsystemsRuntimeComponent.winmdobj" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80" RNP="0x4" DNP="0x5" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\outsystemsruntimecomponent.winmd" LongPathHash="000065a488df0ce013cbd33d40eafb9809d8bab98639" UniqueId="0xd" />
-            <File Name="PushSDK.winmd" Id="00008b0832b4e636d40360f8853194089658df7248de" ProductName="PushSDK" CompanyName="Pushwoosh" ProductVersion="1.0.0.0" VerLanguage="0" ShortName="PUSHSD~1.WIN" SwitchBackContext="0x0100000000000602" FileVersion="1.0.0.0" Size="0x8a00" SizeOfImage="0x10000" PeHeaderHash="0101632beec7177dacba36d86902f03eeb9ab04b309b" PeChecksum="0x0" PeImageType="0x14c" PeSubsystem="3" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="PushSDK" InternalName="PushSDK.winmdobj" LegalCopyright="Copyright ©  2014" LinkerVersion="11.0" LinkDate="01/23/2015 18:35:53" BinaryType="DOTNETIL" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" OriginalFilename="PushSDK.winmdobj" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80" RNP="0x4" DNP="0x5" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\pushsdk.winmd" LongPathHash="00009f15db9cd081c06d3412754f951c2b261203cce8" UniqueId="0xe" />
-            <File Name="resources.pri" Id="00001e4d5985fe659695ff07f768c039c630115c2ab4" ShortName="RESOUR~1.PRI" Size="0x3ed0" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\resources.pri" LongPathHash="00000e9793df493d3028170f54e99dbceda27288a799" UniqueId="0xf" />
-            <File Name="fileSystems.js" Id="00004dd2d45eae5e124c50ef60037de2389c03568b6c" ShortName="FILESY~2.JS" Size="0x438" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\filesystems.js" LongPathHash="0000afa878f8010ae760b5d85ae0b23deac816bbab6b" UniqueId="0x46" />
-            <File Name="FileWriter.js" Id="0000ac386adcab96ff9651d6c86ce3c5d2df2f8892eb" ShortName="FILEWR~1.JS" Size="0x26b8" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\filewriter.js" LongPathHash="0000676c74f0ebfbd060ae967a8349cc4d2a484746bf" UniqueId="0x49" />
-            <File Name="Flags.js" Id="0000dddfec5a596e1ea00dc1d82ebe97e7726e2bf74c" Size="0x564" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\flags.js" LongPathHash="0000f118e8896f8cad7e1d6c36be25cafb1ae5127d7f" UniqueId="0x4a" />
-            <File Name="Metadata.js" Id="00008f2efd9ecbf087392dbc9a4b35f58a547c0c20da" Size="0x5fe" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\metadata.js" LongPathHash="0000f7ff17435d542d480d7e72ea605cee7dab7c83ed" UniqueId="0x4c" />
-            <File Name="resolveLocalFileSystemURI.js" Id="0000b79951d77e3d39d56d6a4e08631d4d1cf4678406" ShortName="RESOLV~1.JS" Size="0xd79" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\resolvelocalfilesystemuri.js" LongPathHash="0000021f7c6f49a05466d7ffd5eb00db599c018312fb" UniqueId="0x4f" />
-            <File Name="Coordinates.js" Id="0000d708c50fe8f778fba07d6ae8bb9f63290840d33b" ShortName="COORDI~1.JS" Size="0x869" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\www\coordinates.js" LongPathHash="000050892da9cef86b501f0d7f49a9beea4e107fa64d" UniqueId="0x55" />
-            <File Name="PositionError.js" Id="00003ebf3d52d0fade5e8949a0bf79944f904a2abcad" ShortName="POSITI~1.JS" Size="0x512" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\www\positionerror.js" LongPathHash="0000bfa602b918320cf86c06964fe41d15d5331fa3f5" UniqueId="0x58" />
-            <File Name="Position.js" Id="0000d25243f4670080298e69971293428e16a71ebc7b" Size="0x56e" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\www\position.js" LongPathHash="0000ec24fa92a8defe28bc25690b99f716b6076089f1" UniqueId="0x57" />
-            <File Name="FileUploadOptions.js" Id="0000c708c8b4ee2e610b444506416a0dc0dda59e6fa2" ShortName="FILEUP~1.JS" Size="0x758" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\fileuploadoptions.js" LongPathHash="0000a2a10344ea0481ccf5ae4d946e6732b75f61a8f7" UniqueId="0x47" />
-            <File Name="FileUploadResult.js" Id="0000d73c538884abaaa9c32f344ccf9723a5533e9405" ShortName="FILEUP~2.JS" Size="0x473" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\fileuploadresult.js" LongPathHash="0000d2b170a64f1ec570f7019333622ed1cbb7a69b00" UniqueId="0x48" />
-            <File Name="LocalFileSystem.js" Id="00009287b549f0181309baa3820caeb3967bf19bd353" ShortName="LOCALF~1.JS" Size="0x3dd" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\localfilesystem.js" LongPathHash="000069924d0e16d4de2ae8cd9a533f587ba5aebab3c5" UniqueId="0x4b" />
-            <File Name="ProgressEvent.js" Id="000037bbcdb984dfc3f99f4c257fae2b825f612af389" ShortName="PROGRE~1.JS" Size="0xa61" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\progressevent.js" LongPathHash="0000ed411a02341c6d74e5e9f2d154ca613e03cbfada" UniqueId="0x4d" />
-            <File Name="requestFileSystem.js" Id="000034bafd5a0a07b605e7088c36b9afba77380a6a4d" ShortName="REQUES~1.JS" Size="0xa1a" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\requestfilesystem.js" LongPathHash="00008b0618ddcf6bec4dba6a68ab3d4c54aea8bf33ad" UniqueId="0x4e" />
-            <File Name="GeolocationProxy.js" Id="0000b43f96fd1487dba6fc5ae96ac57a38630f40785e" ShortName="GEOLOC~1.JS" Size="0x1ab4" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\src\windows" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\src\windows\geolocationproxy.js" LongPathHash="0000942b7ab35554efed6b7ad4e87ec2cba6c70eab64" UniqueId="0x53" />
-            <File Name="geolocation.js" Id="00004c85215f9de12c6773fd0ec666eca6523addbecb" ShortName="GEOLOC~1.JS" Size="0x2365" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\www\geolocation.js" LongPathHash="00007701be9928ba97763601b3fb3eae2bc8924065b1" UniqueId="0x56" />
-            <File Name="DirectoryReader.js" Id="0000f2afa32a1e0cbcedda10fdf3e8b2b492d10ccc86" ShortName="DIRECT~2.JS" Size="0xafb" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\directoryreader.js" LongPathHash="0000fd3ae37a835a2049c43098ac6d23f1b75012ee54" UniqueId="0x3f" />
-            <File Name="BarcodeScannerProxy.js" Id="000043d4bd855545549ee425a083c670ab6e9378e7da" ShortName="BARCOD~1.JS" Size="0x23bd" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\barcodescannerproxy.js" LongPathHash="00001d383742553d256b28fd4dc517981c118106b860" UniqueId="0x2d" />
-            <File Name="index.js" Id="0000dc07060e192f77788eda60d39f924c2e7723176a" Size="0x25d2" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\js\index.js" LongPathHash="0000426e3ec1880c35bf480dff388a3dcd84ec2aa147" UniqueId="0x25" />
-            <File Name="CameraProxy.js" Id="0000bfd3025137ac1dee7f5a0b9c4e53a65be1e7b70d" ShortName="CAMERA~1.JS" Size="0x5a2b" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\src\windows" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\src\windows\cameraproxy.js" LongPathHash="00000aea4fef4082acda75c7d2b887a8b726cf63d7e7" UniqueId="0x33" />
-            <File Name="CameraConstants.js" Id="000045a8eb461cf05349fd561ff208bc0679747818b4" ShortName="CAMERA~1.JS" Size="0x8ab" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\www\cameraconstants.js" LongPathHash="00001ca91ce2dd9ab8f0adebcf72d5ee2508c81f1449" UniqueId="0x36" />
-            <File Name="applist.js" Id="0000b4fbc8d9ce7360052f1476962c091cb27654f4fc" Size="0xb1a" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\js\applist.js" LongPathHash="0000674ce28db5eb4ac38116489ef26c003e263bceea" UniqueId="0x23" />
-            <File Name="CameraPopoverHandle.js" Id="000090bb585d54f72bd0edd0077fd997a37984e17a23" ShortName="CAMERA~2.JS" Size="0x4ef" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\www\camerapopoverhandle.js" LongPathHash="00002a55f3765ff6777e0f23ce95482a4551b6c0ef38" UniqueId="0x37" />
-            <File Name="login.html" Id="0000d8e43fce1a12facb159e1f7f20969dabe3b650a7" ShortName="LOGIN~1.HTM" Size="0x78a" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\login.html" LongPathHash="00006579f7dbcaa503a28feb435db2dfe4c1a9964065" UniqueId="0x1c" />
-            <File Name="DirectoryEntry.js" Id="000009d6d12af06256110ab96edf8376170637297bd5" ShortName="DIRECT~1.JS" Size="0x12bd" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\directoryentry.js" LongPathHash="000006d82cce4230fd44c2c84c5c09c94853da6c6706" UniqueId="0x3e" />
-            <File Name="FileEntry.js" Id="0000c1d32e7dd8fd01ccc3e78d06badfeb70690fa3fa" ShortName="FILEEN~1.JS" Size="0xc5b" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\fileentry.js" LongPathHash="0000a0c4c4d42632aae83e9a10aca13bdf18f06ccbde" UniqueId="0x42" />
-            <File Name="FileError.js" Id="000075f6d7b22a192855f2a96e3558c7659fb4408549" ShortName="FILEER~1.JS" Size="0x5ff" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\fileerror.js" LongPathHash="00001c6067777d14030a1163b2e584124e8ee6a6e32f" UniqueId="0x43" />
-            <File Name="FileReader.js" Id="0000777b20c4e12d7c00095fbb8ab87a5cd524c8dd96" ShortName="FILERE~1.JS" Size="0x2f7c" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\filereader.js" LongPathHash="0000211900a9c8a58fad880da415d0ec91b1892c8a4a" UniqueId="0x44" />
-            <File Name="webview.js" Id="0000521cca7853df67f9bcb61cbf83b69497f3dc3fef" Size="0x3f66" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\js\webview.js" LongPathHash="0000c14e16be314dd142e05f09245d2f4b2540fd49f9" UniqueId="0x28" />
-            <File Name="File.js" Id="000084580a1bd147ffd18b039e1e4b6ddea7b177f344" Size="0xaf0" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\file.js" LongPathHash="0000464eaaa0a2df9a0b828e6b3387d6d5e718bfa4c1" UniqueId="0x41" />
-            <File Name="webview.html" Id="000059ef3f57f4db9d81d5ec48658eb5455e9b51ec4a" ShortName="WEBVIE~1.HTM" Size="0x7cd" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\webview.html" LongPathHash="00004d69ba8cfaa5cd029a7b74262cdcc6cbda162bc0" UniqueId="0x1d" />
-            <File Name="FileProxy.js" Id="00003451cfb82ed29aad8e2dcdf93284542e39fcb0a3" ShortName="FILEPR~1.JS" Size="0xb689" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\src\windows" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\src\windows\fileproxy.js" LongPathHash="00001405dbece78be579003e6486dd9106cb4d4c7d38" UniqueId="0x3c" />
-            <File Name="environment.js" Id="000018177734b0f33231a163ffec430cfd629dd322be" ShortName="ENVIRO~1.JS" Size="0x3a82" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\js\environment.js" LongPathHash="0000696b5ec8558e9556cd48f95983617b548e5572fe" UniqueId="0x24" />
-            <File Name="FileSystem.js" Id="0000b95a4c9e9633afac4557c572025f3eafe8b96508" ShortName="FILESY~1.JS" Size="0x683" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\filesystem.js" LongPathHash="0000fcf1788d1255a9d2a2fed784ceb77680b08988a1" UniqueId="0x45" />
-            <File Name="navigator.js" Id="0000be1b07810db1f616b8775ba5932ce35040fedf18" ShortName="NAVIGA~1.JS" Size="0x15e5" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\js\navigator.js" LongPathHash="0000a881f1b1545bab3a2730aff6a85526765cc95aa6" UniqueId="0x27" />
-            <File Name="login.js" Id="0000ab4eb2485117f619b61aa0e9fc5ec71ec84687dd" Size="0x271b" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\js\login.js" LongPathHash="00002fff5ed130c090ddcf88c61010f57808feaf16e6" UniqueId="0x26" />
-            <File Name="barcodescanner.js" Id="0000b495e2d80a8aadabca05fdb068a9fe15be016bd2" ShortName="BARCOD~1.JS" Size="0x10fd" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\com.phonegap.plugins.barcodescanner\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js" LongPathHash="00008088fb4c1cf90258bf72e3c8a05cfc1a33e87354" UniqueId="0x2f" />
-            <File Name="Camera.js" Id="00005303d952c5341bc9b716425fa52513e5ee4926cd" Size="0xc78" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\www\camera.js" LongPathHash="0000203bdf105678fabdc16011da45e78e1ba7442373" UniqueId="0x35" />
-            <File Name="CameraPopoverOptions.js" Id="0000ddf1b4090ba9cc91973f21df2b11d2efd8c72786" ShortName="CAMERA~3.JS" Size="0x5ae" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\www\camerapopoveroptions.js" LongPathHash="00003493b7bf1fe0e7c8481fe2f359cfdea5c30b2e54" UniqueId="0x38" />
-            <File Name="Entry.js" Id="00004e185a10ec04112977977809a507b0a4919d0229" Size="0x27ca" BinaryType="UNKNOWN" Created="04/07/2015 10:48:51" Modified="04/07/2015 10:48:51" Path="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.0.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\entry.js" LongPathHash="0000e026fcbf8db9ab2f0eeba0d5e0c78883f88ab103" UniqueId="0x40" />
+          <Files Id="00000a2bfbf5c1a2d022cf863d5e052eb207e3412de6">
+            <File Name="fileSystems.js" Id="00004dd2d45eae5e124c50ef60037de2389c03568b6c" Size="0x438" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\filesystems.js" LongPathHash="000011e776767209abd7b9c432ef5c26d22011641a0a" />
+            <File Name="FileEntry.js" Id="0000c1d32e7dd8fd01ccc3e78d06badfeb70690fa3fa" Size="0xc5b" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\fileentry.js" LongPathHash="000056bfe03ee8650886a0918bc60d33183fa10cf975" />
+            <File Name="FileUploadOptions.js" Id="0000c708c8b4ee2e610b444506416a0dc0dda59e6fa2" Size="0x758" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\fileuploadoptions.js" LongPathHash="000083796c9ea9012be8835d2dc75af28555bf00bd3f" />
+            <File Name="Entry.js" Id="00004e185a10ec04112977977809a507b0a4919d0229" Size="0x27ca" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\entry.js" LongPathHash="0000de72d0637e0d70dbb48c93ee8e94b3d3caab7ba6" />
+            <File Name="FileSystem.js" Id="0000b95a4c9e9633afac4557c572025f3eafe8b96508" Size="0x683" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\filesystem.js" LongPathHash="0000a399ede1c0abaf9178614dbca4b926c4e8291740" />
+            <File Name="FileUploadResult.js" Id="0000d73c538884abaaa9c32f344ccf9723a5533e9405" Size="0x473" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\fileuploadresult.js" LongPathHash="00004254c8e66070299bcfd5ed4b583e56c231b30419" />
+            <File Name="FileWriter.js" Id="0000ac386adcab96ff9651d6c86ce3c5d2df2f8892eb" Size="0x26b8" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\filewriter.js" LongPathHash="0000be18ca042735b70f74765a1fa312ad5c2f4ae700" />
+            <File Name="Flags.js" Id="0000dddfec5a596e1ea00dc1d82ebe97e7726e2bf74c" Size="0x564" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\flags.js" LongPathHash="0000e26e3fdb58fc173e2d63737cbcbe538c8be75e28" />
+            <File Name="File.js" Id="000084580a1bd147ffd18b039e1e4b6ddea7b177f344" Size="0xaf0" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\file.js" LongPathHash="00000994d91fa5e5df289be9c84646aff356e8b915f0" />
+            <File Name="FileError.js" Id="000075f6d7b22a192855f2a96e3558c7659fb4408549" Size="0x5ff" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\fileerror.js" LongPathHash="00009fa9cbb7a78a901ea0d486984a01b0f7ab05bc3c" />
+            <File Name="Metadata.js" Id="00008f2efd9ecbf087392dbc9a4b35f58a547c0c20da" Size="0x5fe" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\metadata.js" LongPathHash="000055220cf917392447f2e1b078f66362f8f8e0553f" />
+            <File Name="ProgressEvent.js" Id="000037bbcdb984dfc3f99f4c257fae2b825f612af389" Size="0xa61" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\progressevent.js" LongPathHash="00009060f45e31de5b45ac2d9e0b51a8951010af9947" />
+            <File Name="resolveLocalFileSystemURI.js" Id="0000b79951d77e3d39d56d6a4e08631d4d1cf4678406" Size="0xd79" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\resolvelocalfilesystemuri.js" LongPathHash="000022755847669aec49b0cf5b57ddf9557f921a1f99" />
+            <File Name="FileReader.js" Id="0000777b20c4e12d7c00095fbb8ab87a5cd524c8dd96" Size="0x2f7c" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\filereader.js" LongPathHash="00000baf561f9c72c52b79a57571618664d198e184ea" />
+            <File Name="GeolocationProxy.js" Id="0000b43f96fd1487dba6fc5ae96ac57a38630f40785e" Size="0x1ab4" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\src\windows\geolocationproxy.js" LongPathHash="000088e865e2e8cdba43f5d966894a02f2d60f35b318" />
+            <File Name="Coordinates.js" Id="0000d708c50fe8f778fba07d6ae8bb9f63290840d33b" Size="0x869" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\www\coordinates.js" LongPathHash="00006ae007b952e4aa5f244b63fc6986b2162485f759" />
+            <File Name="LocalFileSystem.js" Id="00009287b549f0181309baa3820caeb3967bf19bd353" Size="0x3dd" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\localfilesystem.js" LongPathHash="0000ef0df6c9ffb01ea71352c692e19caa26e3e3dd7b" />
+            <File Name="requestFileSystem.js" Id="000034bafd5a0a07b605e7088c36b9afba77380a6a4d" Size="0xa1a" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\requestfilesystem.js" LongPathHash="00001a24eaba848c71a7f9a351cca2860bc0598b4f28" />
+            <File Name="geolocation.js" Id="00004c85215f9de12c6773fd0ec666eca6523addbecb" Size="0x2365" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\www\geolocation.js" LongPathHash="0000695bac7c8b2f1970ad587332c146ab5f40829463" />
+            <File Name="Position.js" Id="0000d25243f4670080298e69971293428e16a71ebc7b" Size="0x56e" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\www\position.js" LongPathHash="0000303f3cf0e19e03dfe1c938ae6de13f9d75681951" />
+            <File Name="PositionError.js" Id="00003ebf3d52d0fade5e8949a0bf79944f904a2abcad" Size="0x512" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.geolocation\www\positionerror.js" LongPathHash="000066ba83ec2d882620b8211b56cc613efc26f7b6ae" />
+            <File Name="PushSDK.winmd" Id="00008b0832b4e636d40360f8853194089658df7248de" ProductName="PushSDK" CompanyName="Pushwoosh" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0x0100000000000602" FileVersion="1.0.0.0" Size="0x8a00" SizeOfImage="0x10000" PeHeaderHash="0101632beec7177dacba36d86902f03eeb9ab04b309b" PeChecksum="0x0" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="PushSDK" InternalName="PushSDK.winmdobj" LegalCopyright="Copyright ©  2014" LinkDate="01/23/2015 18:35:53" BinaryType="PE32_CLR_IL" ClrVersion="WindowsRuntime 1.2;CLR v4.0.30319" OriginalFileName="PushSDK.winmdobj" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\pushsdk.winmd" LongPathHash="0000ab9a6ff731558c351037302e0eaa645808cfcc2d" />
+            <File Name="applist.html" Id="0000e2a98ddb3daeb7023a029f7a814cac2adce06b24" Size="0xb9a" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\applist.html" LongPathHash="0000f9a3b30e55f8602dd8b8dda67747e75d3510a360" />
+            <File Name="cordova_plugins.js" Id="0000caf6aee108d1e4d03681fd88b4406af7ca84a3a7" Size="0x1f81" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\cordova_plugins.js" LongPathHash="0000ff3461093fefb4f0468a5b0f92ff799343a6c2ae" />
+            <File Name="ZXing.winmd" Id="0000a1e31b07addcb77312c6622f6ac65f447a32739f" ProductName="ZXing.Net" CompanyName="ZXing.Net Development" ProductVersion="0.14.0.0" VerLanguage="0" SwitchBackContext="0x0100000000000602" FileVersion="0.14.0.0" Size="0x6d000" SizeOfImage="0x74000" PeHeaderHash="0101842fdd91fee181abb69b1ad79210146f3e3aadee" PeChecksum="0x0" BinProductVersion="0.14.0.0" BinFileVersion="0.14.0.0" FileDescription="zxing.net for windows rt" InternalName="ZXing.winmdobj" LegalCopyright="Copyright © 2012-2014" LinkDate="04/01/2014 19:38:24" BinaryType="PE32_CLR_IL" ClrVersion="WindowsRuntime 1.2;CLR v4.0.30319" OriginalFileName="ZXing.winmdobj" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\zxing.winmd" LongPathHash="00004ffff0b09155c38315285fe855344e8ac2be9fc0" />
+            <File Name="cordova.js" Id="0000ae251aa1d025eede4603c8a21109165a2f10ef27" Size="0xcffc" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\cordova.js" LongPathHash="0000d11bddfacaca89dc7f22c53470d9e3b153cb49a5" />
+            <File Name="index.html" Id="0000f497e62f3bfab929d5cb1a8d3f9e3469ed10f67a" Size="0x397" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\index.html" LongPathHash="000095075d23a8d2f3f585ad03e30d5d05d89bc4bab3" />
+            <File Name="resources.pri" Id="0000947ae2f61665e5d2e84318cd18e159c6d8839e75" Size="0x4530" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\resources.pri" LongPathHash="00008d1dbced7b8cec0253187275ec6ff7c039625d2d" />
+            <File Name="WinRTBarcodeReader.winmd" Id="0000908e8661e058d19a0288854bdbdccf0baafa711d" ProductName="WindowsRuntimeComponent1" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0x0100000000000602" FileVersion="1.0.0.0" Size="0x2c00" SizeOfImage="0xa000" PeHeaderHash="0101616cdef3b69804cc114414265ed3fa5e5b5a8653" PeChecksum="0x0" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="WindowsRuntimeComponent1" InternalName="WinRTBarcodeReader.winmdobj" LegalCopyright="Copyright ©  2014" LinkDate="02/05/2015 17:54:59" BinaryType="PE32_CLR_IL" ClrVersion="WindowsRuntime 1.2;CLR v4.0.30319" OriginalFileName="WinRTBarcodeReader.winmdobj" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\winrtbarcodereader.winmd" LongPathHash="0000ad414097b8db47410d00d009e2139abecb3bafda" />
+            <File Name="environment.html" Id="00000a6cec3d9fec2c63c9af4a9a7eea933bff92a317" Size="0xda3" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\environment.html" LongPathHash="0000af4c1f13a6d922674f305987aa7fb7b8a6565a1f" />
+            <File Name="Newtonsoft.Json.dll" Id="0000531935c9217b458fee1bac4e93cc4e73a9aa168f" ProductName="Json.NET" CompanyName="Newtonsoft" ProductVersion="6.0.8.18111" VerLanguage="0" SwitchBackContext="0x0100000000000400" FileVersion="6.0.8.18111" Size="0x61e00" SizeOfImage="0x68000" PeHeaderHash="0101f39cb91e9686b1ab4017fa03d3f38a4b0138255c" PeChecksum="0x6f56d" BinProductVersion="6.0.8.18111" BinFileVersion="6.0.8.18111" FileDescription="Json.NET Portable .NET 4.0" InternalName="Newtonsoft.Json.dll" LegalCopyright="Copyright © James Newton-King 2008" LinkDate="01/11/2015 06:52:17" BinaryType="PE32_CLR_IL" ClrVersion="v4.0.30319" OriginalFileName="Newtonsoft.Json.dll" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\newtonsoft.json.dll" LongPathHash="000099c1387d4b495dcec0c264945734be43c9c5fa1d" />
+            <File Name="OutsystemsRuntimeComponent.winmd" Id="000047c3d408b7d10ed01c4d017d134c55530df98078" ProductName="WindowsRuntimeComponent" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0x0100000000000602" FileVersion="1.0.0.0" Size="0x1400" SizeOfImage="0x8000" PeHeaderHash="0101c24842541d92f433721d09d4f67495ed5810e261" PeChecksum="0x0" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="WindowsRuntimeComponent" InternalName="OutsystemsRuntimeComponent.winmdobj" LegalCopyright="Copyright ©  2015" LinkDate="04/09/2015 15:11:20" BinaryType="PE32_CLR_IL" ClrVersion="WindowsRuntime 1.3;CLR v4.0.30319" OriginalFileName="OutsystemsRuntimeComponent.winmdobj" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\outsystemsruntimecomponent.winmd" LongPathHash="00007578a3ed0c790d16dc6f6f45910fd34818305151" />
+            <File Name="CameraConstants.js" Id="000045a8eb461cf05349fd561ff208bc0679747818b4" Size="0x8ab" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\www\cameraconstants.js" LongPathHash="000004f17fe316606c0da37fb7066ef92c6952850d3f" />
+            <File Name="login.js" Id="00002c111af167d0f05aa7232bddd5fd17c9f1c04e25" Size="0x2c7d" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\js\login.js" LongPathHash="000012030f1e2e2f4296eb425e1e47a45a71c0acf573" />
+            <File Name="applist.js" Id="0000f963710ed7f1ce444c8a8f0f3212084a299c630e" Size="0xf4b" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\js\applist.js" LongPathHash="0000bce023313dadc93cd226a1304cce5e7ac282d311" />
+            <File Name="environment.js" Id="00003a502ae1364bfcb650630e1ce152ef24d2e2e0dc" Size="0x3ca7" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\js\environment.js" LongPathHash="00003bca6e6c8756e9510cb6e8b89e9d7df02ab5b9fd" />
+            <File Name="NetworkInfoProxy.js" Id="0000d9f7edc141de127d57a9250c2424e7e2a512c3fa" Size="0xcb2" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\cordova-plugin-network-information\src\windows\networkinfoproxy.js" LongPathHash="0000337fde053892dcef95d749b02aa01d3ccf1160b5" />
+            <File Name="device.js" Id="00008cd7738eec04cbadea2ae5bd900068fab2c01959" Size="0xb6d" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.device\www\device.js" LongPathHash="0000fffe4c49e5183f74e129c90bda4ce9f12249bd77" />
+            <File Name="login.html" Id="0000393d68cda90df2000bb057db533dae2b5562ada2" Size="0x847" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\login.html" LongPathHash="0000f8d51c6f6724ff1e758acd61432e275084fd079a" />
+            <File Name="FileProxy.js" Id="00003451cfb82ed29aad8e2dcdf93284542e39fcb0a3" Size="0xb689" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\src\windows\fileproxy.js" LongPathHash="0000ff5f1d22970221c6ffb8e528a52533cb331a5e0f" />
+            <File Name="DirectoryEntry.js" Id="000009d6d12af06256110ab96edf8376170637297bd5" Size="0x12bd" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\directoryentry.js" LongPathHash="0000cba779b2abb707053e01e26615ee0f3038918598" />
+            <File Name="Camera.js" Id="00005303d952c5341bc9b716425fa52513e5ee4926cd" Size="0xc78" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\www\camera.js" LongPathHash="00006c217b52e7940ad1156eef2c1dead999d434b362" />
+            <File Name="DirectoryReader.js" Id="0000f2afa32a1e0cbcedda10fdf3e8b2b492d10ccc86" Size="0xafb" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.file\www\directoryreader.js" LongPathHash="0000bffce5f96fb40eaad4e75c948f71992c2b0e7be5" />
+            <File Name="barcodescanner.js" Id="0000b495e2d80a8aadabca05fdb068a9fe15be016bd2" Size="0x10fd" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js" LongPathHash="0000d82e448f87da0d5df4eaaba1cf6aa40cfccb8629" />
+            <File Name="Connection.js" Id="0000cb1b75b67df33f0fd6e51a543e19c05d5a699bbe" Size="0x4b2" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\cordova-plugin-network-information\www\connection.js" LongPathHash="00002dcb2b394d57648d9ee6ef3ed82d1f33c59dbc0f" />
+            <File Name="CameraPopoverHandle.js" Id="000090bb585d54f72bd0edd0077fd997a37984e17a23" Size="0x4ef" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\www\camerapopoverhandle.js" LongPathHash="000042cac10aeaf4c0e873357b3a50c99bfa9dac3b4f" />
+            <File Name="CameraPopoverOptions.js" Id="0000ddf1b4090ba9cc91973f21df2b11d2efd8c72786" Size="0x5ae" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\www\camerapopoveroptions.js" LongPathHash="0000a44a852501b5a417187c5c31785db8a8419d95e7" />
+            <File Name="DeviceProxy.js" Id="00008c6b3990e4d58e57132524a31c8af54312d8138c" Size="0x128a" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.device\src\windows\deviceproxy.js" LongPathHash="000060c0909f2d3c6fe46417942172545cb10091a295" />
+            <File Name="index.js" Id="000058ac2e945c8cfc52f20b40e525a4c4befcdb472d" Size="0x2d26" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\js\index.js" LongPathHash="00004ad935c295b9d96b0dbe69ac34e3171933294e71" />
+            <File Name="CameraProxy.js" Id="0000bfd3025137ac1dee7f5a0b9c4e53a65be1e7b70d" Size="0x5a2b" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\org.apache.cordova.camera\src\windows\cameraproxy.js" LongPathHash="0000119f9059f03e2cecc75d5b805c7a33b96bf0df69" />
+            <File Name="network.js" Id="00001a2e7030015e962170a0c1fccce0563322320eb2" Size="0xd80" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\cordova-plugin-network-information\www\network.js" LongPathHash="0000b0202b0337c8fdfafa8f1c86b4bce03ee709b10d" />
+            <File Name="webview.html" Id="000059ef3f57f4db9d81d5ec48658eb5455e9b51ec4a" Size="0x7cd" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\webview.html" LongPathHash="0000b026d9f2702c1ba6a6e62d6edfbd5cf34efb5583" />
+            <File Name="webview.js" Id="0000693397b13d1f2aa15602b858d9f4a40236094e53" Size="0x5b36" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\js\webview.js" LongPathHash="0000ad140f68580ea1d97cdfb49eee6e472493406cfb" />
+            <File Name="navigator.js" Id="0000be1b07810db1f616b8775ba5932ce35040fedf18" Size="0x15e5" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\js\navigator.js" LongPathHash="0000430fe0f432cce6cde47c47615065127a2cd6b598" />
+            <File Name="BarcodeScannerProxy.js" Id="000043d4bd855545549ee425a083c670ab6e9378e7da" Size="0x23bd" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\barcodescannerproxy.js" LongPathHash="00007c027bd4d5a790e99155afce1dd8be90987e8ad0" />
+            <File Name="sim.js" Id="00009faac2b469953d3a1f363d911bda82d2373511c1" Size="0x197" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\b298aafa.outsystemsnow_1.1.0.0_neutral__28bt5vyr9vk80\www\plugins\cordova-plugin-sim\www\sim.js" LongPathHash="00006858f6d767b96245e9e8006fe587784b0e83f316" />
           </Files>
         </StaticProperties>
       </Program>
     </Installed_Programs>
   </APPLICATIONS>
   <DEPENDENCY_INFORMATION>
-    <AitStaticAnalysis ProgramId="0000682180a6568249a1ef7beba9282f4c4800000904" AnalysisVersion="1.60" DictionaryVersion="2.16" Type="Package" Id="B298AAFA.OutSystemsNow_1.0.0.0_neutral__28bt5vyr9vk80">
-      <AitFile ErrorCode="0" Name="cordova_plugins.js" Id="0000048f6af2567cac24568f58ee3780fbd375f40337">
-        <AitCategory Id="WRTJavaScript">
-          <AitFeature Name="navigator.camera" />
-          <AitFeature Name="navigator.geolocation" />
-          <AitFeature Name="window.DirectoryEntry" />
-          <AitFeature Name="window.DirectoryReader" />
-          <AitFeature Name="window.FileEntry" />
-          <AitFeature Name="window.FileError" />
-          <AitFeature Name="window.FileReader" />
-          <AitFeature Name="window.FileSystem" />
-          <AitFeature Name="window.FileUploadOptions" />
-          <AitFeature Name="window.FileUploadResult" />
-          <AitFeature Name="window.FileWriter" />
-          <AitFeature Name="window.LocalFileSystem" />
-          <AitFeature Name="window.ProgressEvent" />
-          <AitFeature Name="window.requestFileSystem" />
-        </AitCategory>
-      </AitFile>
+    <AitStaticAnalysis ProgramId="000059869d4aba8f5054dd4760a7e9adfac100000904" AnalysisVersion="1.60" DictionaryVersion="2.16" Type="Package" Id="B298AAFA.OutSystemsNow_1.1.0.0_neutral__28bt5vyr9vk80">
       <AitFile ErrorCode="0" Name="DirectoryEntry.js" Id="000009d6d12af06256110ab96edf8376170637297bd5" />
       <AitFile ErrorCode="0" Name="environment.html" Id="00000a6cec3d9fec2c63c9af4a9a7eea933bff92a317" />
-      <AitFile ErrorCode="0" Name="environment.js" Id="000018177734b0f33231a163ffec430cfd629dd322be">
+      <AitFile ErrorCode="0" Name="network.js" Id="00001a2e7030015e962170a0c1fccce0563322320eb2" />
+      <AitFile ErrorCode="0" Name="login.js" Id="00002c111af167d0f05aa7232bddd5fd17c9f1c04e25">
         <AitCategory Id="WRTJavaScript">
-          <AitFeature Name="WinJS.Class.define" />
-          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.Utilities.isPhone" />
           <AitFeature Name="Windows.Graphics.Display" />
           <AitFeature Name="Windows.Storage.ApplicationData.current" />
-          <AitFeature Name="Windows.Storage.Streams.DataReader.fromBuffer" />
-          <AitFeature Name="Windows.System.Profile.HardwareIdentification.getPackageSpecificToken" />
           <AitFeature Name="Windows.UI.Popups.MessageDialog" />
           <AitFeature Name="Windows.UI.ViewManagement.InputPane.getForCurrentView" />
           <AitFeature Name="document.getElementById" />
-          <AitFeature Name="window.WinJS.Navigation" />
+          <AitFeature Name="window.WinJS.Navigation.addEventListener" />
           <AitFeature Name="window.WinJS.Resources.getString" />
           <AitFeature Name="window.WinJS.Resources.processAll" />
           <AitFeature Name="window.WinJS.UI.Pages.define" />
@@ -399,6 +365,32 @@
           <AitFeature Name="document.createEvent" />
         </AitCategory>
       </AitFile>
+      <AitFile ErrorCode="0" Name="login.html" Id="0000393d68cda90df2000bb057db533dae2b5562ada2">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.BackButton" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="environment.js" Id="00003a502ae1364bfcb650630e1ce152ef24d2e2e0dc">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.Utilities.isPhone" />
+          <AitFeature Name="Windows.Graphics.Display" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current" />
+          <AitFeature Name="Windows.Storage.Streams.DataReader.fromBuffer" />
+          <AitFeature Name="Windows.System.Profile.HardwareIdentification.getPackageSpecificToken" />
+          <AitFeature Name="Windows.UI.Popups.MessageDialog" />
+          <AitFeature Name="Windows.UI.ViewManagement.InputPane.getForCurrentView" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="window.WinJS.Class.define" />
+          <AitFeature Name="window.WinJS.Navigation" />
+          <AitFeature Name="window.WinJS.Resources.getString" />
+          <AitFeature Name="window.WinJS.Resources.processAll" />
+          <AitFeature Name="window.WinJS.UI.Pages.define" />
+          <AitFeature Name="window.WinJS.Utilities.getContentHeight" />
+          <AitFeature Name="window.WinJS.Utilities.getContentWidth" />
+          <AitFeature Name="window.WinJS.xhr" />
+        </AitCategory>
+      </AitFile>
       <AitFile ErrorCode="0" Name="PositionError.js" Id="00003ebf3d52d0fade5e8949a0bf79944f904a2abcad" />
       <AitFile ErrorCode="0" Name="BarcodeScannerProxy.js" Id="000043d4bd855545549ee425a083c670ab6e9378e7da">
         <AitCategory Id="WRTJavaScript">
@@ -424,10 +416,7 @@
         </AitCategory>
       </AitFile>
       <AitFile ErrorCode="0" Name="CameraConstants.js" Id="000045a8eb461cf05349fd561ff208bc0679747818b4" />
-      <AitFile ErrorCode="0" Name="geolocation.js" Id="00004c85215f9de12c6773fd0ec666eca6523addbecb" />
-      <AitFile ErrorCode="0" Name="fileSystems.js" Id="00004dd2d45eae5e124c50ef60037de2389c03568b6c" />
-      <AitFile ErrorCode="0" Name="Entry.js" Id="00004e185a10ec04112977977809a507b0a4919d0229" />
-      <AitFile ErrorCode="0" Name="OutsystemsRuntimeComponent.winmd" Id="000051da5eb200db3b617f21671fa4beb799db16461e">
+      <AitFile ErrorCode="0" Name="OutsystemsRuntimeComponent.winmd" Id="000047c3d408b7d10ed01c4d017d134c55530df98078">
         <AitCategory Id="ApiStatic">
           <AitFeature Name="mscoree.dll!_CorDllMain" />
         </AitCategory>
@@ -485,28 +474,9 @@
           <AitFeature Name="Windows.Foundation.Metadata.VersionAttribute..ctor" />
         </AitCategory>
       </AitFile>
-      <AitFile ErrorCode="0" Name="webview.js" Id="0000521cca7853df67f9bcb61cbf83b69497f3dc3fef">
-        <AitCategory Id="WRTJavaScript">
-          <AitFeature Name="WinJS.Application" />
-          <AitFeature Name="WinJS.Navigation" />
-          <AitFeature Name="WinJS.Promise.timeout" />
-          <AitFeature Name="WinJS.Resources.processAll" />
-          <AitFeature Name="WinJS.UI.Pages.define" />
-          <AitFeature Name="Windows.ApplicationModel.Appointments.Appointment" />
-          <AitFeature Name="Windows.ApplicationModel.Appointments.AppointmentManager.showAddAppointmentAsync" />
-          <AitFeature Name="Windows.ApplicationModel.Contacts" />
-          <AitFeature Name="Windows.Graphics.Display" />
-          <AitFeature Name="Windows.UI.Popups.Placement.default" />
-          <AitFeature Name="document.addEventListener" />
-          <AitFeature Name="document.getElementById" />
-          <AitFeature Name="navigator.camera.getPicture" />
-          <AitFeature Name="navigator.geolocation.getCurrentPosition" />
-          <AitFeature Name="navigator.userAgent.indexOf" />
-          <AitFeature Name="window.URL.createObjectURL" />
-          <AitFeature Name="window.navigator.userAgent" />
-          <AitFeature Name="window.requestFileSystem" />
-        </AitCategory>
-      </AitFile>
+      <AitFile ErrorCode="0" Name="geolocation.js" Id="00004c85215f9de12c6773fd0ec666eca6523addbecb" />
+      <AitFile ErrorCode="0" Name="fileSystems.js" Id="00004dd2d45eae5e124c50ef60037de2389c03568b6c" />
+      <AitFile ErrorCode="0" Name="Entry.js" Id="00004e185a10ec04112977977809a507b0a4919d0229" />
       <AitFile ErrorCode="0" Name="Camera.js" Id="00005303d952c5341bc9b716425fa52513e5ee4926cd" />
       <AitFile ErrorCode="0" Name="Newtonsoft.Json.dll" Id="0000531935c9217b458fee1bac4e93cc4e73a9aa168f">
         <AitCategory Id="ApiStatic">
@@ -1143,9 +1113,65 @@
           <AitFeature Name="System.Void" />
         </AitCategory>
       </AitFile>
+      <AitFile ErrorCode="0" Name="index.js" Id="000058ac2e945c8cfc52f20b40e525a4c4befcdb472d">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Class.define" />
+          <AitFeature Name="Windows.ApplicationModel.Activation" />
+          <AitFeature Name="Windows.ApplicationModel.Activation.ActivationKind.protocol" />
+          <AitFeature Name="Windows.ApplicationModel.Package.current" />
+          <AitFeature Name="Windows.Security.Cryptography" />
+          <AitFeature Name="Windows.Security.Cryptography.Core.CryptographicEngine.decrypt" />
+          <AitFeature Name="Windows.Security.Cryptography.Core.CryptographicEngine.encrypt" />
+          <AitFeature Name="Windows.Security.Cryptography.Core.HashAlgorithmNames.md5" />
+          <AitFeature Name="Windows.Security.Cryptography.Core.HashAlgorithmProvider.openAlgorithm" />
+          <AitFeature Name="Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.aesEcbPkcs7" />
+          <AitFeature Name="Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider.openAlgorithm" />
+          <AitFeature Name="Windows.Security.Cryptography.CryptographicBuffer.convertStringToBinary" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current" />
+          <AitFeature Name="Windows.Storage.Streams.DataReader.fromBuffer" />
+          <AitFeature Name="Windows.System.Profile.HardwareIdentification.getPackageSpecificToken" />
+          <AitFeature Name="window.WinJS.Application" />
+          <AitFeature Name="window.WinJS.Class.define" />
+          <AitFeature Name="window.WinJS.Namespace.define" />
+          <AitFeature Name="window.WinJS.Navigation" />
+          <AitFeature Name="window.WinJS.Utilities.Scheduler" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.navigator" />
+          <AitFeature Name="window.navigator.userAgent" />
+        </AitCategory>
+      </AitFile>
       <AitFile ErrorCode="0" Name="webview.html" Id="000059ef3f57f4db9d81d5ec48658eb5455e9b51ec4a">
         <AitCategory Id="WRTJavaScript">
           <AitFeature Name="WinJS.UI.AppBarCommand" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="webview.js" Id="0000693397b13d1f2aa15602b858d9f4a40236094e53">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.Promise.timeout" />
+          <AitFeature Name="WinJS.Resources.processAll" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.ApplicationModel.Appointments.Appointment" />
+          <AitFeature Name="Windows.ApplicationModel.Appointments.AppointmentManager.showAddAppointmentAsync" />
+          <AitFeature Name="Windows.ApplicationModel.Contacts" />
+          <AitFeature Name="Windows.Foundation.Uri" />
+          <AitFeature Name="Windows.Graphics.Display" />
+          <AitFeature Name="Windows.UI.Popups.Placement.default" />
+          <AitFeature Name="Windows.Web.Http.HttpMethod.get" />
+          <AitFeature Name="Windows.Web.Http.HttpRequestMessage" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="navigator.camera.getPicture" />
+          <AitFeature Name="navigator.connection" />
+          <AitFeature Name="navigator.connection.type" />
+          <AitFeature Name="navigator.geolocation.getCurrentPosition" />
+          <AitFeature Name="navigator.userAgent.indexOf" />
+          <AitFeature Name="window.URL.createObjectURL" />
+          <AitFeature Name="window.navigator.userAgent" />
+          <AitFeature Name="window.plugins.sim" />
+          <AitFeature Name="window.plugins.sim.getSimInfo" />
+          <AitFeature Name="window.requestFileSystem" />
         </AitCategory>
       </AitFile>
       <AitFile ErrorCode="0" Name="FileError.js" Id="000075f6d7b22a192855f2a96e3558c7659fb4408549" />
@@ -1446,6 +1472,18 @@
           <AitFeature Name="Windows.UI.Notifications.ToastNotification.get_Content" />
         </AitCategory>
       </AitFile>
+      <AitFile ErrorCode="0" Name="DeviceProxy.js" Id="00008c6b3990e4d58e57132524a31c8af54312d8138c">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Devices.Enumeration.Pnp" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localSettings" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localSettings.values.deviceId" />
+          <AitFeature Name="Windows.Storage.Streams.DataReader.fromBuffer" />
+          <AitFeature Name="Windows.System.Profile.HardwareIdentification.getPackageSpecificToken" />
+          <AitFeature Name="window.clientInformation.platform" />
+          <AitFeature Name="window.clientInformation.userAgent" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="device.js" Id="00008cd7738eec04cbadea2ae5bd900068fab2c01959" />
       <AitFile ErrorCode="0" Name="Metadata.js" Id="00008f2efd9ecbf087392dbc9a4b35f58a547c0c20da" />
       <AitFile ErrorCode="0" Name="WinRTBarcodeReader.winmd" Id="0000908e8661e058d19a0288854bdbdccf0baafa711d">
         <AitCategory Id="ApiStatic">
@@ -1590,6 +1628,11 @@
       </AitFile>
       <AitFile ErrorCode="0" Name="CameraPopoverHandle.js" Id="000090bb585d54f72bd0edd0077fd997a37984e17a23" />
       <AitFile ErrorCode="0" Name="LocalFileSystem.js" Id="00009287b549f0181309baa3820caeb3967bf19bd353" />
+      <AitFile ErrorCode="0" Name="sim.js" Id="00009faac2b469953d3a1f363d911bda82d2373511c1">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.plugins.sim" />
+        </AitCategory>
+      </AitFile>
       <AitFile ErrorCode="0" Name="ZXing.winmd" Id="0000a1e31b07addcb77312c6622f6ac65f447a32739f">
         <AitCategory Id="ApiStatic">
           <AitFeature Name="mscoree.dll!_CorDllMain" />
@@ -1880,25 +1923,6 @@
           <AitFeature Name="Windows.UI.Xaml.Media.Imaging.WriteableBitmap.get_PixelBuffer" />
         </AitCategory>
       </AitFile>
-      <AitFile ErrorCode="0" Name="login.js" Id="0000ab4eb2485117f619b61aa0e9fc5ec71ec84687dd">
-        <AitCategory Id="WRTJavaScript">
-          <AitFeature Name="WinJS.Application" />
-          <AitFeature Name="WinJS.Navigation" />
-          <AitFeature Name="WinJS.Utilities.isPhone" />
-          <AitFeature Name="Windows.Graphics.Display" />
-          <AitFeature Name="Windows.Storage.ApplicationData.current" />
-          <AitFeature Name="Windows.UI.Popups.MessageDialog" />
-          <AitFeature Name="Windows.UI.ViewManagement.InputPane.getForCurrentView" />
-          <AitFeature Name="document.getElementById" />
-          <AitFeature Name="window.WinJS.Navigation.addEventListener" />
-          <AitFeature Name="window.WinJS.Resources.getString" />
-          <AitFeature Name="window.WinJS.Resources.processAll" />
-          <AitFeature Name="window.WinJS.UI.Pages.define" />
-          <AitFeature Name="window.WinJS.Utilities.getContentHeight" />
-          <AitFeature Name="window.WinJS.Utilities.getContentWidth" />
-          <AitFeature Name="window.WinJS.xhr" />
-        </AitCategory>
-      </AitFile>
       <AitFile ErrorCode="0" Name="FileWriter.js" Id="0000ac386adcab96ff9651d6c86ce3c5d2df2f8892eb">
         <AitCategory Id="WRTJavaScript">
           <AitFeature Name="window.ArrayBuffer" />
@@ -1941,21 +1965,6 @@
         </AitCategory>
       </AitFile>
       <AitFile ErrorCode="0" Name="barcodescanner.js" Id="0000b495e2d80a8aadabca05fdb068a9fe15be016bd2" />
-      <AitFile ErrorCode="0" Name="applist.js" Id="0000b4fbc8d9ce7360052f1476962c091cb27654f4fc">
-        <AitCategory Id="WRTJavaScript">
-          <AitFeature Name="WinJS.Application" />
-          <AitFeature Name="WinJS.Binding.List" />
-          <AitFeature Name="WinJS.Navigation" />
-          <AitFeature Name="WinJS.Resources.processAll" />
-          <AitFeature Name="WinJS.UI.Pages.define" />
-          <AitFeature Name="Windows.Graphics.Display" />
-          <AitFeature Name="Windows.UI.Popups.MessageDialog" />
-          <AitFeature Name="Windows.UI.ViewManagement.InputPane.getForCurrentView" />
-          <AitFeature Name="document.getElementById" />
-          <AitFeature Name="document.getElementsByClassName" />
-          <AitFeature Name="window.WinJS.Navigation.addEventListener" />
-        </AitCategory>
-      </AitFile>
       <AitFile ErrorCode="0" Name="resolveLocalFileSystemURI.js" Id="0000b79951d77e3d39d56d6a4e08631d4d1cf4678406">
         <AitCategory Id="WRTJavaScript">
           <AitFeature Name="window.PERSISTENT" />
@@ -2018,43 +2027,40 @@
       </AitFile>
       <AitFile ErrorCode="0" Name="FileEntry.js" Id="0000c1d32e7dd8fd01ccc3e78d06badfeb70690fa3fa" />
       <AitFile ErrorCode="0" Name="FileUploadOptions.js" Id="0000c708c8b4ee2e610b444506416a0dc0dda59e6fa2" />
+      <AitFile ErrorCode="0" Name="cordova_plugins.js" Id="0000caf6aee108d1e4d03681fd88b4406af7ca84a3a7">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.camera" />
+          <AitFeature Name="navigator.connection" />
+          <AitFeature Name="navigator.geolocation" />
+          <AitFeature Name="navigator.network.connection" />
+          <AitFeature Name="window.DirectoryEntry" />
+          <AitFeature Name="window.DirectoryReader" />
+          <AitFeature Name="window.FileEntry" />
+          <AitFeature Name="window.FileError" />
+          <AitFeature Name="window.FileReader" />
+          <AitFeature Name="window.FileSystem" />
+          <AitFeature Name="window.FileUploadOptions" />
+          <AitFeature Name="window.FileUploadResult" />
+          <AitFeature Name="window.FileWriter" />
+          <AitFeature Name="window.LocalFileSystem" />
+          <AitFeature Name="window.ProgressEvent" />
+          <AitFeature Name="window.plugins.sim" />
+          <AitFeature Name="window.requestFileSystem" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="Connection.js" Id="0000cb1b75b67df33f0fd6e51a543e19c05d5a699bbe" />
       <AitFile ErrorCode="0" Name="Position.js" Id="0000d25243f4670080298e69971293428e16a71ebc7b" />
       <AitFile ErrorCode="0" Name="Coordinates.js" Id="0000d708c50fe8f778fba07d6ae8bb9f63290840d33b" />
       <AitFile ErrorCode="0" Name="FileUploadResult.js" Id="0000d73c538884abaaa9c32f344ccf9723a5533e9405" />
-      <AitFile ErrorCode="0" Name="login.html" Id="0000d8e43fce1a12facb159e1f7f20969dabe3b650a7">
+      <AitFile ErrorCode="0" Name="NetworkInfoProxy.js" Id="0000d9f7edc141de127d57a9250c2424e7e2a512c3fa">
         <AitCategory Id="WRTJavaScript">
-          <AitFeature Name="WinJS.UI.BackButton" />
-        </AitCategory>
-      </AitFile>
-      <AitFile ErrorCode="0" Name="index.js" Id="0000dc07060e192f77788eda60d39f924c2e7723176a">
-        <AitCategory Id="WRTJavaScript">
-          <AitFeature Name="Windows.ApplicationModel.Activation" />
-          <AitFeature Name="Windows.ApplicationModel.Activation.ActivationKind.protocol" />
-          <AitFeature Name="Windows.ApplicationModel.Package.current" />
-          <AitFeature Name="Windows.Security.Cryptography" />
-          <AitFeature Name="Windows.Security.Cryptography.Core.CryptographicEngine.decrypt" />
-          <AitFeature Name="Windows.Security.Cryptography.Core.CryptographicEngine.encrypt" />
-          <AitFeature Name="Windows.Security.Cryptography.Core.HashAlgorithmNames.md5" />
-          <AitFeature Name="Windows.Security.Cryptography.Core.HashAlgorithmProvider.openAlgorithm" />
-          <AitFeature Name="Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.aesEcbPkcs7" />
-          <AitFeature Name="Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider.openAlgorithm" />
-          <AitFeature Name="Windows.Security.Cryptography.CryptographicBuffer.convertStringToBinary" />
-          <AitFeature Name="Windows.Storage.ApplicationData.current" />
-          <AitFeature Name="Windows.Storage.Streams.DataReader.fromBuffer" />
-          <AitFeature Name="Windows.System.Profile.HardwareIdentification.getPackageSpecificToken" />
-          <AitFeature Name="window.WinJS.Application" />
-          <AitFeature Name="window.WinJS.Class.define" />
-          <AitFeature Name="window.WinJS.Namespace.define" />
-          <AitFeature Name="window.WinJS.Navigation" />
-          <AitFeature Name="window.WinJS.Utilities.Scheduler" />
-          <AitFeature Name="window.addEventListener" />
-          <AitFeature Name="window.navigator" />
-          <AitFeature Name="window.navigator.userAgent" />
+          <AitFeature Name="Windows.Networking.Connectivity" />
+          <AitFeature Name="Windows.Networking.Connectivity.NetworkConnectivityLevel.internetAccess" />
         </AitCategory>
       </AitFile>
       <AitFile ErrorCode="0" Name="Flags.js" Id="0000dddfec5a596e1ea00dc1d82ebe97e7726e2bf74c" />
       <AitFile ErrorCode="0" Name="CameraPopoverOptions.js" Id="0000ddf1b4090ba9cc91973f21df2b11d2efd8c72786" />
-      <AitFile ErrorCode="0" Name="applist.html" Id="0000eed34c98742382fc79b3e8ab2351efb551db27a4">
+      <AitFile ErrorCode="0" Name="applist.html" Id="0000e2a98ddb3daeb7023a029f7a814cac2adce06b24">
         <AitCategory Id="WRTJavaScript">
           <AitFeature Name="WinJS.UI.BackButton" />
           <AitFeature Name="WinJS.UI.GridLayout" />
@@ -2064,6 +2070,21 @@
       </AitFile>
       <AitFile ErrorCode="0" Name="DirectoryReader.js" Id="0000f2afa32a1e0cbcedda10fdf3e8b2b492d10ccc86" />
       <AitFile ErrorCode="0" Name="index.html" Id="0000f497e62f3bfab929d5cb1a8d3f9e3469ed10f67a" />
+      <AitFile ErrorCode="0" Name="applist.js" Id="0000f963710ed7f1ce444c8a8f0f3212084a299c630e">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="WinJS.Binding.List" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="WinJS.Utilities.isPhone" />
+          <AitFeature Name="Windows.Graphics.Display" />
+          <AitFeature Name="Windows.UI.ViewManagement.InputPane.getForCurrentView" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.getElementsByClassName" />
+          <AitFeature Name="window.WinJS.Navigation.addEventListener" />
+          <AitFeature Name="window.WinJS.Resources.processAll" />
+        </AitCategory>
+      </AitFile>
     </AitStaticAnalysis>
   </DEPENDENCY_INFORMATION>
 </REPORT>

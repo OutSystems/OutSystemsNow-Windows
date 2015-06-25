@@ -2,22 +2,78 @@
 // http://go.microsoft.com/fwlink/?LinkID=392285
 (function () {
     "use strict";
-    var enviroment = window.WinJS.Class.define(function () {
+    var Environment = window.WinJS.Class.define(function () {
     },
-      { host: "" },
-      { userName: "" },
-      { password: "" },
-      { dateLastLogin: "" },
-      { name: "" },
-      { isJsp: false },
-      { applist: null },
-      { currentapp: null });
+      {
+          host: "",
+          userName: "",
+          password: "",
+          dateLastLogin: "",
+          name: "",
+          isJsp: false,
+          applist: null,
+          currentapp: null
+      },
+      { });
+
+    var DeepLink = WinJS.Class.define(
+       function () {
+       },
+       {
+           host: null,
+           operation: null,
+           isValid: false,
+           params: {},
+           invalidate: function () { this.isValid = false; },
+           hasValidSettings: function () { return this.isValid; },
+           hasApplicationURL: function () {
+               var url = this.params.url;
+               return url && url.length > 0;
+           },
+           hasCredentials: function () {
+               var username = this.params.username;
+               var password = this.params.password;
+               return username && username.length > 0 && password && password.length > 0;
+           },
+           createSettings: function (environment, operation, parameters) {
+               this.host = environment;
+               this.isValid = true;
+
+               if (operation) {
+                   if (operation.indexOf("/openurl/") >= 0) {
+                       this.operation = "OpenURL";
+                   }
+                   else {
+                       if (operation.indexOf("/login/") >= 0) {
+                           this.operation = "Login";
+                       }
+                       else {
+                           this.isValid = false;
+                       }
+                   }
+               }
+
+               this.params.username = parameters.username;
+               this.params.password = parameters.password;
+               this.params.url = parameters.url;
+
+               if (this.isValid) {
+                   this.isValid = this.host && this.host.length > 0 && this.operation && this.operation.length > 0;
+               }
+
+           },
+           isLoginOperation: function () { return this.operation == "Login"; },
+           isOpenUrlOperation: function () { return this.operation == "OpenURL"; }
+       },
+       {
+       });
+
 
     window.WinJS.Namespace.define("globalVars", {
         IsUaSetted: false,
         environment: null,
         autologin: false,
-        deeplink: false,
+        deeplink: null,
         encryptFunction: function (data, name) {
             if (data.applist != null) data.applist = null;
             var cryptography = Windows.Security.Cryptography;
@@ -131,6 +187,10 @@
             } else {
                 // Restore application state here.
             }
+            
+            // Global vars initialization          
+            globalVars.environment = new Environment();
+            globalVars.deeplink = new DeepLink();
 
             hookUpBackButtonGlobalEventHandlers();
             nav.history = app.sessionState.history || {};
@@ -141,11 +201,12 @@
             // Optimize the load of the application and while the splash screen is shown, execute high priority scheduled work.
             if (args.detail.kind == Windows.ApplicationModel.Activation.ActivationKind.protocol) {
                 // The received URI is eventArgs.detail.uri.rawUri
-                globalVars.environment = new enviroment();
-                globalVars.environment.host = args.detail.uri.host;
+                
+                var host = args.detail.uri.host;
                 var username;
                 var password;
                 var uriApp;
+
                 for (var i = 0, len = args.detail.uri.queryParsed.length; i < len; i++) {
                     if (args.detail.uri.queryParsed[i].name == "username") {
                         username = args.detail.uri.queryParsed[i].value;
@@ -157,16 +218,12 @@
                         uriApp = args.detail.uri.queryParsed[i].value;
                     }
                 }
-                globalVars.deeplink = true;
-                globalVars.environment.username = username;
-                globalVars.environment.password = password;
-                globalVars.environment.currentapp = uriApp;
-                if (username || password) {
-                    globalVars.deeplinkLogin = true;
-                }
-                if (uriApp) {
-                    globalVars.deeplinkapp = true;
-                }
+
+                var operation = args.detail.uri.path;
+                var parameters = { username: username, password: password, url: uriApp };
+
+                globalVars.deeplink.createSettings(host, operation, parameters);
+             
             }
             ui.disableAnimations();
             var p = ui.processAll().then(function () {

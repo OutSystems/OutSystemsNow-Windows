@@ -15,8 +15,8 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="B298AAFA.OutSystemsNow" StartPage="www/index.html">
-      <m3:VisualElements BackgroundColor="#CC2200" Description="OutSystems Now" DisplayName="OutSystems Now" ForegroundText="light" Square150x150Logo="images\icon150.png" Square44x44Logo="images\icon44.png" ToastCapable="true">
+    <Application Id="OutSystemsNow" StartPage="www/index.html">
+      <m3:VisualElements BackgroundColor="#CC2200" Description="CordovaApp" DisplayName="OutSystems Now" ForegroundText="light" Square150x150Logo="images\icon150.png" Square44x44Logo="images\icon44.png" ToastCapable="true">
         <m3:DefaultTile Square71x71Logo="images\icon71.png" Wide310x150Logo="images\Wide310x150Logo.png">
           <m3:ShowNameOnTiles>
             <m3:ShowOn Tile="square150x150Logo" />
@@ -33,9 +33,9 @@
         </Extension>
       </Extensions>
       <ApplicationContentUriRules>
-        <Rule Match="https://*.outsystemscloud.com" Type="include" />
         <Rule Match="https://*.outsystems.com" Type="include" />
         <Rule Match="https://*.outsystems.net" Type="include" />
+        <Rule Match="https://*.outsystemscloud.com" Type="include" />
       </ApplicationContentUriRules>
     </Application>
   </Applications>

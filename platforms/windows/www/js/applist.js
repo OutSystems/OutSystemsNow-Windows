@@ -7,14 +7,13 @@
     
     window.WinJS.Navigation.addEventListener("navigating", function (parameters) {
         if (parameters.detail.delta < 0) {
-            globalVars.deeplink = false;
-            globalVars.deeplinkLogin = false;
-            globalVars.deeplinkapp = false;
+             if (globalVars.deeplink && globalVars.deeplink.hasValidSettings())
+                globalVars.deeplink.invalidate();
         }
     });
     WinJS.UI.Pages.define("/www/applist.html", {
         processed: function (element) {
-            return WinJS.Resources.processAll(element);
+            return window.WinJS.Resources.processAll(element);
         },
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
@@ -46,8 +45,10 @@
             imgRepeater.winControl.data = new WinJS.Binding.List(globalVars.environment.applist);
             var repeaters = document.getElementsByClassName("smallListIconTextItem");
             for (var i = 0; i < repeaters.length; i++) {
+                repeaters[i].children[0].value = i;
                 repeaters[i].addEventListener("click", function(e) {
-                    globalVars.environment.currentapp = this.children[0].value;
+                    var appIndex = this.children[0].value;                    
+                    globalVars.environment.currentapp = globalVars.environment.applist[appIndex];
                     nav.navigate("/www/webview.html");
                 });
             }
@@ -61,12 +62,17 @@
                 return canGoBack;
             };
 
-          //  var msgBox = new Windows.UI.Popups.MessageDialog("deeplink:" + globalVars.deeplikapp + ", currentapp:" + globalVars.environment.currentapp);
-           // msgBox.showAsync();
-            if (globalVars.deeplinkapp && globalVars.environment.currentapp != null) {
-                globalVars.deeplinkapp = false;
-                nav.navigate("/www/webview.html");
-            }
+            if (globalVars.deeplink && globalVars.deeplink.hasValidSettings()) {
+                if (globalVars.deeplink.isOpenUrlOperation()) {
+                    globalVars.deeplink.invalidate();
+                }
+
+                if (globalVars.deeplink.hasApplicationURL()) {
+                    globalVars.environment.currentapp = { path: globalVars.deeplink.params.url, preloader: false };
+                    nav.navigate("/www/webview.html");
+                }
+            }            
+
         },
 
         unload: function () {

@@ -278,6 +278,38 @@
 							</NamedResource>
 						</ResourceMapSubtree>
 					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-network-information">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="NetworkInfoProxy.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/cordova-plugin-network-information/src/windows/NetworkInfoProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-network-information\src\windows\NetworkInfoProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="Connection.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/cordova-plugin-network-information/www/Connection.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-network-information\www\Connection.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="network.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/cordova-plugin-network-information/www/network.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-network-information\www\network.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-sim">
+						<ResourceMapSubtree name="www">
+							<NamedResource name="sim.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/cordova-plugin-sim/www/sim.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-sim\www\sim.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
 					<ResourceMapSubtree name="org.apache.cordova.camera">
 						<ResourceMapSubtree name="src">
 							<ResourceMapSubtree name="windows">
@@ -307,6 +339,24 @@
 							<NamedResource name="CameraPopoverOptions.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js">
 								<Candidate type="Path">
 									<Value>www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="org.apache.cordova.device">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="DeviceProxy.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.device/src/windows/DeviceProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\org.apache.cordova.device\src\windows\DeviceProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="device.js" uri="ms-resource://B298AAFA.OutSystemsNow/Files/www/plugins/org.apache.cordova.device/www/device.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.device\www\device.js</Value>
 								</Candidate>
 							</NamedResource>
 						</ResourceMapSubtree>

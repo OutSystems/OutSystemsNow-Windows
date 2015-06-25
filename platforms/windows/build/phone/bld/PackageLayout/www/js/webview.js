@@ -4,6 +4,10 @@
 
     var app = WinJS.Application;
     var nav = WinJS.Navigation;
+
+    // Mobile Improvements
+    var applicationHasPreloader = false;
+
     WinJS.UI.Pages.define("/www/webview.html", {
         processed: function (element) {
             return WinJS.Resources.processAll(element);
@@ -15,6 +19,11 @@
             var wgd = Windows.Graphics.Display;
             wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.none;
 
+            var progress = document.getElementById("myProgressLine");
+            if (progress) {
+                progress.style.visibility = "hidden";
+            }
+
             // TODO: Initialize the page here.2
             defineWebviewEvents();
             element.querySelector("#cmdBack").addEventListener("click", doBack, false);
@@ -24,6 +33,10 @@
                 doBack();
                 return true;
             };
+
+            if (globalVars.environment.currentapp != null && globalVars.environment.currentapp.preloader != null)
+                applicationHasPreloader = globalVars.environment.currentapp.preloader
+
         },
 
         unload: function () {
@@ -281,6 +294,137 @@
                 window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, ReadFileGotFS.bind(null, params.fileName, params.inputId), ReadFileFail);
 
                 break;
+
+            case "DeviceInfo":
+
+                if (typeof device == 'undefined') {
+                    var errorparams = JSON.parse(parsed.error_params);
+                    errorparams.result = 'Device plugin undefined';
+                    webview.invokeScriptAsync(parsed.error_action, JSON.stringify(errorparams)).start();
+                }
+                else {
+
+                    var deviceInfo = {
+                        manufacturer: device.manufacturer,
+                        model: device.model,
+                        platform: device.platform,
+                        version: device.version,
+                        cordova: device.cordova
+                    };
+
+                    var successparams = JSON.parse(parsed.success_params);
+                    successparams.result = deviceInfo;
+                    webview.invokeScriptAsync(parsed.success_action, JSON.stringify(successparams)).start();
+
+                }
+                break;
+
+
+            case "SimInfo":
+
+
+                if (typeof window.plugins == 'undefined' || typeof window.plugins.sim == 'undefined') {                    
+                    var errorparams = JSON.parse(parsed.error_params);
+                    errorparams.result = 'SIM plugin undefined';
+                    webview.invokeScriptAsync(parsed.error_action, JSON.stringify(errorparams)).start();
+                }
+                else {
+
+                    window.plugins.sim.getSimInfo(
+                        function (obj) {
+
+                            var carrier = obj.carrierName;
+                            var country = obj.countryCode;
+                            var networkTypeCode = obj.networkType;
+
+                            var networks = {};
+                            networks[0] = "UNKNOWN";
+                            networks[1] = "GPRS";
+                            networks[2] = "EDGE";
+                            networks[3] = "UMTS";
+                            networks[4] = "CDMA";
+                            networks[5] = "EVDO_0";
+                            networks[6] = "EVDO_A";
+                            networks[7] = "1xRTT";
+                            networks[8] = "HSDPA";
+                            networks[9] = "HSUPA";
+                            networks[10] = "HSPA";
+                            networks[11] = "IDEN";
+                            networks[12] = "EVDO_B";
+                            networks[13] = "LTE";
+                            networks[14] = "EHRPD";
+                            networks[15] = "HSPAP";
+
+
+                            var simInfo = {
+                                carrierName: carrier,
+                                countryCode: country,
+                                networkTypeCode: networkTypeCode,
+                                networkType: networks[networkTypeCode]
+                            };
+
+
+                            var successparams = JSON.parse(parsed.success_params);
+                            successparams.result = simInfo;
+                            webview.invokeScriptAsync(parsed.success_action, JSON.stringify(successparams)).start();
+
+                        },
+                        function (err) {
+                            var errorparams = JSON.parse(parsed.error_params);
+                            errorparams.result = err;
+                            webview.invokeScriptAsync(parsed.error_action, JSON.stringify(errorparams)).start();
+                        }
+                    );
+                }
+
+                break;
+
+            case "NetworkInfo":
+
+                if (typeof navigator.connection == 'undefined') {
+                    var errorparams = JSON.parse(parsed.error_params);
+                    errorparams.result = 'NetworkInfo plugin undefined';
+                    webview.invokeScriptAsync(parsed.error_action, JSON.stringify(errorparams)).start();
+                }
+                else {
+
+                    var connectionType = navigator.connection.type;
+
+                    var states = {};
+                    states[Connection.UNKNOWN] = 'UNKNOWN';
+                    states[Connection.ETHERNET] = 'ETHERNET';
+                    states[Connection.WIFI] = 'WIFI';
+                    states[Connection.CELL_2G] = 'CELL_2G';
+                    states[Connection.CELL_3G] = 'CELL_3G';
+                    states[Connection.CELL_4G] = 'CELL_4G';
+                    states[Connection.CELL] = 'CELL';
+                    states[Connection.NONE] = 'NONE';
+
+                    var networkInfo = {
+                        type: states[connectionType]
+                    };
+
+                    var successparams = JSON.parse(parsed.success_params);
+                    successparams.result = networkInfo;
+                    webview.invokeScriptAsync(parsed.success_action, JSON.stringify(successparams)).start();
+
+                }
+                break;
+
+            case "GetPosition":
+                navigator.geolocation.getCurrentPosition(
+                    function (position) {
+                        var successparams = JSON.parse(parsed.success_params);
+                        successparams.result = position;
+                        webview.invokeScriptAsync(parsed.success_action, JSON.stringify(successparams)).start();
+                    },
+                    function (err) {
+                        var errorparams = JSON.parse(parsed.error_params);
+                        errorparams.message = err;
+                        webview.invokeScriptAsync(parsed.error_action, JSON.stringify(parsed.error_params)).start();
+                    });
+                break;
+
             default:
         }
         //    eval(e.value);
@@ -313,15 +457,27 @@
 
     function defineWebviewEvents() {
         var webview = document.getElementById("webview");
-        //var ua = window.navigator.userAgent + " OutSystemsApp v." + globalVars.getAppVersion();
+        var userAgent = window.navigator.userAgent + " OutSystemsApp v." + globalVars.getAppVersion();
         //OutsystemsRuntimeComponent.OutSystemsHelper.changeUserAgent(ua);
         if (webview != null) {
-         //   webview.navigate("http://whatsmyuseragent.com/");
-            webview.navigate("https://" + globalVars.environment.host + "/" + globalVars.environment.currentapp);
+            var targetUri = new Windows.Foundation.Uri("https://" + globalVars.environment.host + "/" + globalVars.environment.currentapp.path);
+
+            var httpRequestMessage = new Windows.Web.Http.HttpRequestMessage(Windows.Web.Http.HttpMethod.get, targetUri);
+            httpRequestMessage.headers.userAgent.tryParseAdd(userAgent);
+            webview.navigateWithHttpRequestMessage(httpRequestMessage);
+
+            //webview.navigate("https://" + globalVars.environment.host + "/" + globalVars.environment.currentapp.path);
             webview.addEventListener("MSWebViewScriptNotify", execCordovaPlugin);
             webview.addEventListener("MSWebViewNavigationStarting", function (e) {
                 var progress = document.getElementById("myProgressLine");
-                progress.style.visibility = "visible";
+                if (progress != null) {
+                    if (applicationHasPreloader) {
+                        progress.style.visibility = "hidden";
+                    }
+                    else {
+                        progress.style.visibility = "visible";
+                    }
+                }
                 //var operation = webview.capturePreviewToBlobAsync();
                 //operation.oncomplete = function (e) {
                 //    captureBitmap();
@@ -342,7 +498,16 @@
             });
             webview.addEventListener("MSWebViewNavigationCompleted", function (e) {
                 var progress = document.getElementById("myProgressLine");
-                if (progress != null) progress.style.visibility = "hidden";
+
+                if(applicationHasPreloader){
+                    var currentURL = webview.src;                
+                    applicationHasPreloader = currentURL.indexOf("preloader.html") > 0;
+                }
+
+                if (progress != null) {
+                    progress.style.visibility = "hidden";
+                }
+
                 var forward = document.getElementById("cmdForward");
                 if (forward != null) {
                     if (webview.canGoForward) {
@@ -352,6 +517,7 @@
                         forward.winControl.enable = false;
                     }
                 }
+       
                 //var image = document.getElementById("imagetagholder");
                 //if (image != null) {
                 //    image.style.transition = "opacity 1s";

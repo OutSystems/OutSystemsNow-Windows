@@ -4,7 +4,7 @@
     height: 100%;
     background: white;
     -ms-grid-columns: 1fr;
-    -ms-grid-rows: 70px 1fr;
+    -ms-grid-rows: 70px 1fr; 
     background: lightgray;
 }
 
@@ -34,9 +34,41 @@
         background: transparent;
     }
 
-.applistpage .backbutton {
-    display: none;
+
+.applistpage .headerholder {
+    background: #CC2200;
+    color: white;
+    display: -ms-grid;
+    -ms-grid-columns: 80px 1fr 80px;
+    -ms-grid-rows: 1fr;
 }
+
+.applistpage .headertitleholder {
+    font-size: 22px;
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-column-align: center;
+    -ms-grid-row-align: center;
+    width: 100%;
+    text-align: center;
+}
+
+.applistpage .backbutton {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column-align: center;
+    -ms-grid-row-align: center;
+}
+
+
+.applistpage .backButtonPhone{
+    display:none;
+}
+
+.applistpage .backButtonTabletDesktop{
+    display:block;
+}
+
 
 #basicListView {
     /*text-align: center;*/
@@ -170,7 +202,7 @@
     }
 
     .smallListIconTextItem {
-        width: 20%;
+        width: 25%;
         display: inline-block;
         vertical-align: top;
     }
@@ -185,32 +217,6 @@
         overflow-y: auto;
         overflow-y: hidden;
         overflow-x: auto;
-    }
-
-    .applistpage .headerholder {
-        background: #CC2200;
-        color: white;
-        display: -ms-grid;
-        -ms-grid-columns: 80px 1fr;
-        -ms-grid-rows: 1fr;
-    }
-
-    .applistpage .headertitleholder {
-        font-size: 22px;
-        -ms-grid-column: 2;
-        -ms-grid-row: 1;
-        -ms-grid-column-align: center;
-        -ms-grid-row-align: center;
-        width: 100%;
-        text-align: center;
-    }
-
-    .applistpage .backbutton {
-        display: inherit;
-        -ms-grid-column: 1;
-        -ms-grid-row: 1;
-        -ms-grid-column-align: center;
-        -ms-grid-row-align: center;
     }
 
     .insideBlock {
@@ -273,7 +279,7 @@
         background: #CC2200;
         color: white;
         display: -ms-grid;
-        -ms-grid-columns: 80px 1fr;
+        -ms-grid-columns: 80px 1fr 80px;
         -ms-grid-rows: 1fr;
     }
 
@@ -287,11 +293,5 @@
         text-align: center;
     }
 
-    .applistpage .backbutton {
-        display: inherit;
-        -ms-grid-column: 1;
-        -ms-grid-row: 1;
-        -ms-grid-column-align: center;
-        -ms-grid-row-align: center;
-    }
+ 
 }

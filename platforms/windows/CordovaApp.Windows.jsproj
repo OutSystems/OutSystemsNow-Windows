@@ -73,7 +73,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <PackageCertificateKeyFile>CordovaApp.Windows_StoreKey.pfx</PackageCertificateKeyFile>
     <PackageCertificateThumbprint>DB10C6EC5FE6AD5C23AA0A905A14D9189FB9CC0D</PackageCertificateThumbprint>
-    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
     <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
   </PropertyGroup>
   <ItemGroup>

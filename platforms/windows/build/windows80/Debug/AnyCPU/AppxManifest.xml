@@ -7,10 +7,10 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="outsystems.now.windows" Publisher="CN=Apache Cordova Temp Cert" Version="0.0.1.0" ProcessorArchitecture="neutral" />
+  <Identity Name="B298AAFA.OutSystemsNow" Publisher="CN=Apache Cordova Temp Cert" Version="0.0.1.0" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>OutSystems Now</DisplayName>
-    <PublisherDisplayName>Apache Cordova Team</PublisherDisplayName>
+    <PublisherDisplayName>OutSystems Inc.</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -21,7 +21,7 @@
     <Resource Language="EN-US" />
   </Resources>
   <Applications>
-    <Application Id="outsystems.now.windows" StartPage="www/index.html">
+    <Application Id="B298AAFA.OutSystemsNow" StartPage="www/index.html">
       <VisualElements BackgroundColor="#464646" Description="CordovaApp" DisplayName="OutSystems Now" ForegroundText="light" Logo="images\Square150x150Logo.png" SmallLogo="images\Square30x30Logo.png">
         <DefaultTile ShowName="allLogos" WideLogo="images\Wide310x150Logo.png" />
         <SplashScreen Image="images\splashscreen.png" />
@@ -41,7 +41,7 @@
     <build:Item Name="SharedGUID" Value="9ebdb27f-d75b-4d8c-b53f-7be4a1fe89f9" />
     <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053" />
     <build:Item Name="VisualStudio" Version="12.0" />
-    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Ultimate 2013" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2013" />
     <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.31101.0" />
     <build:Item Name="ProjectGUID" Value="efffab2f-bfc5-4eda-b545-45ef4995f55a" />

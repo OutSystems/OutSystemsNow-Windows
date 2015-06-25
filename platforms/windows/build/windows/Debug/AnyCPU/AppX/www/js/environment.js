@@ -1,17 +1,18 @@
-﻿var wgd = Windows.Graphics.Display;
-wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.portrait;
-
-var Enviroment = WinJS.Class.define(function () {
+﻿
+var Environment = window.WinJS.Class.define(function () {
 },
-  { host: "" },
-  { userName: "" },
-  { password: "" },
-  { dateLastLogin: "" },
-  { name: "" },
-  { isJsp: false },
-  { applist: null },
-  { currentapp: null });
-
+  {
+      host: "",
+      userName: "",
+      password: "",
+      dateLastLogin: "",
+      name: "",
+      isJsp: false,
+      applist: null,
+      currentapp: null
+  },
+  {});
+ 
 (function () {
     "use strict";
 
@@ -28,6 +29,14 @@ var Enviroment = WinJS.Class.define(function () {
         ready: function () {
           
             // TODO: Initialize the page here.
+            var wgd = Windows.Graphics.Display;
+            if (WinJS.Utilities.isPhone) {
+                wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.portrait;
+            }
+            else {
+                wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.none;
+            }
+
             var button1 = document.getElementById("gobutton");
             button1.addEventListener("click", button1Click, false);
             var demoButton = document.getElementById("demobutton");
@@ -44,15 +53,15 @@ var Enviroment = WinJS.Class.define(function () {
             var inputEnv = document.getElementById("endpointapp");
             inputEnv.addEventListener("keypress", keypressHandler, false);
             loginSavedBind();
-            if (globalVars.deeplink) {
-                globalVars.deeplink = false;
+            if (globalVars.deeplink.hasValidSettings()) {
+                // globalVars.deeplink = false;
                 var userInput = document.getElementById("endpointapp");
-                userInput.value = globalVars.environment.host;
+                userInput.value = globalVars.deeplink.host;
                 tryConnectEnvironment();
             }
         },
         init: function () {
-           if(!globalVars.deeplink) loginSavedHandler();
+           if(!globalVars.deeplink.hasValidSettings()) loginSavedHandler();
         },
         unload: function () {
             // TODO: Respond to navigations away from this page.
@@ -71,14 +80,21 @@ var Enviroment = WinJS.Class.define(function () {
         var localSettings = applicationData.localSettings;
         var lastHost = localSettings.values["lastlogin"];
         var lastLoginData;
-        if (lastHost != null) {
-            lastLoginData = globalVars.decryptFunction(lastHost);
-            if (lastLoginData) {
-                var parsed = JSON.parse(lastLoginData);
-                var endpointapp = document.getElementById("endpointapp");
-                if (endpointapp != null) endpointapp.value = parsed.host;
+        if (globalVars.environment != null && !globalVars.environment.isDemo) {
+            var endpointapp = document.getElementById("endpointapp");
+            if (endpointapp != null) {
+                endpointapp.value = globalVars.environment.host;
             }
-          
+        }
+        else {
+            if (lastHost != null) {
+                lastLoginData = globalVars.decryptFunction(lastHost);
+                if (lastLoginData) {
+                    var parsed = JSON.parse(lastLoginData);
+                    var endpointapp = document.getElementById("endpointapp");
+                    if (endpointapp != null) endpointapp.value = parsed.host;
+                }
+            }
         }
     }
 
@@ -131,12 +147,13 @@ var Enviroment = WinJS.Class.define(function () {
     }
 
     function demoClickHandler() {
-        var currentEnv = new Enviroment();
-        currentEnv.host = "apps.outsystems.net";
+        var currentEnv = new Environment();
+        currentEnv.host = "your.demo.server";
         currentEnv.isJsp = false;
         currentEnv.name = "demo apps";
-        currentEnv.username = "patriciawesley";
+        currentEnv.username = "outsystems";
         currentEnv.password = "outsystems";
+        currentEnv.isDemo = true;
         globalVars.environment = currentEnv;
         var environmentpage = document.getElementById("environmentpage");
         var width = window.WinJS.Utilities.getContentWidth(environmentpage);
@@ -153,6 +170,8 @@ var Enviroment = WinJS.Class.define(function () {
             device: null
         }
 
+        pushRegistration();
+
         var envUrl = "https://" + globalVars.environment.host + "/OutSystemsNowService/login.aspx";
         window.WinJS.xhr({
             type: "post",
@@ -160,7 +179,8 @@ var Enviroment = WinJS.Class.define(function () {
             headers: { "Content-type": "application/x-www-form-urlencoded" },
             data: formatParams(params)
         }).done(
-            function completed(result) {
+            function completed(result) {              
+
                 var resultParsed = JSON.parse(result.response);
 
                 for (var i = 0; i < resultParsed.applications.length; i++) {
@@ -240,11 +260,13 @@ var Enviroment = WinJS.Class.define(function () {
                 globalVars.environment.host = fixedUserInput;
                 globalVars.environment.isJsp = false;
                 globalVars.environment.name = resultParsed.Name;
+                globalVars.environment.isDemo = false;
             } else {
-                var currentEnv = new Enviroment();
+                var currentEnv = new Environment();
                 currentEnv.host = fixedUserInput;
                 currentEnv.isJsp = false;
                 currentEnv.name = resultParsed.Name;
+                currentEnv.isDemo = false;
                 globalVars.environment = currentEnv;
             }
        
@@ -261,13 +283,15 @@ var Enviroment = WinJS.Class.define(function () {
                        // handle completed download.
                        if (globalVars.environment != null) {
                            globalVars.environment.host = fixedUserInput;
-                           globalVars.environment.isJsp = false;
+                           globalVars.environment.isJsp = true;
                            globalVars.environment.name = resultParsed.Name;
+                           globalVars.environment.isDemo = false;
                        } else {
-                           var currentEnv = new Enviroment();
+                           var currentEnv = new Environment();
                            currentEnv.host = fixedUserInput;
-                           currentEnv.isJsp = false;
+                           currentEnv.isJsp = true;
                            currentEnv.name = resultParsed.Name;
+                           currentEnv.isDemo = false;
                            globalVars.environment = currentEnv;
                        }
                        nav.navigate("/www/login.html");
@@ -290,8 +314,72 @@ var Enviroment = WinJS.Class.define(function () {
 
 
     function button1Click(mouseEvent) {
+
+        try {
+            var virtualKeyboard = Windows.UI.ViewManagement.InputPane.getForCurrentView();
+            virtualKeyboard.tryHide();
+        } catch (e) { }
+
         tryConnectEnvironment();
         // nav.navigate("/www/login.html");
         //WinJS.Navigation.navigate("ms-appx:///login.html", null);
     }
+
+
+
+    //This function will register pushwoosh push notifications and send the pushToken to the host
+    function pushRegistration() {
+        try {
+            var service = new PushSDK.NotificationService.getCurrent("PUSHWOOSH_ID", "", null);
+
+            service.ononpushaccepted = function (args) {
+                //code to handle push notification
+                //display push notification payload for test only
+                var md = new Windows.UI.Popups.MessageDialog(args.toString());
+                md.showAsync();
+            }
+
+            service.ononpushtokenreceived = function (pushToken) {
+                //code to handle push token
+                sendToken(pushToken);
+                console.log("ononpushtokenreceived");
+            }
+
+            service.ononpushtokenfailed = function () {
+                //code to handle push subscription failure
+                console.log("ononpushtokenfailed");
+            }
+
+            service.subscribeToPushService();
+        } catch (e) {
+            console.log(e.message);
+        }
+    }
+
+    function sendToken(pushToken) {
+        var params = {
+            device: pushToken,
+            devicetype: "windows",
+            deviceHwId: globalVars.getHardwareId(),
+        }
+        var envUrl = "https://" + globalVars.environment.host + "/OutSystemsNowService/registertoken.aspx";
+        window.WinJS.xhr({
+            type: "post",
+            url: envUrl,
+            headers: { "Content-type": "application/x-www-form-urlencoded" },
+            data: globalVars.formatParams(params)
+        }).done(
+            function completed(result) {
+                //var resultParsed = JSON.parse(result.response);
+                var x = 0;
+            },
+            function error(e) {
+                var x = 0;
+            },
+            function progress() {
+                var x = 0;
+            });
+    }
+
+
 })();

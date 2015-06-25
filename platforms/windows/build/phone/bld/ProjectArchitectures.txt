@@ -1,0 +1,2 @@
+D:\Projects\OutSystemsNow\OpenSource\GitHub\OutSystemsNow-Windows\platforms\windows\CordovaApp.Phone.jsproj;neutral
+D:\Projects\OutSystemsNow\OpenSource\GitHub\OutSystemsNow-Windows\platforms\WindowsRuntimeComponent\OutsystemsRuntimeComponent.csproj;neutral

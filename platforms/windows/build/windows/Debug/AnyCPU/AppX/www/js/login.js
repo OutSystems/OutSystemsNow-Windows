@@ -1,19 +1,15 @@
-﻿//Force portrait screen only
-var wgd = Windows.Graphics.Display;
-wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.portrait;
-
-
-(function () {
+﻿(function () {
     "use strict";
 
-    var nav = window.WinJS.Navigation;
+    var app = WinJS.Application;
+    var nav = WinJS.Navigation;
+
     var applicationData = Windows.Storage.ApplicationData.current;
     var localSettings = applicationData.localSettings;
     window.WinJS.Navigation.addEventListener("navigating", function (parameters) {
         if (parameters.detail.delta < 0) {
-            globalVars.deeplink = false;
-            globalVars.deeplinkLogin = false;
-            globalVars.deeplinkapp = false;
+            if (globalVars.deeplink && globalVars.deeplink.hasValidSettings())
+                globalVars.deeplink.invalidate();
         }
     });
     window.WinJS.UI.Pages.define("/www/login.html", {
@@ -23,6 +19,26 @@ wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.portrai
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function () {
+
+            //Force portrait screen only
+            var wgd = Windows.Graphics.Display;
+
+            var backButton = document.getElementById("backButtonLogin");
+
+            if (WinJS.Utilities.isPhone) {
+                wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.portrait;
+                if (backButton) {
+                    backButton.classList.add("backButtonPhone");
+                }
+            }
+            else {
+                wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.none;
+                if (backButton) {
+                    backButton.classList.add("backButtonTabletDesktop");
+                }
+            }
+
+
             //if (!WinJS.Utilities.isPhone)
                 pushRegistration();
             var button1 = document.getElementById("loginbutton");
@@ -31,23 +47,61 @@ wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.portrai
             var serverNamePlace = document.getElementById("endpoint");
             if (serverNamePlace != null) serverNamePlace.innerHTML = serverName;
             autoLoginHandler();
+
+            // Allow physical back button to navigate
+            app.onbackclick = function (evt) {
+                var canGoBack = nav.canGoBack;
+                if (canGoBack) {
+                    nav.back();
+                }
+                return canGoBack;
+            };
+        },
+        updateLayout: function (element) {
+            /// <param name="element" domElement="true" />
+
+            console.log("updateLayout");
+
+            var backButton = document.getElementById("backButtonLogin");
+            if (backButton) {
+                if (WinJS.Utilities.isPhone) {
+                    backButton.classList.add("backButtonPhone");
+                }
+                else {
+                    backButton.classList.add("backButtonTabletDesktop");
+                }
+            }
         }
-    });
+    });  
 
     function autoLoginHandler() {
         var username = document.getElementById("username");
         var password = document.getElementById("password");
         //if deeplink brings username and password will execute this and use the values of username and password fields.
-        if (globalVars.deeplinkLogin) {
-            globalVars.deeplinkLogin = false;
-            if (globalVars.environment.username != null && globalVars.environment.password != null) {
-                username.value = globalVars.environment.username;
-                password.value = globalVars.environment.password;
-                doLogin();
-            } else {
-                if (globalVars.environment.username) username.value = globalVars.environment.username;
-                if (globalVars.environment.password) password.value = globalVars.environment.password;
+        if (globalVars.deeplink.hasValidSettings()) {
+
+            if (globalVars.deeplink.isLoginOperation()) {
+                globalVars.deeplink.invalidate();
             }
+
+            if (globalVars.deeplink.hasCredentials()) {
+                username.value = globalVars.deeplink.params.username;
+                password.value = globalVars.deeplink.params.password;
+
+            } else {
+                
+                var savedState = globalVars.decryptFunction(globalVars.environment.host);
+                if (savedState != null) {
+                    var parsed = JSON.parse(savedState);
+                    username = document.getElementById("username");
+                    password = document.getElementById("password");
+                    username.value = parsed.username;
+                    password.value = parsed.password;
+                }
+            }
+
+            doLogin();
+
         } else {
             //if the device has a saved instance of last login will, try to login again with the last saved instance
             var savedState = globalVars.decryptFunction(globalVars.environment.host);
@@ -59,7 +113,6 @@ wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.portrai
                 password.value = parsed.password;
                 var lastHost = localSettings.values["lastlogin"];
                 if (lastHost != null && !globalVars.autologin) {
-                    globalVars.autologin = true;
                     doLogin();
                 }
             }
@@ -69,7 +122,7 @@ wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.portrai
     //This function will register pushwoosh push notifications and send the pushToken to the host
     function pushRegistration() {
         try {
-            var service = new PushSDK.NotificationService.getCurrent("32B53-F301A", "", null);
+            var service = new PushSDK.NotificationService.getCurrent("PUSHWOOSH_ID", "", null);
 
             service.ononpushaccepted = function (args) {
                 //code to handle push notification
@@ -121,6 +174,11 @@ wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.portrai
     }
 
     function button1Click() {
+        try {
+            var virtualKeyboard = Windows.UI.ViewManagement.InputPane.getForCurrentView();
+            virtualKeyboard.tryHide();
+        } catch (e) { }
+
         doLogin();
     }
 
@@ -168,6 +226,7 @@ wgd.DisplayInformation.autoRotationPreferences = wgd.DisplayOrientations.portrai
                        loginProgressRing.style.display = "none";
                        return;
                    } else {
+                       globalVars.autologin = true;
                        globalVars.environment.username = username.value;
                        globalVars.environment.password = password.value;
                        for (var i = 0; i < resultParsed.applications.length; i++) {

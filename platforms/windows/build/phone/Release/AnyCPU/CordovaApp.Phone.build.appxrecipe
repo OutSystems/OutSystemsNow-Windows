@@ -7,310 +7,328 @@
     <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>6cb783b9-548e-4d49-8dce-8b64d2a7026d</PackageIdentityName>
-    <IntermediateOutputPath>D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\build\phone\bld\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\build\phone\bld\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\build\phone\Release\AnyCPU\AppxManifest.xml">
+    <AppXManifest Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\build\phone\Release\AnyCPU\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\WindowsRuntimeComponent\bin\Release\OutsystemsRuntimeComponent.winmd">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\WindowsRuntimeComponent\bin\Release\OutsystemsRuntimeComponent.winmd">
       <PackagePath>OutsystemsRuntimeComponent.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\PushSDK\build\bin\Debug\PushSDK.winmd">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\PushSDK\build\bin\Debug\PushSDK.winmd">
       <PackagePath>PushSDK.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\plugins\com.phonegap.plugins.barcodescanner\src\windows8\lib\WinRTBarcodeReader.winmd">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\plugins\com.phonegap.plugins.barcodescanner\src\windows8\lib\WinRTBarcodeReader.winmd">
       <PackagePath>WinRTBarcodeReader.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\plugins\com.phonegap.plugins.barcodescanner\src\windows8\lib\ZXing.winmd">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\plugins\com.phonegap.plugins.barcodescanner\src\windows8\lib\ZXing.winmd">
       <PackagePath>ZXing.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\icon106.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\icon106.png">
       <PackagePath>images\icon106.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\icon150.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\icon150.scale-100.png">
       <PackagePath>images\icon150.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\icon150.scale-240.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\icon150.scale-240.png">
       <PackagePath>images\icon150.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\icon170.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\icon170.png">
       <PackagePath>images\icon170.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\icon360.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\icon360.png">
       <PackagePath>images\icon360.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\icon44.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\icon44.scale-100.png">
       <PackagePath>images\icon44.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\icon44.scale-240.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\icon44.scale-240.png">
       <PackagePath>images\icon44.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\icon71.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\icon71.scale-100.png">
       <PackagePath>images\icon71.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\icon71.scale-240.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\icon71.scale-240.png">
       <PackagePath>images\icon71.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\SplashScreen.scale-100.png">
       <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\splashscreen480.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\splashscreen480.scale-100.png">
       <PackagePath>images\splashscreen480.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\splashscreen620.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\splashscreen620.png">
       <PackagePath>images\splashscreen620.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\Square150x150Logo.scale-100.png">
       <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\Square30x30Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\Square30x30Logo.scale-100.png">
       <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\Square310x310Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\Square310x310Logo.scale-100.png">
       <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\Square70x70Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\Square70x70Logo.scale-100.png">
       <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\StoreLogo.scale-100.png">
       <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\Wide310x150Logo.scale-100.png">
       <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\icon120.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\icon120.png">
       <PackagePath>images\icon120.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\icon50.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\icon50.png">
       <PackagePath>images\icon50.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\splashscreen480.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\splashscreen480.png">
       <PackagePath>images\splashscreen480.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\StoreLogo.scale-240.png">
       <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\images\Wide310x150Logo.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\images\Wide310x150Logo.png">
       <PackagePath>images\Wide310x150Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\img\icon_close_small.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\img\icon_close_small.png">
       <PackagePath>www\img\icon_close_small.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\img\icon_help_small.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\img\icon_help_small.png">
       <PackagePath>www\img\icon_help_small.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\img\icon_close.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\img\icon_close.png">
       <PackagePath>www\img\icon_close.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\img\icon_help.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\img\icon_help.png">
       <PackagePath>www\img\icon_help.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\img\NoAppImage.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\img\NoAppImage.png">
       <PackagePath>www\img\NoAppImage.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\img\logo.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\img\logo.png">
       <PackagePath>www\img\logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\img\test.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\img\test.png">
       <PackagePath>www\img\test.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\img\logo_original.png">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\img\logo_original.png">
       <PackagePath>www\img\logo_original.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\StoreManifest.xml">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\StoreManifest.xml">
       <PackagePath>StoreManifest.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\config.xml">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\config.xml">
       <PackagePath>config.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\src\windows\FileProxy.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\cordova-plugin-network-information\src\windows\NetworkInfoProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-network-information\src\windows\NetworkInfoProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\cordova-plugin-network-information\www\Connection.js">
+      <PackagePath>www\plugins\cordova-plugin-network-information\www\Connection.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\cordova-plugin-network-information\www\network.js">
+      <PackagePath>www\plugins\cordova-plugin-network-information\www\network.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\cordova-plugin-sim\www\sim.js">
+      <PackagePath>www\plugins\cordova-plugin-sim\www\sim.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.device\src\windows\DeviceProxy.js">
+      <PackagePath>www\plugins\org.apache.cordova.device\src\windows\DeviceProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.device\www\device.js">
+      <PackagePath>www\plugins\org.apache.cordova.device\www\device.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\src\windows\FileProxy.js">
       <PackagePath>www\plugins\org.apache.cordova.file\src\windows\FileProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\DirectoryEntry.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\DirectoryEntry.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\DirectoryEntry.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\DirectoryReader.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\DirectoryReader.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\DirectoryReader.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\Entry.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\Entry.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\Entry.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\File.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\File.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\File.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\FileEntry.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileEntry.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\FileEntry.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\FileError.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileError.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\FileError.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\FileReader.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileReader.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\FileReader.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\FileSystem.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileSystem.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\FileSystem.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\fileSystems.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\fileSystems.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\fileSystems.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\FileUploadOptions.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileUploadOptions.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\FileUploadOptions.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\FileUploadResult.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileUploadResult.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\FileUploadResult.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\FileWriter.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\FileWriter.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\FileWriter.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\Flags.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\Flags.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\Flags.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\LocalFileSystem.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\LocalFileSystem.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\LocalFileSystem.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\Metadata.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\Metadata.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\Metadata.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\ProgressEvent.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\ProgressEvent.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\ProgressEvent.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\requestFileSystem.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\requestFileSystem.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\requestFileSystem.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js">
       <PackagePath>www\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\cordova.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\cordova.js">
       <PackagePath>www\cordova.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\cordova_plugins.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\cordova_plugins.js">
       <PackagePath>www\cordova_plugins.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\js\applist.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\js\applist.js">
       <PackagePath>www\js\applist.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\js\environment.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\js\environment.js">
       <PackagePath>www\js\environment.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\js\index.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\js\index.js">
       <PackagePath>www\js\index.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\js\login.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\js\login.js">
       <PackagePath>www\js\login.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\js\navigator.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\js\navigator.js">
       <PackagePath>www\js\navigator.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\js\webview.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\js\webview.js">
       <PackagePath>www\js\webview.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\BarcodeScannerProxy.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\BarcodeScannerProxy.js">
       <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\BarcodeScannerProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js">
       <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.camera\src\windows\CameraProxy.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.camera\src\windows\CameraProxy.js">
       <PackagePath>www\plugins\org.apache.cordova.camera\src\windows\CameraProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.camera\www\Camera.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.camera\www\Camera.js">
       <PackagePath>www\plugins\org.apache.cordova.camera\www\Camera.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.camera\www\CameraConstants.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.camera\www\CameraConstants.js">
       <PackagePath>www\plugins\org.apache.cordova.camera\www\CameraConstants.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js">
       <PackagePath>www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js">
       <PackagePath>www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.geolocation\src\windows\GeolocationProxy.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.geolocation\src\windows\GeolocationProxy.js">
       <PackagePath>www\plugins\org.apache.cordova.geolocation\src\windows\GeolocationProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.geolocation\www\Coordinates.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.geolocation\www\Coordinates.js">
       <PackagePath>www\plugins\org.apache.cordova.geolocation\www\Coordinates.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.geolocation\www\geolocation.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.geolocation\www\geolocation.js">
       <PackagePath>www\plugins\org.apache.cordova.geolocation\www\geolocation.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.geolocation\www\Position.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.geolocation\www\Position.js">
       <PackagePath>www\plugins\org.apache.cordova.geolocation\www\Position.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\plugins\org.apache.cordova.geolocation\www\PositionError.js">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\plugins\org.apache.cordova.geolocation\www\PositionError.js">
       <PackagePath>www\plugins\org.apache.cordova.geolocation\www\PositionError.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\applist.html">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\applist.html">
       <PackagePath>www\applist.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\index.html">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\index.html">
       <PackagePath>www\index.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\environment.html">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\environment.html">
       <PackagePath>www\environment.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\login.html">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\login.html">
       <PackagePath>www\login.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\webview.html">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\webview.html">
       <PackagePath>www\webview.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\css\applist.css">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\css\applist.css">
       <PackagePath>www\css\applist.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\css\environment.css">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\css\environment.css">
       <PackagePath>www\css\environment.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\css\index.css">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\css\index.css">
       <PackagePath>www\css\index.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\css\login.css">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\css\login.css">
       <PackagePath>www\css\login.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\css\webview.css">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\css\webview.css">
       <PackagePath>www\css\webview.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\css\windows\environment.css">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\css\windows\environment.css">
       <PackagePath>www\css\windows\environment.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\fonts\opensans-bold-webfont.woff">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\fonts\opensans-bold-webfont.woff">
       <PackagePath>www\fonts\opensans-bold-webfont.woff</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\fonts\opensans-light-webfont.woff">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\fonts\opensans-light-webfont.woff">
       <PackagePath>www\fonts\opensans-light-webfont.woff</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\fonts\opensans-regular-webfont.woff">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\fonts\opensans-regular-webfont.woff">
       <PackagePath>www\fonts\opensans-regular-webfont.woff</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\fonts\OpenSans-Bold.ttf">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\fonts\OpenSans-Bold.ttf">
       <PackagePath>www\fonts\OpenSans-Bold.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\fonts\OpenSans-Light.ttf">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\fonts\OpenSans-Light.ttf">
       <PackagePath>www\fonts\OpenSans-Light.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\www\fonts\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\www\fonts\OpenSans-Regular.ttf">
       <PackagePath>www\fonts\OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\OutSystemsNow-Win\platforms\windows\build\phone\Release\AnyCPU\resources.pri">
+    <AppxPackagedFile Include="D:\Projects\OutSystemsNow\GitHub\Windows\platforms\windows\build\phone\Release\AnyCPU\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

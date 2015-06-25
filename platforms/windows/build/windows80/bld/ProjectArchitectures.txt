@@ -1,1 +1,1 @@
-C:\XpandDevelop\OutSystemsNowWindows\platforms\windows\CordovaApp.Windows80.jsproj;neutral
+D:\Projects\OutSystemsNow\OpenSource\GitHub\OutSystemsNow-Windows\platforms\windows\CordovaApp.Windows80.jsproj;neutral
