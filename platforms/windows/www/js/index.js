@@ -72,7 +72,7 @@
     window.WinJS.Namespace.define("globalVars", {
         IsUaSetted: false,
         environment: null,
-        autologin: false,
+        autologin: true,
         deeplink: null,
         encryptFunction: function (data, name) {
             if (data.applist != null) data.applist = null;
@@ -95,7 +95,7 @@
                 var cipherString = localSettings.values[name];
                 if (cipherString) {
                     var cryptography = Windows.Security.Cryptography;
-                    var keyHash = this.getMd5Hash("8ce135b5a2361f7eecb83a42f2df15e2");
+                    var keyHash = this.getMd5Hash("Va@wxa!bO2!95-lO1_yc_^@kYE0&7EUBL$S,C%YUgMRTnAF$vC6WcGX!v[\khg");
                     var toDecryptBuffer = cryptography.CryptographicBuffer.decodeFromBase64String(cipherString);
                     var aes = Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider.openAlgorithm(Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.aesEcbPkcs7);
                     var symetricKey = aes.createSymmetricKey(keyHash);
@@ -182,10 +182,14 @@
     app.addEventListener("activated", function (args) {
 
         if (args.detail.kind === activation.ActivationKind.launch || args.detail.kind == Windows.ApplicationModel.Activation.ActivationKind.protocol) {
-            if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
-                // your application here.
-            } else {
-                // Restore application state here.
+   
+            if (args.detail.previousExecutionState === activation.ApplicationExecutionState.running ||
+                args.detail.previousExecutionState === activation.ApplicationExecutionState.suspended) {
+                if (args.detail.kind !== Windows.ApplicationModel.Activation.ActivationKind.protocol) {
+                    return;
+                }
+
+                PushSDK.NotificationService.handleStartPush(args.detail.arguments);
             }
             
             // Global vars initialization          
@@ -197,7 +201,7 @@
             nav.history.current.initialPlaceholder = true;
 
             // Cast the generic event args to WebUILaunchActivatedEventArgs.
-
+             
             // Optimize the load of the application and while the splash screen is shown, execute high priority scheduled work.
             if (args.detail.kind == Windows.ApplicationModel.Activation.ActivationKind.protocol) {
                 // The received URI is eventArgs.detail.uri.rawUri
@@ -206,19 +210,45 @@
                 var username;
                 var password;
                 var uriApp;
+                
 
-                for (var i = 0, len = args.detail.uri.queryParsed.length; i < len; i++) {
-                    if (args.detail.uri.queryParsed[i].name == "username") {
-                        username = args.detail.uri.queryParsed[i].value;
+                var uriQuery = args.detail.uri.query;
+
+                if (uriQuery && uriQuery.length > 0) {
+                    // Get username parameter
+                    var paramIndex = uriQuery.indexOf("username=");
+                    if (paramIndex >= 0) {
+                        var userStr = uriQuery.substring(paramIndex);
+                        var endOfParam = userStr.indexOf("&");
+                        var paramString = userStr.substring(0, endOfParam);
+
+                        username = paramString.substring("username=".length);
+
                     }
-                    if (args.detail.uri.queryParsed[i].name == "password") {
-                        password = args.detail.uri.queryParsed[i].value;
+
+                    // Get password parameter
+                    paramIndex = uriQuery.indexOf("password=");
+                    if (paramIndex >= 0) {
+                        var pwdStr = uriQuery.substring(paramIndex);
+                        var endOfParam = pwdStr.indexOf("&");
+                        var paramString = pwdStr.substring(0, endOfParam);
+
+                        password = paramString.substring("password=".length);
+
                     }
-                    if (args.detail.uri.queryParsed[i].name == "url") {
-                        uriApp = args.detail.uri.queryParsed[i].value;
+
+                    // Get url parameter
+                    paramIndex = uriQuery.indexOf("url=");
+                    if (paramIndex >= 0) {
+                        var urlStr = uriQuery.substring(paramIndex);
+
+                        uriApp = urlStr.substring("url=".length);
+
                     }
+
                 }
 
+              
                 var operation = args.detail.uri.path;
                 var parameters = { username: username, password: password, url: uriApp };
 
@@ -261,5 +291,11 @@
             nav.back();
         }
     }
+    
+    app.onerror = function (e) {
+        console.log("APP CRASH: " + e);
+        return true;
+    }
+    
     app.start();
 })();

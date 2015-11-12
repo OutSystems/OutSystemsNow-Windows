@@ -16,6 +16,8 @@ var Environment = window.WinJS.Class.define(function () {
 (function () {
     "use strict";
 
+
+    var app = WinJS.Application;
     var nav = window.WinJS.Navigation;
     var applicationData = Windows.Storage.ApplicationData.current;
 
@@ -59,12 +61,15 @@ var Environment = window.WinJS.Class.define(function () {
                 userInput.value = globalVars.deeplink.host;
                 tryConnectEnvironment();
             }
-        },
-        init: function () {
-           if(!globalVars.deeplink.hasValidSettings()) loginSavedHandler();
+            else {                
+                loginSavedHandler();
+            }
+       
+
         },
         unload: function () {
             // TODO: Respond to navigations away from this page.
+            console.log("unload");
         },
 
         
@@ -80,14 +85,14 @@ var Environment = window.WinJS.Class.define(function () {
         var localSettings = applicationData.localSettings;
         var lastHost = localSettings.values["lastlogin"];
         var lastLoginData;
-        if (globalVars.environment != null && !globalVars.environment.isDemo) {
+        if (globalVars.environment != null && globalVars.environment.host.length > 0 && !globalVars.environment.isDemo) {
             var endpointapp = document.getElementById("endpointapp");
             if (endpointapp != null) {
                 endpointapp.value = globalVars.environment.host;
             }
         }
         else {
-            if (lastHost != null) {
+            if (lastHost != null) {                
                 lastLoginData = globalVars.decryptFunction(lastHost);
                 if (lastLoginData) {
                     var parsed = JSON.parse(lastLoginData);
@@ -108,13 +113,14 @@ var Environment = window.WinJS.Class.define(function () {
                 var parsed = JSON.parse(lastLoginData);
                 var endpointapp = document.getElementById("endpointapp");
                 if (endpointapp != null) endpointapp.value = parsed.host;
-
-                if (!globalVars.autologin) {
+                if (globalVars.autologin) {
                     globalVars.environment = parsed;
                     nav.navigate("/www/login.html");
                 }
-
             }
+        }
+        else {
+            globalVars.autologin = false;
         }
     }
 
@@ -249,6 +255,7 @@ var Environment = window.WinJS.Class.define(function () {
         }
         var fixedUserInput = userInput.value.trim().replace("https://", "").replace("http://", "");
         var envUrl = "https://" + fixedUserInput + "/OutSystemsNowService/infrastructure.aspx";
+
         window.WinJS.xhr({
             url: envUrl,
             headers: { "Content-type": "application/json" }
@@ -273,7 +280,7 @@ var Environment = window.WinJS.Class.define(function () {
             nav.navigate("/www/login.html");
         },
         function error(result) {
-            envUrl = "http://" + fixedUserInput + "/OutSystemsNowService/infrastructure.jsf";
+            envUrl = "https://" + fixedUserInput + "/OutSystemsNowService/infrastructure.jsf";
             window.WinJS.xhr({
                 url: envUrl,
                 headers: { "Content-type": "application/json" },

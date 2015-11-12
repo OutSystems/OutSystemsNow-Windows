@@ -12,6 +12,7 @@
                 globalVars.deeplink.invalidate();
         }
     });
+
     window.WinJS.UI.Pages.define("/www/login.html", {
         processed: function (element) {
             return window.WinJS.Resources.processAll(element);
@@ -20,6 +21,7 @@
         // populates the page elements with the app's data.
         ready: function () {
 
+  
             //Force portrait screen only
             var wgd = Windows.Graphics.Display;
 
@@ -52,6 +54,11 @@
             app.onbackclick = function (evt) {
                 var canGoBack = nav.canGoBack;
                 if (canGoBack) {
+
+                    if (globalVars.deeplink && globalVars.deeplink.hasValidSettings()) {
+                       globalVars.deeplink.invalidate();
+                    }
+
                     nav.back();
                 }
                 return canGoBack;
@@ -112,7 +119,7 @@
                 username.value = parsed.username;
                 password.value = parsed.password;
                 var lastHost = localSettings.values["lastlogin"];
-                if (lastHost != null && !globalVars.autologin) {
+                if (lastHost != null && globalVars.autologin) {
                     doLogin();
                 }
             }
@@ -155,22 +162,36 @@
             deviceHwId: globalVars.getHardwareId(),
         }
         var envUrl = "https://" + globalVars.environment.host + "/OutSystemsNowService/registertoken.aspx";
+
+        // Before making a POST request we first have to issue a GET against the target
+        // server to work around Network Error 0x2ee4.         
         window.WinJS.xhr({
-            type: "post",
-            url: envUrl,
-            headers: { "Content-type": "application/x-www-form-urlencoded" },
-            data: globalVars.formatParams(params)
+            url: envUrl
         }).done(
-            function completed(result) {
-                //var resultParsed = JSON.parse(result.response);
-                var x = 0;
+            function completed(request) {
+
+                window.WinJS.xhr({
+                    type: "post",
+                    url: envUrl,
+                    headers: { "Content-type": "application/x-www-form-urlencoded" },
+                    data: globalVars.formatParams(params)
+                }).done(
+                    function completed(result) {
+                        //var resultParsed = JSON.parse(result.response);
+                        var x = 0;
+                    },
+                    function error(e) {
+                        var x = 0;
+                    },
+                    function progress() {
+                        var x = 0;
+                    });
             },
-            function error(e) {
-                var x = 0;
+            function error(request) {
             },
-            function progress() {
-                var x = 0;
-            });
+            function progress(request) {
+            }
+        );
     }
 
     function button1Click() {
@@ -212,48 +233,72 @@
         } else {
             envUrl = "https://" + globalVars.environment.host + "/OutSystemsNowService/login.aspx";
         }
-        window.WinJS.xhr({
-            type: "post",
-            url: envUrl,
-            headers: { "Content-type": "application/x-www-form-urlencoded" },
-            data: globalVars.formatParams(params)
-        }).done(
-               function completed(result) {
-                   var resultParsed = JSON.parse(result.response);
-                   if (!resultParsed.success) {
-                       errorMessage.innerHTML = window.WinJS.Resources.getString("loginError1").value;;
-                       loginbutton.style.display = "inherit";
-                       loginProgressRing.style.display = "none";
-                       return;
-                   } else {
-                       globalVars.autologin = true;
-                       globalVars.environment.username = username.value;
-                       globalVars.environment.password = password.value;
-                       for (var i = 0; i < resultParsed.applications.length; i++) {
-                           if (resultParsed.applications[i].imageId != 0) {
-                               var text = "https://" + globalVars.environment.host + "/OutSystemsNowService/applicationImage." + ((globalVars.environment.isJsp == true) ? "jsf" : "aspx") + "?id=" + resultParsed.applications[i].imageId;
-                               resultParsed.applications[i].imageId = "url('" + text + "')";
-                           } else {
-                               resultParsed.applications[i].imageId = "url('ms-appx:///www/img/NoAppImage.png')";
-                           }
 
-                           if (resultParsed.applications[i].description == null || resultParsed.applications[i].description == "") {
-                               resultParsed.applications[i].description = "(no description)";
+
+        // Before making a POST request we first have to issue a GET against the target
+        // server to work around Network Error 0x2ee4.         
+        window.WinJS.xhr({
+            url: envUrl
+        }).done(
+            function completed(request) {
+
+                // After a single GET request we can now invoke POST requests.           
+                window.WinJS.xhr({
+                    type: "post",
+                    url: envUrl,
+                    headers: { "Content-type": "application/x-www-form-urlencoded", "charset": "utf-8" },
+                    data: globalVars.formatParams(params)
+                }).done(
+                       function completed(result) {
+                           var resultParsed = JSON.parse(result.response);
+                           if (!resultParsed.success) {
+                               errorMessage.innerHTML = window.WinJS.Resources.getString("loginError1").value;;
+                               loginbutton.style.display = "inherit";
+                               loginProgressRing.style.display = "none";
+                               return;
+                           } else {
+                               globalVars.autologin = false;
+                               globalVars.environment.username = username.value;
+                               globalVars.environment.password = password.value;
+                               for (var i = 0; i < resultParsed.applications.length; i++) {
+                                   if (resultParsed.applications[i].imageId != 0) {
+                                       var text = "https://" + globalVars.environment.host + "/OutSystemsNowService/applicationImage." + ((globalVars.environment.isJsp == true) ? "jsf" : "aspx") + "?id=" + resultParsed.applications[i].imageId;
+                                       resultParsed.applications[i].imageId = "url('" + text + "')";
+                                   } else {
+                                       resultParsed.applications[i].imageId = "url('ms-appx:///www/img/NoAppImage.png')";
+                                   }
+
+                                   if (resultParsed.applications[i].description == null || resultParsed.applications[i].description == "") {
+                                       resultParsed.applications[i].description = "(no description)";
+                                   }
+                               }
+                               saveLocalDb();
+                               globalVars.environment.applist = resultParsed.applications;
+                               nav.navigate("/www/applist.html");
                            }
-                       }
-                       saveLocalDb();
-                       globalVars.environment.applist = resultParsed.applications;
-                       nav.navigate("/www/applist.html");
-                   }
-               },
-               function error() {
-                   errorMessage.innerHTML = window.WinJS.Resources.getString("loginError2").value;;;
-                   loginbutton.style.display = "inherit";
-                   loginProgressRing.style.display = "none";
-               },
-               function progress() {
-                   // report on progress of download.
-               });
+                       },
+                       function error(error) {
+                           globalVars.autologin = false;
+                           errorMessage.innerHTML = window.WinJS.Resources.getString("loginError2").value;;;
+                           loginbutton.style.display = "inherit";
+                           loginProgressRing.style.display = "none";
+                       },
+                       function progress() {
+                           // report on progress of download.
+                       });
+
+            },
+            function error(request) {
+                globalVars.autologin = false;
+                errorMessage.innerHTML = window.WinJS.Resources.getString("environmentError2").value;
+                loginbutton.style.display = "inherit";
+                loginProgressRing.style.display = "none";
+            },
+            function progress(request) {
+                // report on progress of download.
+            }
+        );
+
 
         //This save local db basically will save the login if success as last instance allowing auto login next time.
         function saveLocalDb() {
