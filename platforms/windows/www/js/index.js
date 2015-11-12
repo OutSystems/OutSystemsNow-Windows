@@ -95,7 +95,7 @@
                 var cipherString = localSettings.values[name];
                 if (cipherString) {
                     var cryptography = Windows.Security.Cryptography;
-                    var keyHash = this.getMd5Hash("Va@wxa!bO2!95-lO1_yc_^@kYE0&7EUBL$S,C%YUgMRTnAF$vC6WcGX!v[\khg");
+                    var keyHash = this.getMd5Hash("8ce135b5a2361f7eecb83a42f2df15e2");
                     var toDecryptBuffer = cryptography.CryptographicBuffer.decodeFromBase64String(cipherString);
                     var aes = Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider.openAlgorithm(Windows.Security.Cryptography.Core.SymmetricAlgorithmNames.aesEcbPkcs7);
                     var symetricKey = aes.createSymmetricKey(keyHash);
